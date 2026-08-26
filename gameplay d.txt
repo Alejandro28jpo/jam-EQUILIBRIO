@@ -1,0 +1,13 @@
+FRIO Y CALOR: juego tipo arcade en el que el protagonista tiene 2 armas una de frio otra de calor,la de frio solo los congela y no les hace un daño minimo y el calor los mata,tu como jugador tienes q tener un equilibrio entre calor o frio o el jugador morira por alguna de los 2
+Van a ser 3 tipos de enemigos (podria haber otros 2mas pero no se van a pensar en ellos hasta q los otros 3 y la jugabilidad de frio y calor de la habitacion esten listas o casi listas)
+TIPO BASE ,va a ir en linea recta ,el frio lo realentiza un poco pero no lo para ,solo atraviesa la habitacion hasta cruzar la otra puerta 
+TIPO CUERPO A CUERPO,ira directo al jugador espera un corto tiempo para lanzar sus golpes hacia el piso y golpear al jugador,se congela por completo con el arma de frio y tiene un poco mas de vida q los demas enemigos TIPO DIAGONAL,entrara a la habitacion e ira de forma completamente diagonal chocando con las paredes como el logo de dvd,este es mas rapido q los demas pero es el que menos vida tiene
+TIPO DIAGONAL,entrara a la habitacion e ira de forma completamente diagonal chocando con las paredes como el logo de dvd,este es mas rapido q los demas pero es el que menos vida tiene
+el jugador contara con 3 vidas, y solo podra recuperar un solo corazon por cada 2 oleadas al golpear una caja que caera del cielo despues de terminar cada ronda
+al perder se guardara la puntuacion en un marcador ,solo se guardaran las 10 puntuaciones mas altas con un nombre al lado
+LOBBY,NO PRIORIDAD HASTA QUE SE TERMINE LA JUGABILIDAD
+unpequeño lobby que puedes entrar desṕues de perder una partida donde el jugador vera al personaje sentado en un sillon,en el lobby aparecera un nuevo objeto(progreso visual) cada vez q llegue a cierta cantidad de puntos 
+es un progereso
+solo visual
+pero te impulsa a jugar mas de una partida y q el jugador tenga la meta de superarse cada vez mas,se regalara un objeto al terminar la primera partida sin importar la puntuacion
+solo para q el jugador descubra el mminilobby y desbloqueo de objetos en el lobby
