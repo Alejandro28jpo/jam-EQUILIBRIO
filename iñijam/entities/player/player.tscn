@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://cgna6o5sjx7ls"]
 
 [ext_resource type="Script" uid="uid://d1bjnw3ndfkq7" path="res://entities/player/player.gd" id="1_symyc"]
+[ext_resource type="Script" uid="uid://bdrf7jgd44xr2" path="res://components/health_component.gd" id="2_bls4j"]
 [ext_resource type="Script" uid="uid://cdmuggadc7ltb" path="res://components/move_component.gd" id="2_sglur"]
+[ext_resource type="PackedScene" uid="uid://bqlnlvnb54ll6" path="res://ui/player_interface/player_interface.tscn" id="4_bls4j"]
+[ext_resource type="Script" uid="uid://oq1ifkw5qcjx" path="res://components/temperature_component.gd" id="5_fkugw"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_ubc1v"]
 size = Vector2(16, 32)
@@ -11,6 +14,18 @@ radius = 8.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1509555614]
 script = ExtResource("1_symyc")
+
+[node name="PlayerInterface" parent="." unique_id=1121228753 node_paths=PackedStringArray("player") instance=ExtResource("4_bls4j")]
+player = NodePath("..")
+
+[node name="TemperatureComponent" type="Node" parent="." unique_id=818896424]
+script = ExtResource("5_fkugw")
+metadata/_custom_type_script = "uid://oq1ifkw5qcjx"
+
+[node name="HealthComponent" type="Node" parent="." unique_id=528223830]
+script = ExtResource("2_bls4j")
+max_health = 3
+metadata/_custom_type_script = "uid://bdrf7jgd44xr2"
 
 [node name="MoveComponent" type="Node" parent="." unique_id=2095079743]
 script = ExtResource("2_sglur")

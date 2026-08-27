@@ -1,0 +1,15 @@
+class_name GlobalEnums
+
+
+enum EntityState {
+	PEAK_FREEZE,
+	FREEZING,
+	DEEP_COLD,
+	COLD,
+	NEUTRAL,
+	HOT,
+	DEEP_HEAT,
+	BURNING,
+	PEAK_BURN,
+	INCANDESCENT
+}
