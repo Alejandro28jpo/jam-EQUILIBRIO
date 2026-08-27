@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cgna6o5sjx7ls"]
 
 [ext_resource type="Script" uid="uid://d1bjnw3ndfkq7" path="res://entities/player/player.gd" id="1_symyc"]
+[ext_resource type="Script" uid="uid://cdmuggadc7ltb" path="res://components/move_component.gd" id="2_sglur"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_ubc1v"]
 size = Vector2(16, 32)
@@ -10,6 +11,10 @@ radius = 8.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1509555614]
 script = ExtResource("1_symyc")
+
+[node name="MoveComponent" type="Node" parent="." unique_id=2095079743]
+script = ExtResource("2_sglur")
+speed = 100.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=743463995]
 position = Vector2(0, -16)

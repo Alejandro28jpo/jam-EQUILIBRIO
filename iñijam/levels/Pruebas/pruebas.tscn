@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://b247ueqo3fbik"]
 
+[ext_resource type="PackedScene" uid="uid://cgna6o5sjx7ls" path="res://entities/player/player.tscn" id="1_kuph3"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ubc1v"]
 bg_color = Color(0.30980393, 0.9019608, 1, 1)
 border_width_left = 3
@@ -28,3 +30,6 @@ offset_bottom = 60.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_ubc1v")
+
+[node name="Player" parent="." unique_id=1509555614 instance=ExtResource("1_kuph3")]
+position = Vector2(152, 85)
