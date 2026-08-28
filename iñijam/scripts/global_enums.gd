@@ -11,5 +11,4 @@ enum EntityState {
 	DEEP_HEAT,
 	BURNING,
 	PEAK_BURN,
-	INCANDESCENT
 }

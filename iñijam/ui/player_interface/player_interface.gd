@@ -5,16 +5,41 @@ class_name PlayerInterface
 @export var player: Player
 
 @onready var player_life: Label = $PlayerLife
-@onready var player_state: Label = $PlayerState
+@onready var temperature_meter: Sprite2D = $TemperatureMeter
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
+
+var state_to_show: int
 
 
 func setup() -> void:
+	state_to_show = _state_to_frame(player.temperature_component.state)
+	temperature_meter.frame = state_to_show
+	player.temperature_component.state_changed.connect(_on_state_changed)
 	manage_health_label()
-	manage_state_label()
 
 
 func manage_health_label() -> void:
 	player_life.text = "%s / %s" % [player.health_component.current_damage, player.health_component.max_health]
 
 
-func manage_state_label() -> void: player_state.text = GlobalEnums.EntityState.keys()[player.temperature_component.state]
+func update_temperature_meter() -> void:
+	temperature_meter.frame = state_to_show
+
+func _on_state_changed(new_state: GlobalEnums.EntityState, _old_state: GlobalEnums.EntityState) -> void:
+	if new_state > state_to_show:
+		state_to_show = _state_to_frame(new_state)
+		animation_player.play("TemperatureUP")
+	elif new_state < state_to_show:
+		state_to_show = _state_to_frame(new_state)
+		animation_player.play("TemperatureDOWN")
+
+
+func _input(_event: InputEvent) -> void:
+	if Input.is_action_just_pressed("ui_accept"):
+		player.temperature_component.affect_temperature(5)
+	if Input.is_action_just_pressed("switch_weapon"):
+		player.temperature_component.affect_temperature(-5)
+
+
+func _state_to_frame(state: int) -> int:
+	return (GlobalEnums.EntityState.size() - 1) - state

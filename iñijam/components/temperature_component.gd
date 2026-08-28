@@ -8,7 +8,7 @@ signal died(cause: GlobalEnums.EntityState)
 
 @onready var body: Node = get_parent()
 
-var balance: float = 0.0:
+var balance: float = 15.0:
 	set(value):
 		balance = value
 		balance_change.emit(balance)
@@ -17,6 +17,10 @@ var balance: float = 0.0:
 var state: GlobalEnums.EntityState = GlobalEnums.EntityState.NEUTRAL
 
 var _is_dead: bool = false
+
+
+func setup() -> void:
+	_update_state()
 
 
 func affect_temperature(amount: float) -> void:
@@ -42,14 +46,12 @@ func _update_state() -> void:
 		state = GlobalEnums.EntityState.DEEP_HEAT
 	elif balance < 60.0:
 		state = GlobalEnums.EntityState.BURNING
-	elif balance <= 100.0:
-		state = GlobalEnums.EntityState.PEAK_BURN
 	else:
-		state = GlobalEnums.EntityState.INCANDESCENT
+		state = GlobalEnums.EntityState.PEAK_BURN
 	
 	if state != old_state: state_changed.emit(state, old_state)
 	
-	if state == GlobalEnums.EntityState.PEAK_FREEZE or state == GlobalEnums.EntityState.INCANDESCENT:
+	if state == GlobalEnums.EntityState.PEAK_FREEZE or state == GlobalEnums.EntityState.PEAK_BURN:
 		_die(state)
 
 
