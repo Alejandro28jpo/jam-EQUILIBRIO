@@ -8,11 +8,13 @@ class_name PlayerInterface
 @onready var temperature_meter: Sprite2D = $TemperatureMeter
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
+var current_state: GlobalEnums.EntityState
 var state_to_show: int
 
 
 func setup() -> void:
-	state_to_show = _state_to_frame(player.temperature_component.state)
+	current_state = player.temperature_component.state
+	state_to_show = _state_to_frame(current_state)
 	temperature_meter.frame = state_to_show
 	player.temperature_component.state_changed.connect(_on_state_changed)
 	manage_health_label()
@@ -26,12 +28,14 @@ func update_temperature_meter() -> void:
 	temperature_meter.frame = state_to_show
 
 func _on_state_changed(new_state: GlobalEnums.EntityState, _old_state: GlobalEnums.EntityState) -> void:
-	if new_state > state_to_show:
-		state_to_show = _state_to_frame(new_state)
-		animation_player.play("TemperatureUP")
-	elif new_state < state_to_show:
+	if new_state > current_state:
+		current_state = new_state
 		state_to_show = _state_to_frame(new_state)
 		animation_player.play("TemperatureDOWN")
+	elif new_state < current_state:
+		current_state = new_state
+		state_to_show = _state_to_frame(new_state)
+		animation_player.play("TemperatureUP")
 
 
 func _input(_event: InputEvent) -> void:
