@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bbd4b6nmml8em"]
+
+[ext_resource type="PackedScene" uid="uid://bf28w2i4upegx" path="res://modelos/arcade.blend" id="1_ry6it"]
+[ext_resource type="Texture2D" uid="uid://d0sffinvdgeqw" path="res://modelos/128_x_128_templo_y_mar.png" id="2_gtppo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_svl11"]
+resource_name = "Material.006"
+cull_mode = 2
+albedo_texture = ExtResource("2_gtppo")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_dom4d"]
+_surfaces = [{
+"aabb": AABB(-1, 0, -1, 2, 1e-05, 2),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 0, 0, 3, 0, 1, 0),
+"name": "Material.006",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_mrtcp"]
+resource_name = "arcade_Plane"
+_surfaces = [{
+"aabb": AABB(-1, 0, -1, 2, 1e-05, 2),
+"attribute_data": PackedByteArray(0, 0, 255, 255, 255, 255, 0, 0, 255, 255, 255, 255, 0, 0, 0, 0),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 0, 0, 3, 0, 1, 0),
+"material": SubResource("StandardMaterial3D_svl11"),
+"name": "Material.006",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 0, 255, 255, 255, 191, 255, 255, 0, 0, 0, 0, 255, 191, 255, 255, 0, 0, 255, 255, 255, 191, 0, 0, 0, 0, 0, 0, 255, 191, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_dom4d")
+
+[node name="arcade" unique_id=927195779 instance=ExtResource("1_ry6it")]
+
+[node name="Plane" parent="." index="2" unique_id=261539418]
+mesh = SubResource("ArrayMesh_mrtcp")
