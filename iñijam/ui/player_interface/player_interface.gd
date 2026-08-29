@@ -14,7 +14,7 @@ var state_to_show: int
 
 func setup() -> void:
 	current_state = player.temperature_component.state
-	state_to_show = _state_to_frame(current_state)
+	state_to_show = current_state#_state_to_frame(current_state)
 	temperature_meter.frame = state_to_show
 	player.temperature_component.state_changed.connect(_on_state_changed)
 	manage_health_label()
@@ -30,12 +30,12 @@ func update_temperature_meter() -> void:
 func _on_state_changed(new_state: GlobalEnums.EntityState, _old_state: GlobalEnums.EntityState) -> void:
 	if new_state > current_state:
 		current_state = new_state
-		state_to_show = _state_to_frame(new_state)
-		animation_player.play("TemperatureDOWN")
+		state_to_show = new_state # _state_to_frame(new_state)
+		animation_player.play("TemperatureUP")
 	elif new_state < current_state:
 		current_state = new_state
-		state_to_show = _state_to_frame(new_state)
-		animation_player.play("TemperatureUP")
+		state_to_show = new_state# _state_to_frame(new_state)
+		animation_player.play("TemperatureDOWN")
 
 
 func _input(_event: InputEvent) -> void:
