@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8ty688vuxq31"
-path="res://.godot/imported/calor particula1-sheet.png-fbc9ebf18b05bb4014dbe79e703461c3.ctex"
+uid="uid://80b5vp5epakl"
+path="res://.godot/imported/frio particula.png-8156ead7c718acffad7973e9c4a64083.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://arte/calor particula1-sheet.png"
-dest_files=["res://.godot/imported/calor particula1-sheet.png-fbc9ebf18b05bb4014dbe79e703461c3.ctex"]
+source_file="res://entities/bullets/frio particula.png"
+dest_files=["res://.godot/imported/frio particula.png-8156ead7c718acffad7973e9c4a64083.ctex"]
 
 [params]
 

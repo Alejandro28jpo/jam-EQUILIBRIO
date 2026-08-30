@@ -40,5 +40,5 @@ current_room_type = 12
 position = Vector2(6, 7)
 
 [node name="Bull" parent="." unique_id=103023843 instance=ExtResource("3_jfd2c")]
-position = Vector2(59, 7)
+position = Vector2(156, 8)
 scale = Vector2(-1, 1)

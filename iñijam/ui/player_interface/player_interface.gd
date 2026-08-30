@@ -38,12 +38,5 @@ func _on_state_changed(new_state: GlobalEnums.EntityState, _old_state: GlobalEnu
 		animation_player.play("TemperatureDOWN")
 
 
-func _input(_event: InputEvent) -> void:
-	if Input.is_action_just_pressed("ui_accept"):
-		player.temperature_component.affect_temperature(5)
-	if Input.is_action_just_pressed("switch_weapon"):
-		player.temperature_component.affect_temperature(-5)
-
-
 func _state_to_frame(state: int) -> int:
 	return (GlobalEnums.EntityState.size() - 1) - state

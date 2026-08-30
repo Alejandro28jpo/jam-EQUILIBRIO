@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://crn2hduobe4sj"]
+
+[ext_resource type="Script" uid="uid://gw4wi3c6cyh0" path="res://entities/bullets/bullet.gd" id="1_d8j5q"]
+[ext_resource type="Texture2D" uid="uid://8ty688vuxq31" path="res://entities/bullets/calor particula1-sheet.png" id="2_calor"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_warm"]
+radius = 6.0
+
+[sub_resource type="Animation" id="Animation_warm_fly"]
+resource_name = "FLY"
+length = 0.42
+step = 0.06
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.06, 0.12, 0.18, 0.24, 0.3, 0.36),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6]
+}
+
+[sub_resource type="Animation" id="Animation_2rc8u"]
+resource_name = "IDLE"
+length = 0.1
+loop_mode = 1
+step = 0.06
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_warm"]
+_data = {
+&"FLY": SubResource("Animation_warm_fly"),
+&"IDLE": SubResource("Animation_2rc8u")
+}
+
+[node name="WarmBullet" type="Area2D" unique_id=866925067]
+script = ExtResource("1_d8j5q")
+speed = 420.0
+temperature_effect = 18.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=792113937]
+texture = ExtResource("2_calor")
+hframes = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=943951535]
+shape = SubResource("CircleShape2D_warm")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1014227927]
+libraries/ = SubResource("AnimationLibrary_warm")
+autoplay = &"IDLE"
