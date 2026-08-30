@@ -27,15 +27,21 @@ var current_weapon: Weapon = Weapon.COLD
 
 var is_taking_damage: bool = false
 var is_invulnerable: bool = false
+var is_dead: bool = false
 
 
 func _ready() -> void:
 	health_component.setup()
 	temperature_component.setup()
 	player_interface.setup()
+	health_component.died.connect(_on_died)
+	temperature_component.died.connect(func(_cause: GlobalEnums.EntityState) -> void: _on_died())
 
 
 func _physics_process(_delta: float) -> void:
+	if is_dead:
+		return
+
 	if is_taking_damage:
 		move_component.move(Vector2.ZERO)
 		return
@@ -53,11 +59,14 @@ func _physics_process(_delta: float) -> void:
 
 
 func take_damage(damage: int) -> void:
-	if is_invulnerable:
+	if is_dead or is_invulnerable:
 		return
 
 	health_component.apply_damage(damage)
 	player_interface.manage_health_label()
+
+	if is_dead:
+		return
 
 	is_invulnerable = true
 	is_taking_damage = true
@@ -65,9 +74,30 @@ func take_damage(damage: int) -> void:
 	animation_player.play("DAMAGE")
 	await animation_player.animation_finished
 
+	if is_dead:
+		return
+
 	is_taking_damage = false
 	await _blink()
+
+	if is_dead:
+		return
 	is_invulnerable = false
+
+
+func _on_died() -> void:
+	if is_dead:
+		return
+
+	is_dead = true
+	is_taking_damage = false
+	is_invulnerable = true
+	velocity = Vector2.ZERO
+	sprite_2d.visible = true
+
+	animation_player.play("DYING")
+	await animation_player.animation_finished
+	animation_player.play("DEAD")
 
 
 func _blink() -> void:
