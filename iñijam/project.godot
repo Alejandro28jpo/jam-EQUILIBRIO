@@ -18,6 +18,7 @@ config/icon="uid://bstiqxnoykwcf"
 [autoload]
 
 ControladorAudio="*uid://6q8v4w07822q"
+Puntos="*uid://dapfdo6aibbvi"
 
 [display]
 

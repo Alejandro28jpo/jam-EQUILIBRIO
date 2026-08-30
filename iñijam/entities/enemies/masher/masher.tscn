@@ -203,6 +203,7 @@ speed = 90.0
 
 [node name="TemperatureComponent" type="Node" parent="." unique_id=1735389838]
 script = ExtResource("4_wb7aw")
+puntos_que_da = 30
 
 [node name="AttackArea" type="Area2D" parent="." unique_id=1150035558]
 position = Vector2(0, -10)

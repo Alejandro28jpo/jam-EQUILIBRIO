@@ -4,6 +4,8 @@ class_name Bull
 
 enum State { CHASE, WINDUP, COOLDOWN }
 
+
+
 @export var attack_range: float = 40.0
 @export var windup_time: float = 0.5
 @export var attack_cooldown: float = 1.0
