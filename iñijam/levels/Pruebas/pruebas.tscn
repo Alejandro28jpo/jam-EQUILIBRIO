@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cy0u5e0hiwcy0" path="res://game_objects/room/room.tscn" id="1_bq086"]
 [ext_resource type="PackedScene" uid="uid://cgna6o5sjx7ls" path="res://entities/player/player.tscn" id="1_kuph3"]
+[ext_resource type="PackedScene" uid="uid://dc5o0s8q3jrl8" path="res://entities/enemies/bull/bull.tscn" id="3_jfd2c"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ubc1v"]
 bg_color = Color(0.30980393, 0.9019608, 1, 1)
@@ -35,13 +36,9 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_ubc1v")
 [node name="Room" parent="." unique_id=1104122540 instance=ExtResource("1_bq086")]
 current_room_type = 12
 
-[node name="Room2" parent="." unique_id=349529768 instance=ExtResource("1_bq086")]
-position = Vector2(640, 0)
-current_room_type = 5
-
-[node name="Room3" parent="." unique_id=514014962 instance=ExtResource("1_bq086")]
-position = Vector2(640, -320)
-current_room_type = 14
-
 [node name="Player" parent="." unique_id=1509555614 instance=ExtResource("1_kuph3")]
-position = Vector2(152, 85)
+position = Vector2(6, 7)
+
+[node name="Bull" parent="." unique_id=103023843 instance=ExtResource("3_jfd2c")]
+position = Vector2(59, 7)
+scale = Vector2(-1, 1)

@@ -1,0 +1,12 @@
+cuerpo a cuerpo 1    1-3 idle ,4-7walk ,8-11 aplasta,12-15 congelarse,16-21 quemarse
+cuerpo a cuerpo 2       1-3 idle, 4-7 walk,8-11 aplasta,12-15 congelarse,16-21 quemarse
+
+
+horizontal 1        1-6 walk,7-10 congelarse,11-16 quemarse
+horizontal 2        1-6 walk,7-10 congelarse,11-16 quemarse
+horizontal 3        1-6 walk,7-10 congelarse,11-15 quemarse
+
+
+diagonal 1          1-2 vuela,3-6 se congela ,7-12 se quema
+diagonal 2          1-2 vuela,3-6 se congela ,7-12 se quema
+diagonal 3          1-2 vuela,3-5 se congela ,6-11 se quema

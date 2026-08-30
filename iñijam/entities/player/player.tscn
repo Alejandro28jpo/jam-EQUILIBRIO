@@ -225,6 +225,7 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody2D" unique_id=1509555614]
+motion_mode = 1
 script = ExtResource("1_symyc")
 
 [node name="PlayerInterface" parent="." unique_id=1121228753 node_paths=PackedStringArray("player") instance=ExtResource("4_bls4j")]
