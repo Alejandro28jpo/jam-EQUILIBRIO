@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://dc5o0s8q3jrl8"]
+[gd_scene format=3 uid="uid://cjd046qb3av6i"]
 
-[ext_resource type="Script" uid="uid://d03e2dwm8mhjh" path="res://entities/enemies/bull/bull.gd" id="1_ybm8d"]
-[ext_resource type="Texture2D" uid="uid://cad3poafii1e0" path="res://entities/enemies/bull/cuerpo a cuerpo 1.png" id="2_lrt4w"]
-[ext_resource type="Script" uid="uid://bdrf7jgd44xr2" path="res://components/health_component.gd" id="3_health"]
-[ext_resource type="Script" uid="uid://cdmuggadc7ltb" path="res://components/move_component.gd" id="4_move"]
-[ext_resource type="Script" uid="uid://oq1ifkw5qcjx" path="res://components/temperature_component.gd" id="5_temp"]
+[ext_resource type="Script" uid="uid://d03e2dwm8mhjh" path="res://entities/enemies/bull/bull.gd" id="1_huv8t"]
+[ext_resource type="Script" uid="uid://bdrf7jgd44xr2" path="res://components/health_component.gd" id="2_yjbvj"]
+[ext_resource type="Script" uid="uid://cdmuggadc7ltb" path="res://components/move_component.gd" id="3_clp5s"]
+[ext_resource type="Script" uid="uid://oq1ifkw5qcjx" path="res://components/temperature_component.gd" id="4_1wrpt"]
+[ext_resource type="Texture2D" uid="uid://cvna8sk3sl84s" path="res://entities/enemigosFiles/diagonal 1.png" id="5_0tm6a"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_attack"]
 radius = 38.052597
@@ -28,7 +28,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [15, 16, 17, 18, 19]
+"values": [7, 8, 9, 10, 11]
 }
 
 [sub_resource type="Animation" id="Animation_osxmd"]
@@ -45,7 +45,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [11, 12, 13, 14]
+"values": [3, 4, 5, 6]
 }
 
 [sub_resource type="Animation" id="Animation_igtda"]
@@ -104,47 +104,6 @@ tracks/1/keys = {
 "update": 0,
 "values": [Vector2(1.3, 1.3)]
 }
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("AttackArea/CollisionShape2D:disabled")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
-[sub_resource type="Animation" id="Animation_a8can"]
-resource_name = "SMASH"
-length = 0.5
-step = 0.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [7, 8, 9, 10]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("AttackArea/CollisionShape2D:disabled")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0.1, 0.2, 0.3, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [true, false, false, true]
-}
 
 [sub_resource type="Animation" id="Animation_rvjbp"]
 resource_name = "WALK"
@@ -161,7 +120,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [3, 4, 5, 6]
+"values": [0, 1, 0, 1]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -182,23 +141,22 @@ _data = {
 &"FREEZED": SubResource("Animation_osxmd"),
 &"IDLE": SubResource("Animation_igtda"),
 &"RESET": SubResource("Animation_lrt4w"),
-&"SMASH": SubResource("Animation_a8can"),
 &"WALK": SubResource("Animation_rvjbp")
 }
 
-[node name="Bull" type="CharacterBody2D" unique_id=103023843]
-script = ExtResource("1_ybm8d")
+[node name="wrath" type="CharacterBody2D" unique_id=103023843]
+script = ExtResource("1_huv8t")
 
 [node name="HealthComponent" type="Node" parent="." unique_id=1991495429]
-script = ExtResource("3_health")
+script = ExtResource("2_yjbvj")
 max_health = 5
 
 [node name="MoveComponent" type="Node" parent="." unique_id=1774239702]
-script = ExtResource("4_move")
+script = ExtResource("3_clp5s")
 speed = 90.0
 
 [node name="TemperatureComponent" type="Node" parent="." unique_id=1735389838]
-script = ExtResource("5_temp")
+script = ExtResource("4_1wrpt")
 
 [node name="AttackArea" type="Area2D" parent="." unique_id=1150035558]
 position = Vector2(0, -10)
@@ -218,10 +176,11 @@ wait_time = 0.6
 one_shot = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1636694391]
+position = Vector2(6, 34)
 scale = Vector2(1.3, 1.3)
-texture = ExtResource("2_lrt4w")
+texture = ExtResource("5_0tm6a")
 offset = Vector2(0, -39)
-hframes = 21
+hframes = 12
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1807691024]
 position = Vector2(0, -10)

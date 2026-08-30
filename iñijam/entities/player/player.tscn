@@ -224,7 +224,7 @@ _data = {
 &"WALK": SubResource("Animation_wvtmh")
 }
 
-[node name="Player" type="CharacterBody2D" unique_id=1509555614]
+[node name="Player" type="CharacterBody2D" unique_id=1509555614 groups=["player"]]
 motion_mode = 1
 script = ExtResource("1_symyc")
 
@@ -243,6 +243,9 @@ metadata/_custom_type_script = "uid://bdrf7jgd44xr2"
 [node name="MoveComponent" type="Node" parent="." unique_id=2095079743]
 script = ExtResource("2_sglur")
 
+[node name="ShootCooldownTimer" type="Timer" parent="." unique_id=1717532957]
+one_shot = true
+
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1411277537]
 texture = ExtResource("6_8fjmc")
 offset = Vector2(0, -28)
@@ -256,3 +259,6 @@ shape = SubResource("CircleShape2D_ubc1v")
 libraries/ = SubResource("AnimationLibrary_qiwj3")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=366370499]
+
+[node name="BulletSpawnPosition" type="Marker2D" parent="." unique_id=1543749472]
+position = Vector2(13, -16)
