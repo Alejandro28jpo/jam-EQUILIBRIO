@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://diapcfca8jbsd"
+path="res://.godot/imported/MUERTE BLIGHT.ogg-634fdd16e3405ebb63ae71622006342a.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/enemigos/MUERTE BLIGHT.ogg"
+dest_files=["res://.godot/imported/MUERTE BLIGHT.ogg-634fdd16e3405ebb63ae71622006342a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

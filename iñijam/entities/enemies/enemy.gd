@@ -105,6 +105,7 @@ func _die() -> void:
 		return
 	is_dead = true
 	velocity = Vector2.ZERO
+	_set_collisions_enabled(false)
 	died.emit()
 	queue_free()
 
@@ -116,10 +117,13 @@ func _die_from_temperature(cause: GlobalEnums.EntityState) -> void:
 	velocity = Vector2.ZERO
 	move_component.move(Vector2.ZERO)
 
+	_set_collisions_enabled(false)
+
 	var death_animation: String = "BURNED" if cause == GlobalEnums.EntityState.PEAK_BURN else "FREEZED"
 	if animation_player.has_animation(death_animation):
 		animation_player.play(death_animation)
-		await animation_player.animation_finished
+		var anim_length: float = animation_player.get_animation(death_animation).length
+		await get_tree().create_timer(anim_length).timeout
 
 	died.emit()
 	queue_free()
