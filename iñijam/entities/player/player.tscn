@@ -241,7 +241,6 @@ metadata/_custom_type_script = "uid://bdrf7jgd44xr2"
 
 [node name="MoveComponent" type="Node" parent="." unique_id=2095079743]
 script = ExtResource("2_sglur")
-speed = 100.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1411277537]
 texture = ExtResource("6_8fjmc")

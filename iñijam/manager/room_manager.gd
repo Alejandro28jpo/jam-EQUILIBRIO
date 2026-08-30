@@ -74,6 +74,18 @@ func generate(parent: Node, room_count: int) -> Vector2:
 	return Vector2(start_cell) * ROOM_SIZE
 
 
+func cell_at(world_position: Vector2) -> Vector2i:
+	return Vector2i(round(world_position.x / ROOM_SIZE.x), round(world_position.y / ROOM_SIZE.y))
+
+
+func has_room(cell: Vector2i) -> bool:
+	return rooms_by_cell.has(cell)
+
+
+func room_center(cell: Vector2i) -> Vector2:
+	return Vector2(cell) * ROOM_SIZE
+
+
 func _clear() -> void:
 	for room in rooms_by_cell.values():
 		room.queue_free()

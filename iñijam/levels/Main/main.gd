@@ -4,6 +4,7 @@ class_name MainLevel
 
 const BASE_ROOM_COUNT := 3
 const LEVELS_PER_ROOM_INCREASE := 2
+const CAMERA_TRANSITION_TIME := 0.4
 
 @export var player_scene: PackedScene = preload("res://entities/player/player.tscn")
 
@@ -11,10 +12,21 @@ const LEVELS_PER_ROOM_INCREASE := 2
 
 var current_level: int = 1
 var player: Node2D
+var camera: Camera2D
+var current_cell: Vector2i
+var _camera_tween: Tween
 
 
 func _ready() -> void:
 	_start_level(current_level)
+
+
+func _process(_delta: float) -> void:
+	if player == null:
+		return
+	var cell := room_manager.cell_at(player.position)
+	if cell != current_cell and room_manager.has_room(cell):
+		_move_camera_to(cell)
 
 
 func next_level() -> void:
@@ -25,13 +37,31 @@ func _start_level(level: int) -> void:
 	current_level = level
 	var room_count := BASE_ROOM_COUNT + (level - 1) / LEVELS_PER_ROOM_INCREASE
 	var start_position := room_manager.generate(self, room_count)
+
 	generate_player(start_position)
+
+	current_cell = room_manager.cell_at(start_position)
+	if camera == null:
+		camera = Camera2D.new()
+		add_child(camera)
+	if _camera_tween:
+		_camera_tween.kill()
+	camera.position = start_position
+	camera.make_current()
 
 
 func generate_player(start_position: Vector2) -> void:
 	if player == null:
 		player = player_scene.instantiate()
 		add_child(player)
-		var camera := Camera2D.new()
-		player.add_child(camera)
 	player.position = start_position
+
+
+func _move_camera_to(cell: Vector2i) -> void:
+	current_cell = cell
+	var target := room_manager.room_center(cell)
+	if _camera_tween:
+		_camera_tween.kill()
+	_camera_tween = create_tween()
+	_camera_tween.set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+	_camera_tween.tween_property(camera, "position", target, CAMERA_TRANSITION_TIME)
