@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cy0u5e0hiwcy0" path="res://game_objects/room/room.tscn" id="1_bq086"]
 [ext_resource type="PackedScene" uid="uid://cgna6o5sjx7ls" path="res://entities/player/player.tscn" id="1_kuph3"]
 [ext_resource type="PackedScene" uid="uid://dc5o0s8q3jrl8" path="res://entities/enemies/bull/bull.tscn" id="3_jfd2c"]
+[ext_resource type="PackedScene" uid="uid://dhxvq8nbtpq8o" path="res://entities/enemies/masher/masher.tscn" id="4_jgouc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ubc1v"]
 bg_color = Color(0.30980393, 0.9019608, 1, 1)
@@ -42,3 +43,6 @@ position = Vector2(6, 7)
 [node name="Bull" parent="." unique_id=103023843 instance=ExtResource("3_jfd2c")]
 position = Vector2(156, 8)
 scale = Vector2(-1, 1)
+
+[node name="masher" parent="." unique_id=544056758 instance=ExtResource("4_jgouc")]
+position = Vector2(44, 57)
