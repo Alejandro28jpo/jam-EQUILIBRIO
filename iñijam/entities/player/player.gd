@@ -55,6 +55,9 @@ func _physics_process(_delta: float) -> void:
 	if Input.is_action_pressed("shoot") and shoot_cooldown_timer.is_stopped():
 		_shoot()
 
+	if is_dead:
+		return
+
 	_manage_animations()
 
 
