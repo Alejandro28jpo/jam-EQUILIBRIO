@@ -51,7 +51,11 @@ func _update_room_type() -> void:
 	var type_name = RoomType.keys()[current_room_type]
 	for child in collision_forms.get_children():
 		if child is StaticBody2D:
-			child.visible = child.name == type_name
+			var active = child.name == type_name
+			child.visible = active
+			for shape in child.get_children():
+				if shape is CollisionShape2D:
+					shape.disabled = not active
 
 
 func _unlock_current_room_type() -> void:

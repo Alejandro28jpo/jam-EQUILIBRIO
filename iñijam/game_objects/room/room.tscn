@@ -256,8 +256,8 @@ texture = ExtResource("3_v362g")
 visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/NoDoors" unique_id=2025985355]
-position = Vector2(0, -122)
-scale = Vector2(32, 1)
+position = Vector2(0, -133)
+scale = Vector2(32, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/NoDoors" unique_id=788749244]
@@ -279,8 +279,8 @@ shape = SubResource("RectangleShape2D_ubc1v")
 visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/OnlyDownDoor" unique_id=1745033789]
-position = Vector2(0, -122)
-scale = Vector2(32, 1)
+position = Vector2(0, -133)
+scale = Vector2(32, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="CollisionForms/OnlyDownDoor" unique_id=1664740513]
@@ -322,21 +322,21 @@ scale = Vector2(0.6, 16)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/OnlyUpDoor" unique_id=1344626308]
-position = Vector2(168, -122)
-scale = Vector2(14.5, 1)
+position = Vector2(168, -133)
+scale = Vector2(14.5, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="CollisionForms/OnlyUpDoor" unique_id=82936572]
-position = Vector2(-168, -122)
-scale = Vector2(14.5, 1)
+position = Vector2(-168, -133)
+scale = Vector2(14.5, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="OnlyRightDoor" type="StaticBody2D" parent="CollisionForms" unique_id=140667180]
 visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/OnlyRightDoor" unique_id=728750159]
-position = Vector2(0, -122)
-scale = Vector2(32, 1)
+position = Vector2(0, -133)
+scale = Vector2(32, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/OnlyRightDoor" unique_id=1387632482]
@@ -363,8 +363,8 @@ shape = SubResource("RectangleShape2D_ubc1v")
 visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/OnlyLeftDoor" unique_id=897681440]
-position = Vector2(0, -122)
-scale = Vector2(32, 1)
+position = Vector2(0, -133)
+scale = Vector2(32, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/OnlyLeftDoor" unique_id=1691787877]
@@ -388,15 +388,16 @@ scale = Vector2(0.6, 7.5)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="AllDoors" type="StaticBody2D" parent="CollisionForms" unique_id=739580069]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/AllDoors" unique_id=81947348]
-position = Vector2(168, -122)
-scale = Vector2(14.5, 1)
+position = Vector2(168, -133)
+scale = Vector2(14.5, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/AllDoors" unique_id=2116043007]
-position = Vector2(-168, -122)
-scale = Vector2(14.5, 1)
+position = Vector2(-168, -133)
+scale = Vector2(14.5, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="CollisionForms/AllDoors" unique_id=2109576371]
@@ -433,13 +434,13 @@ shape = SubResource("RectangleShape2D_ubc1v")
 visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/UpLeftDoors" unique_id=1188696891]
-position = Vector2(168, -122)
-scale = Vector2(14.5, 1)
+position = Vector2(168, -133)
+scale = Vector2(14.5, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/UpLeftDoors" unique_id=48278377]
-position = Vector2(-168, -122)
-scale = Vector2(14.5, 1)
+position = Vector2(-168, -133)
+scale = Vector2(14.5, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="CollisionForms/UpLeftDoors" unique_id=1824986535]
@@ -466,13 +467,13 @@ shape = SubResource("RectangleShape2D_ubc1v")
 visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/UpDoors" unique_id=592696675]
-position = Vector2(168, -122)
-scale = Vector2(14.5, 1)
+position = Vector2(168, -133)
+scale = Vector2(14.5, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/UpDoors" unique_id=2029394385]
-position = Vector2(-168, -122)
-scale = Vector2(14.5, 1)
+position = Vector2(-168, -133)
+scale = Vector2(14.5, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="CollisionForms/UpDoors" unique_id=1759995345]
@@ -504,13 +505,13 @@ shape = SubResource("RectangleShape2D_ubc1v")
 visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/UpRightDoors" unique_id=1047828336]
-position = Vector2(168, -122)
-scale = Vector2(14.5, 1)
+position = Vector2(168, -133)
+scale = Vector2(14.5, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/UpRightDoors" unique_id=504045298]
-position = Vector2(-168, -122)
-scale = Vector2(14.5, 1)
+position = Vector2(-168, -133)
+scale = Vector2(14.5, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="CollisionForms/UpRightDoors" unique_id=1936844347]
@@ -537,8 +538,8 @@ shape = SubResource("RectangleShape2D_ubc1v")
 visible = false
 
 [node name="CollisionShape2D9" type="CollisionShape2D" parent="CollisionForms/MiddleDoors" unique_id=1137608325]
-position = Vector2(0, -122)
-scale = Vector2(32, 1)
+position = Vector2(0, -133)
+scale = Vector2(32, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="CollisionForms/MiddleDoors" unique_id=1673157888]
@@ -570,13 +571,13 @@ shape = SubResource("RectangleShape2D_ubc1v")
 visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/UpDownDoors" unique_id=876455631]
-position = Vector2(168, -122)
-scale = Vector2(14.5, 1)
+position = Vector2(168, -133)
+scale = Vector2(14.5, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/UpDownDoors" unique_id=1678555601]
-position = Vector2(-168, -122)
-scale = Vector2(14.5, 1)
+position = Vector2(-168, -133)
+scale = Vector2(14.5, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="CollisionForms/UpDownDoors" unique_id=82567536]
@@ -623,8 +624,8 @@ scale = Vector2(0.6, 7.5)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D9" type="CollisionShape2D" parent="CollisionForms/DownLeftDoors" unique_id=1004386070]
-position = Vector2(0, -122)
-scale = Vector2(32, 1)
+position = Vector2(0, -133)
+scale = Vector2(32, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="CollisionForms/DownLeftDoors" unique_id=798751823]
@@ -666,8 +667,8 @@ scale = Vector2(0.6, 7.5)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D9" type="CollisionShape2D" parent="CollisionForms/DownDoors" unique_id=1324933677]
-position = Vector2(0, -122)
-scale = Vector2(32, 1)
+position = Vector2(0, -133)
+scale = Vector2(32, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="DownRightDoors" type="StaticBody2D" parent="CollisionForms" unique_id=1338605808]
@@ -694,8 +695,8 @@ scale = Vector2(0.6, 7.5)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D9" type="CollisionShape2D" parent="CollisionForms/DownRightDoors" unique_id=71073569]
-position = Vector2(0, -122)
-scale = Vector2(32, 1)
+position = Vector2(0, -133)
+scale = Vector2(32, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="CollisionForms/DownRightDoors" unique_id=902176686]
@@ -707,13 +708,13 @@ shape = SubResource("RectangleShape2D_ubc1v")
 visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/RightDoors" unique_id=2109749668]
-position = Vector2(168, -122)
-scale = Vector2(14.5, 1)
+position = Vector2(168, -133)
+scale = Vector2(14.5, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/RightDoors" unique_id=256584849]
-position = Vector2(-168, -122)
-scale = Vector2(14.5, 1)
+position = Vector2(-168, -133)
+scale = Vector2(14.5, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="CollisionForms/RightDoors" unique_id=1455130585]
@@ -742,16 +743,15 @@ scale = Vector2(0.6, 16)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="LeftDoors" type="StaticBody2D" parent="CollisionForms" unique_id=929042111]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/LeftDoors" unique_id=348588376]
-position = Vector2(168, -122)
-scale = Vector2(14.5, 1)
+position = Vector2(168, -133)
+scale = Vector2(14.5, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/LeftDoors" unique_id=262191228]
-position = Vector2(-168, -122)
-scale = Vector2(14.5, 1)
+position = Vector2(-168, -133)
+scale = Vector2(14.5, 2.4)
 shape = SubResource("RectangleShape2D_ubc1v")
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="CollisionForms/LeftDoors" unique_id=1769295155]

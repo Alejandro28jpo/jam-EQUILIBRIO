@@ -45,5 +45,3 @@ current_room_type = 14
 
 [node name="Player" parent="." unique_id=1509555614 instance=ExtResource("1_kuph3")]
 position = Vector2(152, 85)
-
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1363359848]
