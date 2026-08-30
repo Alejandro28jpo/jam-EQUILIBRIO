@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://calax00sni87m"
+path="res://.godot/imported/lolo_s-dead-474091.mp3-f03be8d88e50233239a16f58006d50eb.mp3str"
+
+[deps]
+
+source_file="res://sonidos/menu/Proyectos Reaper/Media/lolo_s-dead-474091.mp3"
+dest_files=["res://.godot/imported/lolo_s-dead-474091.mp3-f03be8d88e50233239a16f58006d50eb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

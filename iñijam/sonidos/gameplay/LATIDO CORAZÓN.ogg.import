@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bg0xpyxhosllp"
+path="res://.godot/imported/LATIDO CORAZÓN.ogg-bad6a0e1a67d359b973e461327757bda.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/gameplay/LATIDO CORAZÓN.ogg"
+dest_files=["res://.godot/imported/LATIDO CORAZÓN.ogg-bad6a0e1a67d359b973e461327757bda.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
