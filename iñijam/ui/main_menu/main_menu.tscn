@@ -1,0 +1,208 @@
+[gd_scene format=3 uid="uid://dgijqkbas0cdl"]
+
+[ext_resource type="Script" uid="uid://cer27mmc4ikw3" path="res://ui/main_menu/main_menu.gd" id="1_u184e"]
+[ext_resource type="Texture2D" uid="uid://d3kfu3hoek0lt" path="res://ui/main_menu/menu.png" id="1_uhj5c"]
+[ext_resource type="Texture2D" uid="uid://bi6e8kdq0eweb" path="res://ui/main_menu/star.png" id="2_mu8pm"]
+[ext_resource type="Texture2D" uid="uid://d2s8wkjvompyv" path="res://ui/main_menu/exit.png" id="3_omy8q"]
+[ext_resource type="Texture2D" uid="uid://cj7a6bqsv1x3t" path="res://ui/main_menu/setting.png" id="4_i5wg5"]
+[ext_resource type="Texture2D" uid="uid://bdxa880xouqwi" path="res://ui/main_menu/logo.png" id="5_3c04x"]
+[ext_resource type="Texture2D" uid="uid://8kl6n1c8736c" path="res://ui/main_menu/nubes.png" id="5_joh67"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mu8pm"]
+atlas = ExtResource("1_uhj5c")
+region = Rect2(0, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_omy8q"]
+atlas = ExtResource("1_uhj5c")
+region = Rect2(640, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i5wg5"]
+atlas = ExtResource("1_uhj5c")
+region = Rect2(1280, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3c04x"]
+atlas = ExtResource("1_uhj5c")
+region = Rect2(1920, 0, 640, 360)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ubc1v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mu8pm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_omy8q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i5wg5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3c04x")
+}],
+"loop": 2,
+"name": &"IDLE",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ubc1v"]
+atlas = ExtResource("2_mu8pm")
+region = Rect2(0, 0, 115, 0)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_omy8q"]
+load_path = "res://.godot/imported/star.png-1f9f00e0905ef68a9162a83d3095016a.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u184e"]
+atlas = SubResource("CompressedTexture2D_omy8q")
+region = Rect2(230, 0, 115, 0)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6mijq"]
+load_path = "res://.godot/imported/star.png-1f9f00e0905ef68a9162a83d3095016a.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w2r0d"]
+atlas = SubResource("CompressedTexture2D_6mijq")
+region = Rect2(115, 0, 115, 0)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tyojl"]
+atlas = ExtResource("3_omy8q")
+region = Rect2(0, 0, 58, 0)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_i5wg5"]
+load_path = "res://.godot/imported/exit.png-6184a860409f6d5ee11844393819f83c.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_joh67"]
+atlas = SubResource("CompressedTexture2D_i5wg5")
+region = Rect2(116, 0, 58, 0)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_u184e"]
+load_path = "res://.godot/imported/exit.png-6184a860409f6d5ee11844393819f83c.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6mijq"]
+atlas = SubResource("CompressedTexture2D_u184e")
+region = Rect2(58, 0, 58, 0)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iv24s"]
+atlas = ExtResource("4_i5wg5")
+region = Rect2(0, 0, 173, 0)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3c04x"]
+load_path = "res://.godot/imported/setting.png-7ed956799cfa11cb5abf6d013e6ccc3f.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4e78x"]
+atlas = SubResource("CompressedTexture2D_3c04x")
+region = Rect2(346, 0, 173, 0)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_s4pem"]
+load_path = "res://.godot/imported/setting.png-7ed956799cfa11cb5abf6d013e6ccc3f.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xio0d"]
+atlas = SubResource("CompressedTexture2D_s4pem")
+region = Rect2(173, 0, 173, 0)
+
+[sub_resource type="Animation" id="Animation_3c04x"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TitleTextureRect:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_joh67"]
+resource_name = "TitleSmooth"
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TitleTextureRect:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.95, 1), Vector2(1, 1.05), Vector2(1, 1.2)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_u184e"]
+_data = {
+&"RESET": SubResource("Animation_3c04x"),
+&"TitleSmooth": SubResource("Animation_joh67")
+}
+
+[node name="MainMenu" type="CanvasLayer" unique_id=1586886678]
+script = ExtResource("1_u184e")
+metadata/_edit_vertical_guides_ = [535.0]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=762751254]
+position = Vector2(0, -35)
+sprite_frames = SubResource("SpriteFrames_ubc1v")
+animation = &"IDLE"
+autoplay = "IDLE"
+frame_progress = 0.89751613
+centered = false
+
+[node name="ParallaxClip" type="Control" parent="." unique_id=2080257438]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 538.0
+offset_bottom = 360.0
+mouse_filter = 2
+
+[node name="Parallax2D" type="Parallax2D" parent="ParallaxClip" unique_id=786482982]
+repeat_size = Vector2(535, 0)
+autoscroll = Vector2(-25, 0)
+repeat_times = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxClip/Parallax2D" unique_id=994405487]
+scale = Vector2(0.95, 0.95)
+texture = ExtResource("5_joh67")
+centered = false
+
+[node name="StartButton" type="TextureButton" parent="." unique_id=2047051216]
+offset_left = 68.0
+offset_top = 169.0
+offset_right = 183.0
+offset_bottom = 298.0
+texture_normal = SubResource("AtlasTexture_ubc1v")
+texture_pressed = SubResource("AtlasTexture_u184e")
+texture_hover = SubResource("AtlasTexture_w2r0d")
+
+[node name="QuitButton" type="TextureButton" parent="." unique_id=1892573144]
+offset_left = 7.0
+offset_top = 231.0
+offset_right = 65.0
+offset_bottom = 309.0
+texture_normal = SubResource("AtlasTexture_tyojl")
+texture_pressed = SubResource("AtlasTexture_joh67")
+texture_hover = SubResource("AtlasTexture_6mijq")
+
+[node name="SettingsButton" type="TextureButton" parent="." unique_id=1454472357]
+offset_left = 21.0
+offset_top = 96.0
+offset_right = 194.0
+offset_bottom = 169.0
+texture_normal = SubResource("AtlasTexture_iv24s")
+texture_pressed = SubResource("AtlasTexture_4e78x")
+texture_hover = SubResource("AtlasTexture_xio0d")
+
+[node name="TitleTextureRect" type="TextureRect" parent="." unique_id=1205690771]
+offset_left = 19.0
+offset_top = 11.0
+offset_right = 307.0
+offset_bottom = 97.0
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("5_3c04x")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=71585170]
+libraries/ = SubResource("AnimationLibrary_u184e")
+autoplay = &"TitleSmooth"

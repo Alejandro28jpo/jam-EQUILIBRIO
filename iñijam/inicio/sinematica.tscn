@@ -308,6 +308,130 @@ albedo_color = Color(0.1584723, 0.15847233, 0.1584723, 1)
 material = SubResource("StandardMaterial3D_jvjwp")
 size = Vector3(2, 0.001, 2)
 
+[sub_resource type="Animation" id="Animation_04jrl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../arcade/Plane/OmniLight3D:light_energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "position_3d"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0, 0.3749479, 0.7059432)
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:rotation:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:rotation:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-0.86171436, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:rotation:z")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_wvx8s"]
+resource_name = "inicio"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../arcade/Plane/OmniLight3D:light_energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.56666666, 1.0333333, 1.3333333, 1.5999999, 1.9, 2.1999998, 2.4666667, 3.6333332, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.2, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2]
+}
+tracks/1/type = "position_3d"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, -0.35807732, 0.25711325, 0.48334283, 1.8666667, 1, -0.35807732, 0.25711325, 0.48334283, 3.5, 1, 0, 0.3749479, -0.20311797)
+tracks/2/type = "rotation_3d"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, 0, -0.41764978, 0, 0.9086081, 1.3666667, 1, 0, -0.41764978, 0, 0.9086081)
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:rotation:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(2, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.8333334, 0, 0, 0),
+"times": PackedFloat32Array(0, 4)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:rotation:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(2, 0, 0),
+"points": PackedFloat32Array(-0.86171436, -0.25, 0, 0.25, 0, 0, -0.8333334, -0.14361906, 0, 0, 0, -0.8333334, -0.14361906, 0, 0),
+"times": PackedFloat32Array(0, 3.0333333, 4)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".:rotation:z")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(2, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.8333334, 0, 0, 0),
+"times": PackedFloat32Array(0, 4)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mgwog"]
+_data = {
+&"RESET": SubResource("Animation_04jrl"),
+&"inicio": SubResource("Animation_wvx8s")
+}
+
 [node name="Node3D" type="Node3D" unique_id=1415431664]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1762515977]
@@ -334,7 +458,7 @@ mesh = SubResource("ArrayMesh_7tiux")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="arcade/Plane" unique_id=1210245128]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.16246486, 0)
-light_energy = 0.2
+light_energy = 0.0
 light_specular = 0.0
 shadow_enabled = true
 omni_range = 0.45255062
@@ -376,3 +500,9 @@ mesh = SubResource("BoxMesh_eaugy")
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="Node3D" unique_id=2000586596]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0042012334, -1.1920929e-07, 0.00039684772)
 mesh = SubResource("BoxMesh_jvjwp")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=2132565561]
+transform = Transform3D(0.6511373, 0, -0.75895995, 0, 1, 0, 0.75895995, 0, 0.6511373, 0, 0.3749479, 0.7059432)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Camera3D" unique_id=759972517]
+libraries/ = SubResource("AnimationLibrary_mgwog")

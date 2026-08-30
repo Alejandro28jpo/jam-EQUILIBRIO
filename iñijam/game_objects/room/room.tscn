@@ -1,0 +1,783 @@
+[gd_scene format=3 uid="uid://cy0u5e0hiwcy0"]
+
+[ext_resource type="Script" uid="uid://wp4tmunqkmtf" path="res://game_objects/room/room.gd" id="1_ry4l0"]
+[ext_resource type="Texture2D" uid="uid://bdluq88val6el" path="res://game_objects/room/room.png" id="2_vxwyh"]
+[ext_resource type="Texture2D" uid="uid://bcktpm1eom7uf" path="res://game_objects/room/NoDoorRoom.png" id="3_v362g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ubc1v"]
+size = Vector2(20, 17.28125)
+
+[sub_resource type="Animation" id="Animation_wawv0"]
+resource_name = "LOCKED"
+length = 0.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NoDoors:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("NoDoors:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AllRooms:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AllRooms:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_2wsmu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NoDoors:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("NoDoors:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AllRooms:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AllRooms:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_adewu"]
+resource_name = "UNLOCKED"
+length = 0.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NoDoors:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("NoDoors:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AllRooms:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AllRooms:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_niadq"]
+resource_name = "UNLOCKING"
+length = 0.5
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NoDoors:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("NoDoors:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AllRooms:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AllRooms:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.4),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"_unlock_current_room_type"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_niadq"]
+_data = {
+&"LOCKED": SubResource("Animation_wawv0"),
+&"RESET": SubResource("Animation_2wsmu"),
+&"UNLOCKED": SubResource("Animation_adewu"),
+&"UNLOCKING": SubResource("Animation_niadq")
+}
+
+[node name="Room" type="Node2D" unique_id=1104122540]
+script = ExtResource("1_ry4l0")
+
+[node name="AllRooms" type="Sprite2D" parent="." unique_id=95455608]
+texture = ExtResource("2_vxwyh")
+hframes = 15
+
+[node name="NoDoors" type="Sprite2D" parent="." unique_id=415371947]
+visible = false
+texture = ExtResource("3_v362g")
+
+[node name="CollisionForms" type="Node2D" parent="." unique_id=940091090]
+
+[node name="NoDoors" type="StaticBody2D" parent="CollisionForms" unique_id=471321487]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/NoDoors" unique_id=2025985355]
+position = Vector2(0, -133)
+scale = Vector2(32, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/NoDoors" unique_id=788749244]
+position = Vector2(0, 155.5)
+scale = Vector2(32, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="CollisionForms/NoDoors" unique_id=2124716937]
+position = Vector2(311, 14.5)
+scale = Vector2(0.6, 16)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="CollisionForms/NoDoors" unique_id=263278287]
+position = Vector2(-311, 7.25)
+scale = Vector2(0.6, 16)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="OnlyDownDoor" type="StaticBody2D" parent="CollisionForms" unique_id=1408886848]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/OnlyDownDoor" unique_id=1745033789]
+position = Vector2(0, -133)
+scale = Vector2(32, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="CollisionForms/OnlyDownDoor" unique_id=1664740513]
+position = Vector2(311, 14.5)
+scale = Vector2(0.6, 16)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="CollisionForms/OnlyDownDoor" unique_id=1851432321]
+position = Vector2(-311, 7.25)
+scale = Vector2(0.6, 16)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="CollisionForms/OnlyDownDoor" unique_id=1941705708]
+position = Vector2(168, 155.5)
+scale = Vector2(14.5, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="CollisionForms/OnlyDownDoor" unique_id=1032460511]
+position = Vector2(-168, 156)
+scale = Vector2(14.5, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="OnlyUpDoor" type="StaticBody2D" parent="CollisionForms" unique_id=824634290]
+visible = false
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/OnlyUpDoor" unique_id=1152233967]
+position = Vector2(0, 155.5)
+scale = Vector2(32, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="CollisionForms/OnlyUpDoor" unique_id=397813374]
+position = Vector2(311, 14.5)
+scale = Vector2(0.6, 16)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="CollisionForms/OnlyUpDoor" unique_id=1238820974]
+position = Vector2(-311, 7.25)
+scale = Vector2(0.6, 16)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/OnlyUpDoor" unique_id=1344626308]
+position = Vector2(168, -133)
+scale = Vector2(14.5, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="CollisionForms/OnlyUpDoor" unique_id=82936572]
+position = Vector2(-168, -133)
+scale = Vector2(14.5, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="OnlyRightDoor" type="StaticBody2D" parent="CollisionForms" unique_id=140667180]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/OnlyRightDoor" unique_id=728750159]
+position = Vector2(0, -133)
+scale = Vector2(32, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/OnlyRightDoor" unique_id=1387632482]
+position = Vector2(0, 155.5)
+scale = Vector2(32, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="CollisionForms/OnlyRightDoor" unique_id=1000039898]
+position = Vector2(-311, 7.25)
+scale = Vector2(0.6, 16)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="CollisionForms/OnlyRightDoor" unique_id=2115783792]
+position = Vector2(311, -73)
+scale = Vector2(0.6, 6)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="CollisionForms/OnlyRightDoor" unique_id=1965325528]
+position = Vector2(311, 87.00001)
+scale = Vector2(0.6, 7.5)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="OnlyLeftDoor" type="StaticBody2D" parent="CollisionForms" unique_id=1806656413]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/OnlyLeftDoor" unique_id=897681440]
+position = Vector2(0, -133)
+scale = Vector2(32, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/OnlyLeftDoor" unique_id=1691787877]
+position = Vector2(0, 155.5)
+scale = Vector2(32, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="CollisionForms/OnlyLeftDoor" unique_id=1543360649]
+position = Vector2(311, 14.5)
+scale = Vector2(0.6, 16)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="CollisionForms/OnlyLeftDoor" unique_id=379571860]
+position = Vector2(-310.99994, -73)
+scale = Vector2(0.6, 6)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="CollisionForms/OnlyLeftDoor" unique_id=1129541080]
+position = Vector2(-311, 87.00001)
+scale = Vector2(0.6, 7.5)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="AllDoors" type="StaticBody2D" parent="CollisionForms" unique_id=739580069]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/AllDoors" unique_id=81947348]
+position = Vector2(168, -133)
+scale = Vector2(14.5, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/AllDoors" unique_id=2116043007]
+position = Vector2(-168, -133)
+scale = Vector2(14.5, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="CollisionForms/AllDoors" unique_id=2109576371]
+position = Vector2(168, 155.5)
+scale = Vector2(14.5, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="CollisionForms/AllDoors" unique_id=1811583804]
+position = Vector2(-168, 156)
+scale = Vector2(14.5, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="CollisionForms/AllDoors" unique_id=639252144]
+position = Vector2(311, -73)
+scale = Vector2(0.6, 6)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="CollisionForms/AllDoors" unique_id=1743964118]
+position = Vector2(311, 87.00001)
+scale = Vector2(0.6, 7.5)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="CollisionForms/AllDoors" unique_id=1930897551]
+position = Vector2(-310.99994, -73)
+scale = Vector2(0.6, 6)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="CollisionForms/AllDoors" unique_id=1694746559]
+position = Vector2(-311, 87.00001)
+scale = Vector2(0.6, 7.5)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="UpLeftDoors" type="StaticBody2D" parent="CollisionForms" unique_id=1294583052]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/UpLeftDoors" unique_id=1188696891]
+position = Vector2(168, -133)
+scale = Vector2(14.5, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/UpLeftDoors" unique_id=48278377]
+position = Vector2(-168, -133)
+scale = Vector2(14.5, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="CollisionForms/UpLeftDoors" unique_id=1824986535]
+position = Vector2(-310.99994, -73)
+scale = Vector2(0.6, 6)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="CollisionForms/UpLeftDoors" unique_id=553537503]
+position = Vector2(-311, 87.00001)
+scale = Vector2(0.6, 7.5)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="CollisionForms/UpLeftDoors" unique_id=120422734]
+position = Vector2(0, 155.5)
+scale = Vector2(32, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="CollisionForms/UpLeftDoors" unique_id=1002632039]
+position = Vector2(311, 14.5)
+scale = Vector2(0.6, 16)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="UpDoors" type="StaticBody2D" parent="CollisionForms" unique_id=438972705]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/UpDoors" unique_id=592696675]
+position = Vector2(168, -133)
+scale = Vector2(14.5, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/UpDoors" unique_id=2029394385]
+position = Vector2(-168, -133)
+scale = Vector2(14.5, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="CollisionForms/UpDoors" unique_id=1759995345]
+position = Vector2(311, -73)
+scale = Vector2(0.6, 6)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="CollisionForms/UpDoors" unique_id=660879877]
+position = Vector2(311, 87.00001)
+scale = Vector2(0.6, 7.5)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="CollisionForms/UpDoors" unique_id=2120343154]
+position = Vector2(-310.99994, -73)
+scale = Vector2(0.6, 6)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="CollisionForms/UpDoors" unique_id=12296971]
+position = Vector2(-311, 87.00001)
+scale = Vector2(0.6, 7.5)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="CollisionForms/UpDoors" unique_id=789184221]
+position = Vector2(0, 155.5)
+scale = Vector2(32, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="UpRightDoors" type="StaticBody2D" parent="CollisionForms" unique_id=1567001631]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/UpRightDoors" unique_id=1047828336]
+position = Vector2(168, -133)
+scale = Vector2(14.5, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/UpRightDoors" unique_id=504045298]
+position = Vector2(-168, -133)
+scale = Vector2(14.5, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="CollisionForms/UpRightDoors" unique_id=1936844347]
+position = Vector2(311, -73)
+scale = Vector2(0.6, 6)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="CollisionForms/UpRightDoors" unique_id=1278660471]
+position = Vector2(311, 87.00001)
+scale = Vector2(0.6, 7.5)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="CollisionForms/UpRightDoors" unique_id=1219230246]
+position = Vector2(0, 155.5)
+scale = Vector2(32, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="CollisionForms/UpRightDoors" unique_id=610290958]
+position = Vector2(-311, 7.25)
+scale = Vector2(0.6, 16)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="MiddleDoors" type="StaticBody2D" parent="CollisionForms" unique_id=2019060661]
+visible = false
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="CollisionForms/MiddleDoors" unique_id=1137608325]
+position = Vector2(0, -133)
+scale = Vector2(32, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="CollisionForms/MiddleDoors" unique_id=1673157888]
+position = Vector2(0, 155.5)
+scale = Vector2(32, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="CollisionForms/MiddleDoors" unique_id=410508131]
+position = Vector2(311, -73)
+scale = Vector2(0.6, 6)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="CollisionForms/MiddleDoors" unique_id=1432204638]
+position = Vector2(311, 87.00001)
+scale = Vector2(0.6, 7.5)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="CollisionForms/MiddleDoors" unique_id=574914918]
+position = Vector2(-310.99994, -73)
+scale = Vector2(0.6, 6)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="CollisionForms/MiddleDoors" unique_id=2044179654]
+position = Vector2(-311, 87.00001)
+scale = Vector2(0.6, 7.5)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="UpDownDoors" type="StaticBody2D" parent="CollisionForms" unique_id=1334088391]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/UpDownDoors" unique_id=876455631]
+position = Vector2(168, -133)
+scale = Vector2(14.5, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/UpDownDoors" unique_id=1678555601]
+position = Vector2(-168, -133)
+scale = Vector2(14.5, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="CollisionForms/UpDownDoors" unique_id=82567536]
+position = Vector2(168, 155.5)
+scale = Vector2(14.5, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="CollisionForms/UpDownDoors" unique_id=740199579]
+position = Vector2(-168, 156)
+scale = Vector2(14.5, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="CollisionForms/UpDownDoors" unique_id=284706644]
+position = Vector2(311, 14.5)
+scale = Vector2(0.6, 16)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="CollisionForms/UpDownDoors" unique_id=1745168244]
+position = Vector2(-311, 7.25)
+scale = Vector2(0.6, 16)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="DownLeftDoors" type="StaticBody2D" parent="CollisionForms" unique_id=1966639765]
+visible = false
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="CollisionForms/DownLeftDoors" unique_id=1052797695]
+position = Vector2(168, 155.5)
+scale = Vector2(14.5, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="CollisionForms/DownLeftDoors" unique_id=959030226]
+position = Vector2(-168, 156)
+scale = Vector2(14.5, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="CollisionForms/DownLeftDoors" unique_id=545769532]
+position = Vector2(-310.99994, -73)
+scale = Vector2(0.6, 6)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="CollisionForms/DownLeftDoors" unique_id=337904496]
+position = Vector2(-311, 87.00001)
+scale = Vector2(0.6, 7.5)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="CollisionForms/DownLeftDoors" unique_id=1004386070]
+position = Vector2(0, -133)
+scale = Vector2(32, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="CollisionForms/DownLeftDoors" unique_id=798751823]
+position = Vector2(311, 14.5)
+scale = Vector2(0.6, 16)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="DownDoors" type="StaticBody2D" parent="CollisionForms" unique_id=324405555]
+visible = false
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="CollisionForms/DownDoors" unique_id=1228107900]
+position = Vector2(168, 155.5)
+scale = Vector2(14.5, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="CollisionForms/DownDoors" unique_id=323149301]
+position = Vector2(-168, 156)
+scale = Vector2(14.5, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="CollisionForms/DownDoors" unique_id=1164742140]
+position = Vector2(311, -73)
+scale = Vector2(0.6, 6)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="CollisionForms/DownDoors" unique_id=1005295915]
+position = Vector2(311, 87.00001)
+scale = Vector2(0.6, 7.5)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="CollisionForms/DownDoors" unique_id=1851099865]
+position = Vector2(-310.99994, -73)
+scale = Vector2(0.6, 6)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="CollisionForms/DownDoors" unique_id=936861482]
+position = Vector2(-311, 87.00001)
+scale = Vector2(0.6, 7.5)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="CollisionForms/DownDoors" unique_id=1324933677]
+position = Vector2(0, -133)
+scale = Vector2(32, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="DownRightDoors" type="StaticBody2D" parent="CollisionForms" unique_id=1338605808]
+visible = false
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="CollisionForms/DownRightDoors" unique_id=1137282537]
+position = Vector2(168, 155.5)
+scale = Vector2(14.5, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="CollisionForms/DownRightDoors" unique_id=1565223790]
+position = Vector2(-168, 156)
+scale = Vector2(14.5, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="CollisionForms/DownRightDoors" unique_id=593837313]
+position = Vector2(311, -73)
+scale = Vector2(0.6, 6)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="CollisionForms/DownRightDoors" unique_id=1919056467]
+position = Vector2(311, 87.00001)
+scale = Vector2(0.6, 7.5)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="CollisionForms/DownRightDoors" unique_id=71073569]
+position = Vector2(0, -133)
+scale = Vector2(32, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="CollisionForms/DownRightDoors" unique_id=902176686]
+position = Vector2(-311, 7.25)
+scale = Vector2(0.6, 16)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="RightDoors" type="StaticBody2D" parent="CollisionForms" unique_id=1946723298]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/RightDoors" unique_id=2109749668]
+position = Vector2(168, -133)
+scale = Vector2(14.5, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/RightDoors" unique_id=256584849]
+position = Vector2(-168, -133)
+scale = Vector2(14.5, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="CollisionForms/RightDoors" unique_id=1455130585]
+position = Vector2(168, 155.5)
+scale = Vector2(14.5, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="CollisionForms/RightDoors" unique_id=1286160206]
+position = Vector2(-168, 156)
+scale = Vector2(14.5, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="CollisionForms/RightDoors" unique_id=1685163905]
+position = Vector2(311, -73)
+scale = Vector2(0.6, 6)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="CollisionForms/RightDoors" unique_id=139605498]
+position = Vector2(311, 87.00001)
+scale = Vector2(0.6, 7.5)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="CollisionForms/RightDoors" unique_id=1420943569]
+position = Vector2(-311, 7.25)
+scale = Vector2(0.6, 16)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="LeftDoors" type="StaticBody2D" parent="CollisionForms" unique_id=929042111]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionForms/LeftDoors" unique_id=348588376]
+position = Vector2(168, -133)
+scale = Vector2(14.5, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionForms/LeftDoors" unique_id=262191228]
+position = Vector2(-168, -133)
+scale = Vector2(14.5, 2.4)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="CollisionForms/LeftDoors" unique_id=1769295155]
+position = Vector2(168, 155.5)
+scale = Vector2(14.5, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="CollisionForms/LeftDoors" unique_id=1778663839]
+position = Vector2(-168, 156)
+scale = Vector2(14.5, 0.45)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="CollisionForms/LeftDoors" unique_id=1449977105]
+position = Vector2(-310.99994, -73)
+scale = Vector2(0.6, 6)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="CollisionForms/LeftDoors" unique_id=462713432]
+position = Vector2(-311, 87.00001)
+scale = Vector2(0.6, 7.5)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="CollisionForms/LeftDoors" unique_id=860390864]
+position = Vector2(311, 14.5)
+scale = Vector2(0.6, 16)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1798743246]
+libraries/ = SubResource("AnimationLibrary_niadq")

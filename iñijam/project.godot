@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="iñijam"
-run/main_scene="uid://b247ueqo3fbik"
+run/main_scene="uid://dgijqkbas0cdl"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://bstiqxnoykwcf"
+
+[autoload]
+
+ControladorAudio="*uid://6q8v4w07822q"
 
 [display]
 

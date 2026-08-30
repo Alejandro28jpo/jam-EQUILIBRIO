@@ -99,7 +99,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_8fjmc"]
 resource_name = "IDLE"
-length = 0.39999999999999997
+length = 0.4
 loop_mode = 1
 step = 0.1
 tracks/0/type = "value"
@@ -225,6 +225,7 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody2D" unique_id=1509555614]
+motion_mode = 1
 script = ExtResource("1_symyc")
 
 [node name="PlayerInterface" parent="." unique_id=1121228753 node_paths=PackedStringArray("player") instance=ExtResource("4_bls4j")]
@@ -241,7 +242,6 @@ metadata/_custom_type_script = "uid://bdrf7jgd44xr2"
 
 [node name="MoveComponent" type="Node" parent="." unique_id=2095079743]
 script = ExtResource("2_sglur")
-speed = 100.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1411277537]
 texture = ExtResource("6_8fjmc")
@@ -254,3 +254,5 @@ shape = SubResource("CircleShape2D_ubc1v")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=47416511]
 libraries/ = SubResource("AnimationLibrary_qiwj3")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=366370499]
