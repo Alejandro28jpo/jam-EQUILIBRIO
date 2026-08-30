@@ -1,0 +1,1368 @@
+<REAPER_PROJECT 0.1 "7.79/win64" 1788115605 0
+  <NOTES 0 2
+  >
+  RIPPLE 0 0
+  GROUPOVERRIDE 0 0 0 0
+  AUTOXFADE 129
+  ENVATTACH 3
+  POOLEDENVATTACH 0
+  TCPUIFLAGS 0
+  MIXERUIFLAGS 11 48 0
+  ENVFADESZ10 40
+  PEAKGAIN 1
+  FEEDBACK 0
+  PANLAW 1
+  PROJOFFS 0 0 0
+  MAXPROJLEN 0 0
+  GRID 3455 8 1 8 1 0 0 0
+  TIMEMODE 1 5 -1 30 0 0 -1 0
+  VIDEO_CONFIG 0 0 65792
+  PANMODE 3
+  PANLAWFLAGS 3
+  CURSOR 1.38108375539273
+  ZOOM 24.97986422453244 0 0
+  VZOOMEX 6 368
+  USE_REC_CFG 0
+  RECMODE 1
+  SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
+  LOOP 0
+  LOOPGRAN 0 4
+  RECORD_PATH "Media" ""
+  <RECORD_CFG
+    ZXZhdxgAAQ==
+  >
+  <APPLYFX_CFG
+  >
+  RENDER_FILE "C:\Users\User\Documents\Apps\GitHub\jam-EQUILIBRIO\iñijam\sonidos\enemigos\MUERTE MAW.ogg"
+  RENDER_FMT 0 2 48000
+  RENDER_1X 0
+  RENDER_RANGE 2 0 0 0 1000
+  RENDER_RESAMPLE 3 0 1
+  RENDER_ADDTOPROJ 0
+  RENDER_STEMS 0
+  RENDER_DITHER 0
+  RENDER_TRIM 0.000001 0.000001 0 0
+  TIMELOCKMODE 1
+  TEMPOENVLOCKMODE 1
+  ITEMMIX 1
+  DEFPITCHMODE 589824 0
+  TAKELANE 1
+  SAMPLERATE 44100 0 0
+  <RENDER_CFG
+    dmdnbwAAgD8AgAAAAIAAAAAgAAAAAAEAAA==
+  >
+  LOCK 1
+  <METRONOME 6 2
+    VOL 0.25 0.125
+    BEATLEN 4
+    FREQ 1760 880 1
+    SAMPLES "" "" "" ""
+    SPLIGNORE 0 0
+    SPLDEF 2 660 "" 0 ""
+    SPLDEF 3 440 "" 0 ""
+    PATTERN 0 169
+    PATTERNSTR ABBB
+    MULT 1
+  >
+  GLOBAL_AUTO -1
+  TEMPO 120 4 4 0
+  PLAYRATE 1 0 0.25 4
+  SELECTION 3.64293413214912 0
+  SELECTION2 3.64293413214912 0
+  MASTERAUTOMODE 0
+  MASTERTRACKHEIGHT 0 0
+  MASTERPEAKCOL 16576
+  MASTERMUTESOLO 0
+  MASTERTRACKVIEW 0 0.6667 0.5 0.5 0 0 0 0 0 0 0 0 0 0 1
+  MASTERHWOUT 0 0 1 0 0 0 0 -1
+  MASTER_NCH 2 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  MASTER_PANMODE 3
+  MASTER_PANLAWFLAGS 3
+  MASTER_FX 1
+  MASTER_TRACKID {013B82A6-9632-43DD-B082-770BBE95F85B}
+  MASTER_SEL 0
+  <MASTERFXLIST
+    WNDRECT 25 60 655 408
+    SHOW 0
+    LASTSEL 0
+    DOCKED 0
+    BYPASS 0 0 0
+    <VST "VST: easyReverb (EmRysRa)" easyReverb_x64.dll 0 "" 2020570983<565354786F7767656173797265766572> ""
+      Z3dveO9e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAARAAAAAAAAAA4AAAA
+      776t3g3wrd6PwnU8YhEePajF/z4lSRI/AAAAALdtWz8AAAA/AAAAP1yPAj9mZmY/zczMPpqZGT8K1yM9j8J1PwAAAAA=
+      VmVyeSBTbWFsbCBMb3cgLSBDaGFtYmVyAEnDkUlHT0RPVCBERUZJTklUSVZPIE9HAAAAAAA=
+    >
+    PRESETNAME "IÑIGODOT DEFINITIVO OG"
+    FLOATPOS 0 0 0 0
+    FXID {8BF9CC89-FF6A-4AEA-AE62-CD0E7C3E7ACF}
+    WAK 0 0
+  >
+  <MASTERPLAYSPEEDENV
+    EGUID {DA9CE788-654F-4203-8EA7-6B78DF14E610}
+    ACT 0 -1
+    VIS 0 1 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 0 -1 -1
+  >
+  <TEMPOENVEX
+    EGUID {AE4B0095-AAB3-49B0-A6A3-82571492E4AA}
+    ACT 1 -1
+    VIS 1 0 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 1 -1 -1
+  >
+  RULERHEIGHT 86 86
+  RULERLANE 1 4 "" 0 -1 0
+  RULERLANE 2 8 "" 0 -1 0
+  <PROJBAY
+  >
+  <TRACK {6F6BBD7E-88D7-4DE4-917F-89B42B55698A}
+    NAME soumages-insect-flying-sound-426783
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.56412952443985 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {6F6BBD7E-88D7-4DE4-917F-89B42B55698A}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 4.01697916666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1.1 0 0.51697916666667 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {0F0A27DE-A098-4BC0-9DE1-725FE5581F82}
+      IID 168
+      NAME soumages-insect-flying-sound-426783.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 4
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1190900E-A1F9-444F-AC09-6CB72D11211F}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\soumages-insect-flying-sound-426783.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 3.5
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.51697916666667 1 1 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {1D4E77D6-5F4E-4696-A9C3-65DCD29CA3D5}
+      IID 168
+      NAME soumages-insect-flying-sound-426783.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C0B68062-2277-41A7-86EB-1F0733FBF393}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\soumages-insect-flying-sound-426783.mp3" 1
+      >
+    >
+  >
+  <TRACK {DA1422CA-A234-4D21-88B5-F4D51A879FBB}
+    NAME dragon-studio-helicopter-sound-2-372458
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.00788226240542 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {DA1422CA-A234-4D21-88B5-F4D51A879FBB}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 25 60 655 408
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaPitch (Cockos)" reapitch.dll 0 "" 1919250531<56535472657063726561706974636800> ""
+        Y3Blcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAATAAAAAEAAAAAABAA
+        AAAAAP////8BAAAALAAAAAIAAAAAAAAAAACAPwAAAAAAAAAAAACAP8HKIT8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIA/AAAAPw==
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {B9FE96F3-FD80-4E1F-AEEE-0FCA8E39B330}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.57208616780045
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1.1 0 0.07208616780045 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {6EDA0F9D-2580-4769-8995-ECD4F34A4867}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BF4E80F7-FDD9-45E3-9031-87FA09AB1A3A}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 0.5
+      SNAPOFFS 0
+      LENGTH 0.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.07208616780045 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {39D1BD44-6FEB-43EA-844C-B05C6A260AD0}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DA37709E-2DA8-4140-AEA9-1924765E3218}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 1
+      SNAPOFFS 0
+      LENGTH 0.57208616780045
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 0.07208616780045 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {B2BDC178-B331-4BB1-A563-CCA20C16F71B}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D31A8E50-4A64-420A-9026-CC78DB6D2A33}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 1
+      SNAPOFFS 0
+      LENGTH 0.57208616780045
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 0.07208616780045 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {C117E60B-E4CA-4414-AC0D-BC9ADC84F8CF}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8A68C215-1D37-497B-8CF3-B5F317497570}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 1.5
+      SNAPOFFS 0
+      LENGTH 0.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.07208616780045 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {A1283AD3-B774-46ED-AC36-C81C94971984}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0982FBB0-2FCB-466D-BB2E-3F5F66164359}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 1.5
+      SNAPOFFS 0
+      LENGTH 0.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.07208616780045 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {8A00C498-17CB-419C-A5B0-12371AF7F088}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FFD75F09-CA13-4CB8-B2E6-BEB958E3ADE3}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 2
+      SNAPOFFS 0
+      LENGTH 0.57208616780045
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 0.07208616780045 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {992AE0F4-E1B3-4F7F-8B07-A5EF0F0C2D28}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B9DA58AE-ACBB-486E-B4B3-DD5FA58E02B3}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 2.5
+      SNAPOFFS 0
+      LENGTH 0.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.07208616780045 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {43481B83-EDD9-485D-80CA-95FA25F77627}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D3A22EE1-3311-465D-A661-5C9A7F2AF615}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 3
+      SNAPOFFS 0
+      LENGTH 0.57208616780045
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 0.07208616780045 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {210CA956-61D8-4783-9588-4E1CE57C110D}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {284E6558-AF54-4A40-BC20-4F6EE196F537}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 3.5
+      SNAPOFFS 0
+      LENGTH 0.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.07208616780045 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {3B167446-EB17-4698-9788-4B839AB88D7D}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {05C899E0-257D-48CF-98D5-10B28F4C88C4}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 4
+      SNAPOFFS 0
+      LENGTH 0.57208616780045
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 0.07208616780045 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {337096BA-D499-453F-AE2B-85B710B112B8}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {11B9EB11-772F-4CE6-BB83-0E3EFFE613D9}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 4
+      SNAPOFFS 0
+      LENGTH 0.57208616780045
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 0.07208616780045 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {2A525C58-4596-4097-ABAA-E9A804F3BDE3}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {87243B60-2E1C-4498-BE92-C150746CD332}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 4.5
+      SNAPOFFS 0
+      LENGTH 0.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.07208616780045 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {80A23DFF-3D53-458C-8FFC-3C1F62397AD6}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FAF5E12A-90CA-4F2C-876D-2F9D83CFB382}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 4.5
+      SNAPOFFS 0
+      LENGTH 0.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.07208616780045 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {B3BCE673-8088-4DFF-8BB7-D8642133F1A9}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {EBA007BF-B9B3-4CA8-96C5-91D8400C788E}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 5
+      SNAPOFFS 0
+      LENGTH 0.57208616780045
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 0.07208616780045 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {DD283AA7-1EC2-4997-B807-4DD061A1363D}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {15E3C80A-DDE5-4323-A854-1CC719B4597B}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 5.5
+      SNAPOFFS 0
+      LENGTH 0.57208616780045
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.07208616780045 1 1 0 0
+      FADEOUT 1.1 0 0.07208616780045 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {09E02ED4-A650-43B8-ABFB-BB2DBA505027}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C26F8D4E-238E-4AB4-9CB4-EC01FC3CB7A8}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 5.5
+      SNAPOFFS 0
+      LENGTH 0.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.07208616780045 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {F54404BB-1EF1-4B19-8B03-6E4E37E72149}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {683368E6-6005-4E00-8889-6AC146783D7E}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 6
+      SNAPOFFS 0
+      LENGTH 0.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.07208616780045 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {66159FD3-024F-417C-868D-2FE224F25FE1}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A73BF9BF-469F-4435-8A6F-612FC83DCAD0}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 6.5
+      SNAPOFFS 0
+      LENGTH 0.57208616780045
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 0.07208616780045 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {64547E93-CC9C-461E-968E-400CB06405AA}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4D246E0E-A75B-45A1-B1D3-F55D2ACFB032}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 6.5
+      SNAPOFFS 0
+      LENGTH 0.57208616780045
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 0.07208616780045 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {1E5A3D80-33D0-46EF-B969-09877F0F6D49}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6BC63C96-0257-4C52-8DED-F3E03170D0B6}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 7
+      SNAPOFFS 0
+      LENGTH 0.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.07208616780045 1 1 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {4D4C03CD-BF48-401D-875D-83745CAB816B}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {149D3A00-E3FD-4A74-846B-1286054C233B}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 7
+      SNAPOFFS 0
+      LENGTH 0.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.07208616780045 1 1 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {507356D3-774D-4289-AA4C-9ED896867863}
+      IID 169
+      NAME dragon-studio-helicopter-sound-2-372458.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {08C2A922-05D8-41AB-8086-4F80D215F502}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\dragon-studio-helicopter-sound-2-372458.mp3" 1
+      >
+    >
+  >
+  <TRACK {FC0080FC-BA7D-44C4-957F-64827EE41B6E}
+    NAME freesound_community-light-wing-flap-6143
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1.88829815772236 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {FC0080FC-BA7D-44C4-957F-64827EE41B6E}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.8818820861678
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1.1 0 0.3818820861678 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {ABE21BDB-0507-456E-B35C-079CC2B14381}
+      IID 205
+      NAME freesound_community-light-wing-flap-6143.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 1
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4440967F-7BA2-4E1A-B692-AAA7F81B0FC6}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\freesound_community-light-wing-flap-6143.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 0.5
+      SNAPOFFS 0
+      LENGTH 1
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.3818820861678 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {C45893D3-BE4D-41BC-954E-D1A345185286}
+      IID 205
+      NAME freesound_community-light-wing-flap-6143.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BD5ABDC4-1C17-4AAB-B6B8-6BB848837531}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\freesound_community-light-wing-flap-6143.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 1.5
+      SNAPOFFS 0
+      LENGTH 0.8818820861678
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 0.3818820861678 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {B8255202-8BA8-41F9-B656-2BEEE397B90E}
+      IID 205
+      NAME freesound_community-light-wing-flap-6143.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 1
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DDE38F3A-0ADB-43B8-B2EB-B1ABC974521B}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\freesound_community-light-wing-flap-6143.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 2
+      SNAPOFFS 0
+      LENGTH 1
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.3818820861678 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {C0B77656-DD13-4123-83FD-7E904B37BFFB}
+      IID 205
+      NAME freesound_community-light-wing-flap-6143.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {94EE176F-1434-4B66-BAA0-1C09663F28E6}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\freesound_community-light-wing-flap-6143.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 3
+      SNAPOFFS 0
+      LENGTH 0.8818820861678
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 0.3818820861678 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {E900DF00-37F4-43BB-B6AE-1685BAF51FC1}
+      IID 205
+      NAME freesound_community-light-wing-flap-6143.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 1
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {AD20C615-C03F-48D3-B59B-C2AA2B828379}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\freesound_community-light-wing-flap-6143.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 3.5
+      SNAPOFFS 0
+      LENGTH 1
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.3818820861678 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {BEC2D8A1-C1A9-4887-8C88-BC9A5E6B3BD7}
+      IID 205
+      NAME freesound_community-light-wing-flap-6143.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E5993876-3434-44F9-85FB-D186267E28CE}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\freesound_community-light-wing-flap-6143.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 4.5
+      SNAPOFFS 0
+      LENGTH 0.8818820861678
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 0.3818820861678 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {903D0BE4-979C-4C33-9FBB-A96DCFE91108}
+      IID 205
+      NAME freesound_community-light-wing-flap-6143.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 1
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1581DD74-27D5-4F67-802C-A7CDB6DC68DB}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\freesound_community-light-wing-flap-6143.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 5
+      SNAPOFFS 0
+      LENGTH 1
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.3818820861678 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {AC39CE66-B141-4094-B46B-3EC2772EFC7B}
+      IID 205
+      NAME freesound_community-light-wing-flap-6143.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {44CEA51B-64F1-4656-B1E8-0BC694EF0673}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\freesound_community-light-wing-flap-6143.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 6
+      SNAPOFFS 0
+      LENGTH 0.8818820861678
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 0.3818820861678 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {A8FD59AC-36DE-4E20-A65D-0CDFB1720E7D}
+      IID 205
+      NAME freesound_community-light-wing-flap-6143.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 1
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4303516E-9829-4EEA-89F2-CC3F580FC9EE}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\freesound_community-light-wing-flap-6143.mp3" 1
+      >
+    >
+    <ITEM
+      POSITION 6.5
+      SNAPOFFS 0
+      LENGTH 1
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 0.3818820861678 1 1 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {88D8B752-CFB2-429E-93E4-30901AE720CC}
+      IID 205
+      NAME freesound_community-light-wing-flap-6143.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C0E93DD9-240E-416E-A6DE-91927E37147D}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\freesound_community-light-wing-flap-6143.mp3" 1
+      >
+    >
+  >
+  <TRACK {9E3EF21D-72B9-4CB8-8812-CCAB75A6EB6F}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {9E3EF21D-72B9-4CB8-8812-CCAB75A6EB6F}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+  >
+  <TRACK {60DB0BF7-D6AB-440A-8DDD-F41C5F4B6EDA}
+    NAME freesound_community-scratching-31532
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.45859632086202 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {60DB0BF7-D6AB-440A-8DDD-F41C5F4B6EDA}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.65376946034425
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 4 0.12869477565832 0 4 0 1 1
+      FADEOUT 4 0.49933572955427 0 4 0 -1 -1
+      MUTE 0 0
+      SEL 0
+      IGUID {3931D440-9087-4105-A43C-79F42C618885}
+      IID 215
+      NAME freesound_community-scratching-31532.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.56874772214
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7495DBA1-E89C-426F-9C0D-58B92E6FBC48}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\freesound_community-scratching-31532.mp3" 1
+      >
+    >
+  >
+  <TRACK {F428F4D3-1B8A-4108-8DEF-451761C693AD}
+    NAME freesound_community-zombie-bite-96528
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1.02122369593623 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {F428F4D3-1B8A-4108-8DEF-451761C693AD}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 828 245 655 408
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.dll 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAJOOSlz3dE1A7gyyVSXTzz+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAPnSzL2xE39Az5oJvTxJ
+        4D8AAAAAAAAAQAEBAAAAAQAAAEPXMMuif7BAnuxkCkkGzT+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AP0BAABcAQAAAgABAA==
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {F19457B5-5D88-4BA9-9EEE-CF2FBC9171CD}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.84028845257033
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.08236465642132 0 1 0 0 0
+      FADEOUT 1 0.67041134870135 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {A538D98E-F007-4906-B8A9-C6936DEF79C8}
+      IID 222
+      NAME freesound_community-zombie-bite-96528.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0.74762821409634
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {240073FE-1CC8-43A9-AEC0-A3BFFC347DC8}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\freesound_community-zombie-bite-96528.mp3" 1
+      >
+    >
+  >
+  <TRACK {04EDCFA6-5C13-49F0-A381-4E0EED339BAE}
+    NAME tanweraman-angry-cat-hq-sound-effect-240675
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {04EDCFA6-5C13-49F0-A381-4E0EED339BAE}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+  >
+  <TRACK {BB9CB6FD-52A7-4B98-B71A-3E7FD66120E3}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.59770560311481 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {BB9CB6FD-52A7-4B98-B71A-3E7FD66120E3}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 25 60 655 408
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.dll 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAJBmwLnrGVhA7gyyVSXTzz+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAD5M3FUjIa9AFaoz+LQq
+        6z8AAAAAAAAAQAEBAAAAAQAAALK9dihhh85AO7RnErdSzT+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AP0BAABcAQAAAgABAA==
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {02745E5E-9748-4FE1-B0F4-DE1703F3F067}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.96759637188209
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.66613288908207 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {8FC81213-D8BB-4EEA-9BDF-12BEBECE59F1}
+      IID 224
+      NAME tanweraman-angry-cat-hq-sound-effect-240675.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E5F2F33F-F73B-487E-B382-0E7797C5F153}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\tanweraman-angry-cat-hq-sound-effect-240675.mp3" 1
+      >
+    >
+  >
+  <TRACK {B7D4A497-5096-46C8-9D18-403FAB82B3FA}
+    NAME biww-whoosh-fly-by-sound-effect-561945
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {B7D4A497-5096-46C8-9D18-403FAB82B3FA}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 25 60 734 521
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaPitch (Cockos)" reapitch.dll 0 "" 1919250531<56535472657063726561706974636800> ""
+        Y3Blcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAATAAAAAEAAAAAABAA
+        AAAAAP////8BAAAALAAAAAIAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAA/AAAAP23nez6+nxo+AAAAAAAAAD8AAIA/AAAAPw==
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {AB4278BD-7A86-44CF-804D-76A05B4FFD94}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.dll 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAMK3SIYYdFJAjsUvNRlw/z+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAIx5NQoOf4NAR5xHsBRd0j8zMzMzMzPzPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AP0BAABcAQAAAgABAA==
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {8A7AFA5E-1B5B-492E-82B6-08032785F588}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.68867150768616
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.04306621182857 0 1 0 0 0
+      FADEOUT 1 1.35849721700043 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {BBF5C71C-9D68-45D3-B296-F3418D2D884A}
+      IID 225
+      NAME biww-whoosh-fly-by-sound-effect-561945.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0.11484323154286
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7E0ABED0-9995-4590-81A4-9AAECB0286F0}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\biww-whoosh-fly-by-sound-effect-561945.mp3" 1
+      >
+    >
+  >
+  <TRACK {913732F4-C039-4B6D-8BB6-381FEBE45EEC}
+    NAME stu9-cute-cat-352656
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {913732F4-C039-4B6D-8BB6-381FEBE45EEC}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+  >
+  <TRACK {1B38B6DA-B2F2-4733-BCE3-9F3ADD0E2A4B}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.77874018757665 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 1
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {1B38B6DA-B2F2-4733-BCE3-9F3ADD0E2A4B}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 25 60 655 408
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.dll 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAA9+Nl1E7WRATHDdh3kT0D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAA24PMpzMbhA8ElWByB4
+        5T8AAAAAAAAAQAEBAAAAAQAAAFg9LsUFILdAj+21oPfGsD4zMzMzMzPzPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AP0BAABcAQAAAgABAA==
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {8DD8B338-67C6-4D9E-AC06-07E62D64FA41}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.83804988662131
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {BAF98A3D-DC51-4B9B-85DB-F3ECE05CF74A}
+      IID 226
+      NAME stu9-cute-cat-352656.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FF8D3D98-294E-4800-B89F-5A0725552AFF}
+      <SOURCE MP3
+        FILE "C:\Users\User\Downloads\stu9-cute-cat-352656.mp3" 1
+      >
+    >
+  >
+>
