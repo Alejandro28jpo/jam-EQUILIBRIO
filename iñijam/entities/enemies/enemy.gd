@@ -25,7 +25,7 @@ func _ready() -> void:
 	health_component.setup()
 	temperature_component.setup()
 	health_component.died.connect(_die)
-	temperature_component.died.connect(func(_cause: GlobalEnums.EntityState) -> void: _die())
+	temperature_component.died.connect(_die_from_temperature)
 	player = get_tree().get_first_node_in_group("player")
 
 
@@ -66,5 +66,21 @@ func _die() -> void:
 		return
 	is_dead = true
 	velocity = Vector2.ZERO
+	died.emit()
+	queue_free()
+
+
+func _die_from_temperature(cause: GlobalEnums.EntityState) -> void:
+	if is_dead:
+		return
+	is_dead = true
+	velocity = Vector2.ZERO
+	move_component.move(Vector2.ZERO)
+
+	var death_animation: String = "BURNED" if cause == GlobalEnums.EntityState.PEAK_BURN else "FREEZED"
+	if animation_player.has_animation(death_animation):
+		animation_player.play(death_animation)
+		await animation_player.animation_finished
+
 	died.emit()
 	queue_free()

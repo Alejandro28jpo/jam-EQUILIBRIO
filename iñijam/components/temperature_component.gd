@@ -6,6 +6,7 @@ signal balance_change(new_value: float)
 signal state_changed(new_state: GlobalEnums.EntityState, old_state: GlobalEnums.EntityState)
 signal died(cause: GlobalEnums.EntityState)
 
+@export var puntos_que_da: int
 @onready var body: Node = get_parent()
 
 var balance: float = 15.0:
@@ -57,7 +58,7 @@ func _update_state() -> void:
 
 func _die(cause: GlobalEnums.EntityState) -> void:
 	if _is_dead: return
-	
+	Puntos.puntos += puntos_que_da
 	_is_dead = true
 	died.emit(cause)
 

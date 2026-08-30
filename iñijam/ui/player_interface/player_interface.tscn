@@ -130,6 +130,14 @@ grow_vertical = 0
 text = "CURRENT STATE: "
 label_settings = SubResource("LabelSettings_ubc1v")
 
+[node name="puntos" type="Label" parent="." unique_id=1236482406]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+
 [node name="TemperatureMeter" type="Sprite2D" parent="." unique_id=1930263204]
 position = Vector2(610, 315)
 scale = Vector2(1.5, 1.5)

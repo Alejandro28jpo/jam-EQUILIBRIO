@@ -11,6 +11,8 @@ class_name PlayerInterface
 var current_state: GlobalEnums.EntityState
 var state_to_show: int
 
+func _process(delta: float) -> void:
+	$puntos.text = "%s / %s" % [Puntos.puntos, Puntos.record]
 
 func setup() -> void:
 	current_state = player.temperature_component.state
@@ -32,10 +34,14 @@ func _on_state_changed(new_state: GlobalEnums.EntityState, _old_state: GlobalEnu
 		current_state = new_state
 		state_to_show = new_state # _state_to_frame(new_state)
 		animation_player.play("TemperatureUP")
+		await animation_player.animation_finished
+		animation_player.play("IDLE")
 	elif new_state < current_state:
 		current_state = new_state
 		state_to_show = new_state# _state_to_frame(new_state)
 		animation_player.play("TemperatureDOWN")
+		await animation_player.animation_finished
+		animation_player.play("IDLE")
 
 
 func _state_to_frame(state: int) -> int:

@@ -4,6 +4,8 @@ class_name Bull
 
 enum State { CHASE, WINDUP, COOLDOWN }
 
+
+
 @export var attack_range: float = 40.0
 @export var windup_time: float = 0.5
 @export var attack_cooldown: float = 1.0
@@ -29,8 +31,10 @@ func _ready() -> void:
 
 func get_speed_multiplier() -> float:
 	var temp_state: GlobalEnums.EntityState = temperature_component.state
-	if temp_state == GlobalEnums.EntityState.FREEZING or temp_state == GlobalEnums.EntityState.PEAK_FREEZE:
+	if temp_state == GlobalEnums.EntityState.PEAK_FREEZE:
 		return 0.0
+	if temp_state == GlobalEnums.EntityState.FREEZING:
+		return 0.05
 	return super.get_speed_multiplier()
 
 
@@ -112,7 +116,7 @@ func _damage_player(body: Node, damage: int) -> void:
 func _update_facing() -> void:
 	if player == null:
 		return
-	sprite_2d.flip_h = player.global_position.x > global_position.x
+	sprite_2d.flip_h = player.global_position.x < global_position.x
 
 
 func _play_animation(anim_name: String) -> void:
