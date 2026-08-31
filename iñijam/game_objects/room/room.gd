@@ -84,7 +84,6 @@ func _update_room_type() -> void:
 
 
 func _on_lock_trigger_body_entered(body: Node) -> void:
-	print("[Room] lock_trigger body_entered at ", global_position, " body=", body.name, " is_player=", body.is_in_group("player"), " has_encounter=", has_encounter, " already_triggered=", _encounter_triggered)
 	if _encounter_triggered or not has_encounter or not body.is_in_group("player"):
 		return
 	_encounter_triggered = true
@@ -97,12 +96,13 @@ func _start_encounter() -> void:
 
 
 func _spawn_enemies() -> void:
+	print("[Room] _spawn_enemies at ", global_position, " count=", _enemies_alive)
 	for i in _enemies_alive:
 		var enemy_scene: PackedScene = _enemy_scenes.pick_random()
 		var enemy: Enemy = enemy_scene.instantiate()
 		add_child(enemy)
 		enemy.position = _random_spawn_position()
-		enemy.died.connect(_on_enemy_died)
+		enemy.died.connect(_on_enemy_died.bind(enemy))
 
 
 func _random_spawn_position() -> Vector2:
@@ -113,8 +113,9 @@ func _random_spawn_position() -> Vector2:
 	)
 
 
-func _on_enemy_died() -> void:
+func _on_enemy_died(enemy: Enemy) -> void:
 	_enemies_alive -= 1
+	print("[Room] _on_enemy_died at ", global_position, " enemy=", enemy, " remaining=", _enemies_alive)
 	if _enemies_alive <= 0:
 		unlock()
 		cleared.emit()
