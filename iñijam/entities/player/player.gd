@@ -2,6 +2,11 @@ extends CharacterBody2D
 class_name Player
 
 
+var murido = preload("res://sonidos/gameplay/MUERTE.ogg")
+var canbiar_arma = preload("res://sonidos/gameplay/CAMBIAR_ARMA.ogg")
+var distaro1 = preload("res://sonidos/gameplay/ARMA_FUEGO.ogg")
+var recibir_daño = preload("res://sonidos/gameplay/RECIBIR_DAÑO.ogg")
+
 enum Weapon { COLD, WARM }
 
 @export var cold_bullet_scene: PackedScene = preload("res://entities/bullets/cold_bullet.tscn")
@@ -51,8 +56,10 @@ func _physics_process(_delta: float) -> void:
 	_update_facing()
 
 	if Input.is_action_just_pressed("switch_weapon"):
+		ControladorAudio.reproducir_sonido(canbiar_arma)
 		_switch_weapon()
 	if Input.is_action_pressed("shoot") and shoot_cooldown_timer.is_stopped():
+		ControladorAudio.reproducir_sonido(distaro1)
 		_shoot()
 
 	if is_dead:
@@ -62,6 +69,7 @@ func _physics_process(_delta: float) -> void:
 
 
 func take_damage(damage: int) -> void:
+	ControladorAudio.reproducir_sonido(recibir_daño)
 	if is_dead or is_invulnerable:
 		return
 
@@ -89,6 +97,7 @@ func take_damage(damage: int) -> void:
 
 
 func _on_died() -> void:
+	ControladorAudio.reproducir_sonido(murido)
 	if is_dead:
 		return
 
@@ -131,6 +140,7 @@ func _shoot() -> void:
 
 
 func _update_facing() -> void:
+	
 	var facing_left: bool = get_global_mouse_position().x < global_position.x
 	sprite_2d.flip_h = facing_left
 	bullet_spawn_position.position.x = -13.0 if facing_left else 13.0

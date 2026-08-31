@@ -15,5 +15,6 @@ func setup() -> void:
 
 func apply_damage(damage: int) -> void:
 	current_damage = max(current_damage - damage, 0)
+	
 	if current_damage <= 0:
 		died.emit()
