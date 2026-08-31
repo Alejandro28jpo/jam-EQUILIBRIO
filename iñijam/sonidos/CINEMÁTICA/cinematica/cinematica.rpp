@@ -1,0 +1,1295 @@
+<REAPER_PROJECT 0.1 "7.79/win64" 1788167069 0
+  <NOTES 0 2
+  >
+  RIPPLE 0 0
+  GROUPOVERRIDE 0 0 0 0
+  AUTOXFADE 129
+  ENVATTACH 3
+  POOLEDENVATTACH 0
+  TCPUIFLAGS 0
+  MIXERUIFLAGS 11 48 88
+  ENVFADESZ10 40
+  PEAKGAIN 1
+  FEEDBACK 0
+  PANLAW 1
+  PROJOFFS 0 0 0
+  MAXPROJLEN 0 0
+  GRID 3455 8 1 8 1 0 0 0
+  TIMEMODE 1 5 -1 30 0 0 -1 0
+  VIDEO_CONFIG 0 0 65792
+  PANMODE 3
+  PANLAWFLAGS 3
+  CURSOR 0
+  ZOOM 29.88300344840895 0 0
+  VZOOMEX 2 27
+  USE_REC_CFG 0
+  RECMODE 1
+  SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
+  LOOP 0
+  LOOPGRAN 0 4
+  RECORD_PATH "Media" ""
+  <RECORD_CFG
+    ZXZhdxgAAQ==
+  >
+  <APPLYFX_CFG
+  >
+  RENDER_FILE "C:\Users\User\Documents\Apps\GitHub\jam-EQUILIBRIO\iñijam\sonidos\escenas\CINEMÁTICA\cinemática.ogg"
+  RENDER_FMT 0 2 48000
+  RENDER_1X 0
+  RENDER_RANGE 1 0 0 0 1000
+  RENDER_RESAMPLE 3 0 1
+  RENDER_ADDTOPROJ 0
+  RENDER_STEMS 0
+  RENDER_DITHER 0
+  RENDER_TRIM 0.000001 0.000001 0 0
+  TIMELOCKMODE 1
+  TEMPOENVLOCKMODE 1
+  ITEMMIX 1
+  DEFPITCHMODE 589824 0
+  TAKELANE 1
+  SAMPLERATE 44100 0 0
+  <RENDER_CFG
+    dmdnbwAAgD8AgAAAAIAAAAAgAAAAAAEAAA==
+  >
+  LOCK 1
+  <METRONOME 6 2
+    VOL 0.25 0.125
+    BEATLEN 4
+    FREQ 1760 880 1
+    SAMPLES "" "" "" ""
+    SPLIGNORE 0 0
+    SPLDEF 2 660 "" 0 ""
+    SPLDEF 3 440 "" 0 ""
+    PATTERN 0 169
+    PATTERNSTR ABBB
+    MULT 1
+  >
+  GLOBAL_AUTO -1
+  TEMPO 120 4 4 0
+  PLAYRATE 1 0 0.25 4
+  SELECTION 9.84724259249222 10.286399208967
+  SELECTION2 9.84724259249222 10.286399208967
+  MASTERAUTOMODE 0
+  MASTERTRACKHEIGHT 0 0
+  MASTERPEAKCOL 16576
+  MASTERMUTESOLO 0
+  MASTERTRACKVIEW 0 0.6667 0.5 0.5 0 0 0 0 0 0 0 0 0 0 1
+  MASTERHWOUT 0 0 1 0 0 0 0 -1
+  MASTER_NCH 2 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  MASTER_PANMODE 3
+  MASTER_PANLAWFLAGS 3
+  MASTER_FX 1
+  MASTER_TRACKID {C0CEF515-1894-4DDF-BEA1-D9311E48D0C0}
+  MASTER_SEL 0
+  <MASTERPLAYSPEEDENV
+    EGUID {79DA4F7E-C934-4806-BD2A-604D06351BA1}
+    ACT 0 -1
+    VIS 0 1 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 0 -1 -1
+  >
+  <TEMPOENVEX
+    EGUID {25E26614-E854-4C93-9A44-E1DB922EAAFF}
+    ACT 0 -1
+    VIS 1 0 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 1 -1 -1
+  >
+  RULERHEIGHT 86 86
+  RULERLANE 1 4 "" 0 -1 0
+  RULERLANE 2 8 "" 0 -1 0
+  MARKER 1 6.40225155639686 "" 0 0 1 R {BE4C63A6-3C79-4EB8-9C12-88F40A09EB2B} 0 2
+  MARKER 2 12.41978526303815 "" 0 0 1 R {2C32A391-A057-4F6F-ABF1-40FDAA580820} 0 2
+  MARKER 3 13.91757713051782 "" 0 0 1 R {8583E847-0143-4D8E-A72C-968ECAFA8E25} 0 2
+  MARKER 4 15.36782004982354 "" 0 0 1 R {F698CC89-E26A-4240-91E6-C05CE6C11DD2} 0 2
+  MARKER 5 16.39012243556366 "" 0 0 1 R {C5122EDB-569E-4BD6-9C6D-CBD9B0C564C0} 0 2
+  MARKER 6 18.41095273295702 "" 0 0 1 R {4A9E0CFC-148C-44A8-9D4B-F9B886F0AB87} 0 2
+  MARKER 7 19.38570617052324 "" 0 0 1 R {7293DD38-2BBF-43C5-9873-0556E2F1D0E8} 0 2
+  MARKER 8 20.38423408217643 "" 0 0 1 R {15C067C3-BB36-49B7-A217-D0A3044905D6} 0 2
+  MARKER 9 22.38128990548281 "" 0 0 1 R {981506FB-71D8-4053-8CDF-12B67BBF2332} 0 2
+  <PROJBAY
+  >
+  <TRACK {7C8049C8-5E51-4743-9F38-1A0D1EBFE2A5}
+    NAME "2026-08-31 01-31-20"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {7C8049C8-5E51-4743-9F38-1A0D1EBFE2A5}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 24.433
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {75EA287E-18E7-41EE-9690-2211368346BB}
+      IID 1
+      NAME "2026-08-31 01-31-20.mp4"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D0B48AB3-01BC-469E-A8F4-341C03A20A30}
+      <SOURCE VIDEO
+        FILE "Media\2026-08-31 01-31-20.mp4"
+      >
+      <EXT
+        ORIGINAL_FILENAME "C:\Users\User\Videos\2026-08-31 01-31-20.mp4"
+      >
+    >
+  >
+  <TRACK {90048074-2126-4C21-A2EB-F8A4D418DBE1}
+    NAME "Explosion Distant Bomb 01"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.16829929582119 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 1
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {90048074-2126-4C21-A2EB-F8A4D418DBE1}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 2.412
+      SNAPOFFS 0
+      LENGTH 1.74820657832006
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {9CA17774-A9AE-43E1-931D-839E2E62C079}
+      IID 4
+      NAME "Explosion Blast Fire Heavy Crackle 01.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {91391F34-6BF1-444E-B1E5-7C7469C20022}
+      <SOURCE WAVE
+        FILE "Media\Explosion Blast Fire Heavy Crackle 01.wav"
+      >
+      <TAKEFX
+        WNDRECT 27 60 655 408
+        SHOW 0
+        LASTSEL 0
+        DOCKED 0
+        BYPASS 0 0 0
+        <VST "VST: easyReverb (EmRysRa)" easyReverb_x64.dll 0 "" 2020570983<565354786F7767656173797265766572> ""
+          Z3dveO9e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAARAAAAAAAAAAAAAAA
+          776t3g3wrd4K16M8QpUtPUiMKj8AAAAAAAAAACVJEj4AAAA/AACAPgAAgD8AAIA/AACAP5qZGT/hepQ+j8J1PwAAAAA=
+          LS0tLSBkZWZhdWx0IC0tLS0ALS0tLSBkZWZhdWx0IC0tLS0AAAAAAA==
+        >
+        PRESETNAME "---- default ----"
+        FLOATPOS 0 0 0 0
+        FXID {16D42CFF-7A38-40A7-ACF5-50E694666223}
+        WAK 0 0
+      >
+      <EXT
+        ORIGINAL_FILENAME "C:\Users\User\Music\BANCOS DE SONIDO\Fire and Explosions\Explosion Blast Fire Heavy Crackle 01.wav"
+      >
+    >
+    <ITEM
+      POSITION 5.26019172509188
+      SNAPOFFS 0
+      LENGTH 0.60195833333333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.20911509804969 0 1 0 0 0
+      FADEOUT 1 0.2508392028968 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {C39112D5-3B48-45DB-AD46-98FB4FE054F5}
+      IID 24
+      NAME freesound_community-fart-83471.mp3
+      VOLPAN 1 0 1.995262 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {60D876E1-C3C1-46B9-B68E-4FC6B6FC3B5A}
+      <SOURCE MP3
+        FILE "Media\freesound_community-fart-83471.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\freesound_community-fart-83471.mp3
+      >
+    >
+  >
+  <TRACK {35A786C5-7585-4AE6-B988-D04FFAD06680}
+    NAME "Explosion Blast Fire Heavy Crackle 01"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.42898399552231 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {35A786C5-7585-4AE6-B988-D04FFAD06680}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 2.642
+      SNAPOFFS 0
+      LENGTH 2.07
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 1.41 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {F3BEB650-4574-43EE-9ADC-3F2BA5326F83}
+      IID 2
+      NAME "Explosion Distant Bomb 01.wav"
+      VOLPAN 1 0 0.501187 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D53CC154-AB52-4662-A7E9-2B67FCDE1E66}
+      <SOURCE WAVE
+        FILE "Media\Explosion Distant Bomb 01.wav"
+      >
+      <EXT
+        ORIGINAL_FILENAME "C:\Users\User\Music\BANCOS DE SONIDO\Fire and Explosions\Explosion Distant Bomb 01.wav"
+      >
+    >
+    <ITEM
+      POSITION 6.39610362961842
+      SNAPOFFS 0
+      LENGTH 1.15687101634197
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1.1 0.26044740158484 1.1418495612455 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {53F6379D-B3C7-44F4-9585-BC84B2D83D1C}
+      IID 25
+      NAME "ATAQUE BLIGHT.ogg"
+      VOLPAN 1 0 1 -1
+      SOFFS 0.11350098462494
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E493935B-9781-455A-931F-BD6DD207C926}
+      <SOURCE VORBIS
+        FILE "Media\ATAQUE BLIGHT.ogg"
+      >
+      <EXT
+        ORIGINAL_FILENAME "C:\Users\User\Documents\Apps\GitHub\jam-EQUILIBRIO\iñijam\sonidos\enemigos\ATAQUE BLIGHT.ogg"
+      >
+    >
+    <ITEM
+      POSITION 6.41112508471489
+      SNAPOFFS 0
+      LENGTH 1.14790647756141
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.1418495612455 1 1 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {CBA6B405-EDE9-4068-9412-5FDE46215985}
+      IID 27
+      NAME "IMPACTO BLIGHT.ogg"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {226A1F99-C6DC-4C30-804A-47C0D9E9E348}
+      <SOURCE VORBIS
+        FILE "Media\IMPACTO BLIGHT.ogg"
+      >
+      <EXT
+        ORIGINAL_FILENAME "C:\Users\User\Documents\Apps\GitHub\jam-EQUILIBRIO\iñijam\sonidos\enemigos\IMPACTO BLIGHT.ogg"
+      >
+    >
+    <ITEM
+      POSITION 12.41062153133345
+      SNAPOFFS 0
+      LENGTH 0.76995833333333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.08518481885778 0 1 0 0 0
+      FADEOUT 1 0.54546443920923 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {8453D9BC-27C7-4020-8D03-87BA1E45C5D9}
+      IID 43
+      NAME freesound_community-item-equip-6904.mp3
+      VOLPAN 1 0 2.041485 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D16BCCE4-11E7-4BC1-9025-86B69AEA5E9B}
+      <SOURCE MP3
+        FILE "Media\freesound_community-item-equip-6904.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\freesound_community-item-equip-6904.mp3
+      >
+    >
+  >
+  <TRACK {44DB8E82-705E-4C11-813C-5F92C99E0D8F}
+    NAME "Ambience Nature Trail 180 01"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {44DB8E82-705E-4C11-813C-5F92C99E0D8F}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <VOLENV2
+      EGUID {5FF86020-0244-4B88-92DC-9C609DBFD630}
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 27 0
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      VOLTYPE 1
+      PT 0 1 0
+      PT 3.01028741 1 0
+      PT 3.01078741 0.16715874 0
+      PT 3.18816455 0.14550606 0
+      PT 12.42 0.14550606 0 0 1
+      PT 14.016 0.11557958 0 0 1
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 3.21622256375698
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 4 0.5935777989608 0 4 0 -1 -1
+      MUTE 0 0
+      SEL 0
+      IGUID {6ECB0EF8-EB51-4317-BC55-13F99EE390E3}
+      IID 72
+      NAME freesound_community-nuclear-alarm-of-tihange-liege-belgium-69176.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1C6AE4A4-AA17-4103-87F3-AA69ADC51645}
+      <SOURCE MP3
+        FILE "Media\freesound_community-nuclear-alarm-of-tihange-liege-belgium-69176.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\freesound_community-nuclear-alarm-of-tihange-liege-belgium-69176.mp3
+      >
+    >
+    <ITEM
+      POSITION 12.38639386606974
+      SNAPOFFS 0
+      LENGTH 1.65499312133108
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.15345778128307 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {7DF0B911-FB5A-4B0C-948B-326B3649DDA5}
+      IID 45
+      NAME freesound_community-180904-woodland04-run-steps-skip-jump-clip-47486.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A42BB32F-AC80-412F-9B90-A0CDD0AEEC46}
+      <SOURCE MP3
+        FILE "Media\freesound_community-180904-woodland04-run-steps-skip-jump-clip-47486.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\freesound_community-180904-woodland04-run-steps-skip-jump-clip-47486.mp3
+      >
+    >
+  >
+  <TRACK {21B28F38-7AC1-4450-9D22-26C7B8C10599}
+    NAME storegraphic-air-transition-312732
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {21B28F38-7AC1-4450-9D22-26C7B8C10599}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <VOLENV2
+      EGUID {97CA8379-1D2B-457C-A6CC-90E9877A68C4}
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      VOLTYPE 1
+      PT 0 1 0
+      PT 2.652 1.04712855 0
+      PT 4.032 1.6218101 0
+      PT 14.15425556 1.6218101 0
+      PT 14.15435556 1.6218101 0
+    >
+    <ITEM
+      POSITION 2.6349396988487
+      SNAPOFFS 0
+      LENGTH 1.5290603011513
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {A3636686-67B1-4B84-9C1E-0BF3AA02489F}
+      IID 13
+      NAME storegraphic-air-transition-312732.mp3
+      VOLPAN 1 0 0.251189 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D589F944-F6B9-4CB6-8D97-AD34F8522F07}
+      <SOURCE MP3
+        FILE "Media\storegraphic-air-transition-312732.mp3" 1
+      >
+      <TAKEFX
+        WNDRECT 905 278 753 388
+        SHOW 0
+        LASTSEL 0
+        DOCKED 0
+        BYPASS 0 0 0
+        <VST "VST: easyReverb (EmRysRa)" easyReverb_x64.dll 0 "" 2020570983<565354786F7767656173797265766572> ""
+          Z3dveO9e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAARAAAAAAAAAAAAAAA
+          776t3g3wrd4K16M8YREePUiMKj8AAAAAAAAAACVJEj4AAAA/AACAPgAAgD8AAIA/AACAP5qZGT8pXI8+j8J1PwAAAAA=
+          LS0tLSBkZWZhdWx0IC0tLS0ALS0tLSBkZWZhdWx0IC0tLS0AAAAAAA==
+        >
+        PRESETNAME "---- default ----"
+        FLOATPOS 0 0 0 0
+        FXID {3FF3A5DA-5E6F-4027-B83B-C4D20670BABE}
+        WAK 0 0
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\storegraphic-air-transition-312732.mp3
+      >
+    >
+    <ITEM
+      POSITION 7.41972248701
+      SNAPOFFS 0
+      LENGTH 3.05739229024944
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.1817074894778 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {755E3AEB-DEB7-4376-BA5B-AC56C9A82303}
+      IID 32
+      NAME koiroylers-shine-02-355934.mp3
+      VOLPAN 1 0 0.039053 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F5D6EA28-283A-4F46-9438-66A49B2C805E}
+      <SOURCE MP3
+        FILE "Media\koiroylers-shine-02-355934.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\koiroylers-shine-02-355934.mp3
+      >
+    >
+    <ITEM
+      POSITION 12.42035918491512
+      SNAPOFFS 0
+      LENGTH 1.6210278024857
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.18755951045708 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {2E98FA78-14E0-44E9-ABD6-5B10D5B01300}
+      IID 41
+      NAME freesound_community-outside-ambience-29767.mp3
+      VOLPAN 1 0 0.094689 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {EAE11BA0-A898-4A38-8227-775B5825CD84}
+      <SOURCE MP3
+        FILE "Media\freesound_community-outside-ambience-29767.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\freesound_community-outside-ambience-29767.mp3
+      >
+    >
+    <ITEM
+      POSITION 16.26
+      SNAPOFFS 0
+      LENGTH 2.15493375396833
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.216 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {887DB4E8-D0A6-46A1-99B6-42954969F5A9}
+      IID 41
+      NAME freesound_community-outside-ambience-29767.mp3
+      VOLPAN 1 0 0.094689 -1
+      SOFFS 1.35907989833278
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BC2D6C34-CB3B-4175-AE76-7E146FD6967A}
+      <SOURCE MP3
+        FILE "Media\freesound_community-outside-ambience-29767.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\freesound_community-outside-ambience-29767.mp3
+      >
+    >
+    <ITEM
+      POSITION 23.09004853515612
+      SNAPOFFS 0
+      LENGTH 7.2892290249433
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 4.05866850879863 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {84F7B022-6D27-4617-9229-384145B52F73}
+      IID 74
+      NAME bryansantosbreton-darkness-tonal-cymbal-roll-riser-braam-impact-184275.mp3
+      VOLPAN 1 0 0.251189 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6592D7B3-A839-4804-826A-6EBDF1FFB252}
+      <SOURCE MP3
+        FILE "Media\bryansantosbreton-darkness-tonal-cymbal-roll-riser-braam-impact-184275.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\bryansantosbreton-darkness-tonal-cymbal-roll-riser-braam-impact-184275.mp3
+      >
+    >
+  >
+  <TRACK {643DEBD8-3B4E-48F7-B162-76E3252762E2}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {643DEBD8-3B4E-48F7-B162-76E3252762E2}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 4.39156616474783
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 4 1.63839199223284 0 4 0 -1 -1
+      MUTE 0 0
+      SEL 0
+      IGUID {5F6F7B90-2EE3-400C-8657-CCD2F3F1D288}
+      IID 10
+      NAME "Ambience Nature Trail 180 01.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.00083402835696 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FAE23F71-8AFA-4E10-B651-B6F1AB1A14F4}
+      <SOURCE WAVE
+        FILE "Media\Ambience Nature Trail 180 01.wav"
+      >
+      <EXT
+        ORIGINAL_FILENAME "C:\Users\User\Music\BANCOS DE SONIDO\Ambience_2\Ambience Nature Trail 180 01.wav"
+      >
+    >
+    <ITEM
+      POSITION 7.45606398490555
+      SNAPOFFS 0
+      LENGTH 3.03302289320366
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.2059351547415 0 1 0 0 0
+      FADEOUT 1 0.21957830823739 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {B4C6EF87-BD91-4B34-A97C-20134D2D20DF}
+      IID 33
+      NAME dragon-studio-heavenly-choir-515273.mp3
+      VOLPAN 1 0 0.114264 -1
+      SOFFS 0.27764999377532
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {EF1F6F35-482F-477A-9FAA-C18E60F8AA4B}
+      <SOURCE MP3
+        FILE "Media\dragon-studio-heavenly-choir-515273.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\dragon-studio-heavenly-choir-515273.mp3
+      >
+    >
+    <ITEM
+      POSITION 13.83677661235673
+      SNAPOFFS 0
+      LENGTH 2.1469962483097
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.17903407816358 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {B2DBFC71-70C7-43B1-B5F6-BC3157DD59D3}
+      IID 47
+      NAME universfield-man-pain-scream-567203.mp3
+      VOLPAN 1 0 0.104144 -1
+      SOFFS 1.98296208502364
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {EC5A2439-2825-46CC-B720-88B2D914923B}
+      <SOURCE MP3
+        FILE "Media\universfield-man-pain-scream-567203.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\universfield-man-pain-scream-567203.mp3
+      >
+    >
+    <ITEM
+      POSITION 16.3865184153012
+      SNAPOFFS 0
+      LENGTH 10.00897916666666
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {671431C9-6EA9-44D4-AEA2-17145A92F32A}
+      IID 67
+      NAME soundreality-hit-watchtower-399087.mp3
+      VOLPAN 1 0 0.158489 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3563BCD7-00B2-4A18-8192-C05CBD0E6A3A}
+      <SOURCE MP3
+        FILE "Media\soundreality-hit-watchtower-399087.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\soundreality-hit-watchtower-399087.mp3
+      >
+    >
+  >
+  <TRACK {664D600C-F060-448D-9BBC-4D436C8B801D}
+    NAME storegraphic-soft-wind-477404
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.08900335832088 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {664D600C-F060-448D-9BBC-4D436C8B801D}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 4.332
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 4 1.848 0 4 0 -1 -1
+      MUTE 0 0
+      SEL 0
+      IGUID {F6352B44-120B-40AE-907E-7DBEB8AE9D68}
+      IID 19
+      NAME storegraphic-soft-wind-477404.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 1.224
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {75F8EE4C-E944-4390-A292-0C0B90D773C4}
+      <SOURCE MP3
+        FILE "Media\storegraphic-soft-wind-477404.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\storegraphic-soft-wind-477404.mp3
+      >
+    >
+    <ITEM
+      POSITION 6.40216054593434
+      SNAPOFFS 0
+      LENGTH 1.24772476108086
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.14536599158224 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {F6F9CE3E-A97E-49C7-9592-8B8C65376F2B}
+      IID 31
+      NAME freesound_community-alarm-car-or-home-62554.mp3
+      VOLPAN 1 0 1.399978 -1
+      SOFFS 0.30890273211225
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F291CEF8-E04A-4FE3-8D83-823102DAC8B5}
+      <SOURCE MP3
+        FILE "Media\freesound_community-alarm-car-or-home-62554.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\freesound_community-alarm-car-or-home-62554.mp3
+      >
+    >
+    <ITEM
+      POSITION 10.12110716391323
+      SNAPOFFS 0
+      LENGTH 3.56624716553288
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {7A170DF3-013D-4D06-B13A-CFBB334DDC95}
+      IID 35
+      NAME u_q2hb2391vb-thunder-clap-521194.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 2 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DED3AA35-D4A8-4537-A8E8-3D950BA98102}
+      <SOURCE MP3
+        FILE "Media\u_q2hb2391vb-thunder-clap-521194.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\u_q2hb2391vb-thunder-clap-521194.mp3
+      >
+    >
+    <ITEM
+      POSITION 13.79414945088921
+      SNAPOFFS 0
+      LENGTH 1.70508645870077
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.2131358073376 0 1 0 0 0
+      FADEOUT 1.1 0.01 0.26428840109862 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {9573AD14-8A11-4125-B9AA-2436D1122A1F}
+      IID 48
+      NAME "soundreality-wind-outside-room-tone-457957 (1).mp3"
+      VOLPAN 1 0 1 -1
+      SOFFS 100.89233492355673
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {AF7A0114-AF28-4D7E-AA90-1C2AFD4C1D53}
+      <SOURCE MP3
+        FILE "Media\soundreality-wind-outside-room-tone-457957 (1).mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME "C:\Users\User\Downloads\soundreality-wind-outside-room-tone-457957 (1).mp3"
+      >
+    >
+    <ITEM
+      POSITION 15.23494750849136
+      SNAPOFFS 0
+      LENGTH 1.15506804240581
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.26428840109862 1 1 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {3548EE68-F355-4EF3-99FE-3AA1E22CE859}
+      IID 48
+      NAME "soundreality-wind-outside-room-tone-457957 (1).mp3"
+      VOLPAN 1 0 1 -1
+      SOFFS 2.99566397631246
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2A745114-6B2F-4087-B917-F64022A58AB4}
+      <SOURCE MP3
+        FILE "Media\soundreality-wind-outside-room-tone-457957 (1).mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME "C:\Users\User\Downloads\soundreality-wind-outside-room-tone-457957 (1).mp3"
+      >
+    >
+    <ITEM
+      POSITION 19.35242190680143
+      SNAPOFFS 0
+      LENGTH 1.06985133391408
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.19019579269584 0 1 0 0 0
+      FADEOUT 1 0.1188723704349 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {6E0A95F8-5C8B-4021-AE78-22550912067A}
+      IID 68
+      NAME freesound_community-run-up-stairs-open-and-close-door-82097.mp3
+      VOLPAN 1 0 1.736722 -1
+      SOFFS 1.26004712660992
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1DFB720E-7410-4DE2-A617-C60289DCCC66}
+      <SOURCE MP3
+        FILE "Media\freesound_community-run-up-stairs-open-and-close-door-82097.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\freesound_community-run-up-stairs-open-and-close-door-82097.mp3
+      >
+    >
+    <ITEM
+      POSITION 21.00755213984672
+      SNAPOFFS 0
+      LENGTH 6.91395833333333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {3AAF98C1-4423-43D1-B8E6-9352C56E50B9}
+      IID 71
+      NAME freesound_community-062864_ese-24142.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1CED07BC-0C32-484E-933A-1F4C92DF7FB3}
+      <SOURCE MP3
+        FILE "Media\freesound_community-062864_ese-24142.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\freesound_community-062864_ese-24142.mp3
+      >
+    >
+  >
+  <TRACK {4AA46D9B-11EB-4E79-ABDA-AF2194383EF9}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.29322214811631 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {4AA46D9B-11EB-4E79-ABDA-AF2194383EF9}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <VOLENV2
+      EGUID {3F0A2E1B-9D13-4D2D-A42D-4E6BC7AFC3AA}
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      VOLTYPE 1
+      PT 3.1092409 1 0
+    >
+    <ITEM
+      POSITION 6.40216054593434
+      SNAPOFFS 0
+      LENGTH 1.24772476108086
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.468 0 1 0 0 0
+      FADEOUT 1 0.28181609643538 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {E1A879D6-5F67-4670-9697-A27E4D6512F3}
+      IID 28
+      NAME dragon-studio-woman-screaming-sfx-screaming-sound-effect-320169.mp3
+      VOLPAN 1 -0.348 1 -1
+      SOFFS 0.39016054593435
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6EA02C05-EAED-4C03-B40A-925A7CB76F88}
+      <SOURCE MP3
+        FILE "Media\dragon-studio-woman-screaming-sfx-screaming-sound-effect-320169.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\dragon-studio-woman-screaming-sfx-screaming-sound-effect-320169.mp3
+      >
+    >
+    <ITEM
+      POSITION 13.85216761452396
+      SNAPOFFS 0
+      LENGTH 1.58587095432768
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.08479682842297 0 1 0 0 0
+      FADEOUT 1 0.10192645692568 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {E83AEC20-F600-4D6A-BBC2-407B22EDB0A0}
+      IID 55
+      NAME PROYECTIL_FUEGO.ogg
+      VOLPAN 1 0 0.418608 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D4EFD51D-E851-4097-A31F-28FF91C7052D}
+      <SOURCE VORBIS
+        FILE "Media\PROYECTIL_FUEGO.ogg"
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Documents\Apps\GitHub\jam-EQUILIBRIO\iñijam\sonidos\gameplay\PROYECTIL_FUEGO.ogg
+      >
+    >
+    <ITEM
+      POSITION 15.46330735456041
+      SNAPOFFS 0
+      LENGTH 0.56834211428571
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.10869349958807 0 1 0 0 0
+      FADEOUT 1 0.2059351547415 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {E43A5438-5E79-487C-A117-BBEAC9ED740D}
+      IID 60
+      NAME freesound_community-grito-101472.mp3
+      VOLPAN 1 0 0.447642 -1
+      SOFFS 0.3696331909138
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {65924E95-D236-42D5-8A65-2DB9631B52ED}
+      <SOURCE MP3
+        FILE "Media\freesound_community-grito-101472.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\freesound_community-grito-101472.mp3
+      >
+    >
+    <ITEM
+      POSITION 19.37619638093747
+      SNAPOFFS 0
+      LENGTH 7.00099913097769
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.50090452268431 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {BFBBBD7F-4969-4987-B0C9-87AAE2DCB901}
+      IID 69
+      NAME freesound_community-kitchen-room-tone-day-61809.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E12633B4-BD3B-4817-AB8D-FDF93AB6242C}
+      <SOURCE MP3
+        FILE "Media\freesound_community-kitchen-room-tone-day-61809.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\freesound_community-kitchen-room-tone-day-61809.mp3
+      >
+    >
+  >
+  <TRACK {18503EB1-2632-40C1-A716-565BBD58F8A1}
+    NAME universfield-male-horror-scream-08-352438
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.14664497430468 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {18503EB1-2632-40C1-A716-565BBD58F8A1}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <VOLENV2
+      EGUID {8AD3B5BE-8540-4C21-A4AE-57EC9DDD308E}
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      VOLTYPE 1
+      PT 0 1 0
+      PT 14.08135286 1 0
+      PT 14.08185286 1.6218101 0
+      PT 15.31093619 1.6218101 0
+      PT 15.31143619 1 0
+    >
+    <ITEM
+      POSITION 6.40216054593434
+      SNAPOFFS 0
+      LENGTH 1.24166784476493
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.1694149246816 0 1 0 0 0
+      FADEOUT 1 0.30796071763375 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {D0FE6E08-8050-4C02-959F-996E874C6178}
+      IID 29
+      NAME universfield-male-horror-scream-08-352438.mp3
+      VOLPAN 1 0.868 1 -1
+      SOFFS 0.10991648436258
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0228E0FB-F441-463C-864D-2895D05EFDDB}
+      <SOURCE MP3
+        FILE "Media\universfield-male-horror-scream-08-352438.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\universfield-male-horror-scream-08-352438.mp3
+      >
+    >
+    <ITEM
+      POSITION 13.85216761452396
+      SNAPOFFS 0
+      LENGTH 1.59488993629064
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.08479682842297 0 1 0 0 0
+      FADEOUT 1 0.1230592715205 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {E4085F80-FFE0-4975-B189-94E18A67861D}
+      IID 57
+      NAME PROYECTIL_HIELO.ogg
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {476EF665-1D24-4274-8E80-EC83707531C1}
+      <SOURCE VORBIS
+        FILE "Media\PROYECTIL_HIELO.ogg"
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Documents\Apps\GitHub\jam-EQUILIBRIO\iñijam\sonidos\gameplay\PROYECTIL_HIELO.ogg
+      >
+    >
+  >
+  <TRACK {F59AE8FE-7837-4D12-9C74-298D133255BB}
+    NAME thumblegray-running-on-the-floor-359909
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {F59AE8FE-7837-4D12-9C74-298D133255BB}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <VOLENV2
+      EGUID {E574558A-F44B-4DA1-886B-3FD3297787DC}
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      VOLTYPE 1
+      PT 0 1 0
+      PT 6.42033129 1 0
+      PT 6.66260795 2 0
+      PT 6.78374627 1.95447444 0
+      PT 7.48029165 1 0
+    >
+    <PANENV2
+      EGUID {701ADA74-6752-4591-874C-53D1D7BAE542}
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      PT 0 0 0
+      PT 6.40216055 -0.71 0
+      PT 7.4984624 0.57 0
+    >
+    <ITEM
+      POSITION 6.40216054593434
+      SNAPOFFS 0
+      LENGTH 1.22955401213308
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.17565057316187 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {253131AE-470C-4554-8C09-63B03C7E3EEC}
+      IID 30
+      NAME thumblegray-running-on-the-floor-359909.mp3
+      VOLPAN 1 0 0.251189 -1
+      SOFFS 0.04239841421149
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {63D2B01F-2D07-4F0D-BA5D-3ACFBB54AEBB}
+      <SOURCE MP3
+        FILE "Media\thumblegray-running-on-the-floor-359909.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\thumblegray-running-on-the-floor-359909.mp3
+      >
+    >
+  >
+>
