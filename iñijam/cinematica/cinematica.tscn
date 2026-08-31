@@ -4,6 +4,11 @@
 [ext_resource type="Script" uid="uid://bf5lacd5hrw2x" path="res://cinematica/cinematica.gd" id="1_rqwxg"]
 [ext_resource type="Texture2D" uid="uid://bmab6rewjngxv" path="res://cinematica/bomba.png" id="2_rqwxg"]
 [ext_resource type="Texture2D" uid="uid://cpoftpt6c2qvl" path="res://cinematica/mano.png" id="3_oed65"]
+[ext_resource type="AudioStream" uid="uid://cauq68u6ecm1h" path="res://sonidos/CINEMÁTICA/cinematica/Media/Ambience Nature Trail 180 01.wav" id="5_oed65"]
+[ext_resource type="AudioStream" uid="uid://cwuo3h688nmd7" path="res://sonidos/CINEMÁTICA/cinematica/Media/universfield-man-pain-scream-567203.mp3" id="6_b8554"]
+[ext_resource type="AudioStream" uid="uid://dyb0usv6clmpn" path="res://sonidos/CINEMÁTICA/cinematica/Media/Explosion Blast Fire Heavy Crackle 01.wav" id="6_tr6xv"]
+[ext_resource type="AudioStream" uid="uid://d3fh41xre5sqw" path="res://sonidos/CINEMÁTICA/cinematica/Media/u_q2hb2391vb-thunder-clap-521194.mp3" id="6_uy2lk"]
+[ext_resource type="AudioStream" uid="uid://csufw4svoo7ll" path="res://sonidos/CINEMÁTICA/cinematica/Media/bryansantosbreton-darkness-tonal-cymbal-roll-riser-braam-impact-184275.mp3" id="9_qrraf"]
 
 [sub_resource type="Animation" id="Animation_tr6xv"]
 length = 0.001
@@ -246,7 +251,6 @@ hframes = 18
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=933678829]
 libraries/ = SubResource("AnimationLibrary_b8554")
-autoplay = &"comienzo"
 
 [node name="Bomba" type="Sprite2D" parent="." unique_id=72844188]
 position = Vector2(324, -32)
@@ -259,3 +263,19 @@ position = Vector2(125, 176)
 texture = ExtResource("3_oed65")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=871078730]
+
+[node name="AmbienceNatureTrail18001" type="AudioStreamPlayer" parent="." unique_id=1005649898]
+stream = ExtResource("5_oed65")
+autoplay = true
+
+[node name="UniversfieldManPainScream567203" type="AudioStreamPlayer" parent="." unique_id=640841425]
+stream = ExtResource("6_b8554")
+
+[node name="UQ2Hb2391VbThunderClap521194" type="AudioStreamPlayer" parent="." unique_id=757016179]
+stream = ExtResource("6_uy2lk")
+
+[node name="ExplosionBlastFireHeavyCrackle01" type="AudioStreamPlayer" parent="." unique_id=676163080]
+stream = ExtResource("6_tr6xv")
+
+[node name="BryansantosbretonDarknessTonalCymbalRollRiserBraamImpact184275" type="AudioStreamPlayer" parent="." unique_id=676034151]
+stream = ExtResource("9_qrraf")
