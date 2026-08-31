@@ -34,6 +34,7 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_ubc1v")
 
 [node name="Room" parent="." unique_id=1104122540 instance=ExtResource("1_bq086")]
+y_sort_enabled = false
 current_room_type = 12
 
 [node name="Player" parent="." unique_id=1509555614 instance=ExtResource("1_kuph3")]
