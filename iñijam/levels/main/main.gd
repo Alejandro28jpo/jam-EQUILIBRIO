@@ -9,8 +9,14 @@ const CAMERA_TRANSITION_TIME := 0.4
 const BASE_ENEMY_COUNT := 2
 const LEVELS_PER_ENEMY_INCREASE := 2
 
+const BULL_WEIGHT := 3
+const MASHER_START_LEVEL := 3
+const MASHER_WEIGHT_PER_LEVEL := 1
+const MASHER_MAX_WEIGHT := 5
+
 @export var player_scene: PackedScene = preload("res://entities/player/player.tscn")
-@export var enemy_scenes: Array[PackedScene] = [preload("res://entities/enemies/bull/bull.tscn")]
+@export var bull_scene: PackedScene = preload("res://entities/enemies/bull/bull.tscn")
+@export var masher_scene: PackedScene = preload("res://entities/enemies/masher/masher.tscn")
 @export var room_exit_scene: PackedScene = preload("res://game_objects/room_exit/room_exit.tscn")
 
 @onready var room_manager: RoomManager = $RoomManager
@@ -75,14 +81,28 @@ func _move_camera_to(cell: Vector2i) -> void:
 
 func _setup_encounters() -> void:
 	var enemy_count = BASE_ENEMY_COUNT + (GameManager.current_level - 1) / LEVELS_PER_ENEMY_INCREASE
+	var enemy_pool := _build_enemy_pool(GameManager.current_level)
 	var end_cell := room_manager.farthest_cell(room_manager.start_cell)
 	for cell in room_manager.rooms_by_cell:
 		if cell == room_manager.start_cell:
 			continue
 		var room: Room = room_manager.rooms_by_cell[cell]
-		room.setup_encounter(enemy_scenes, enemy_count)
+		room.setup_encounter(enemy_pool, enemy_count)
 		if cell == end_cell:
 			room.cleared.connect(_on_final_room_cleared.bind(room), CONNECT_ONE_SHOT)
+
+
+func _build_enemy_pool(level: int) -> Array[PackedScene]:
+	var pool: Array[PackedScene] = []
+	for i in BULL_WEIGHT:
+		pool.append(bull_scene)
+
+	if level >= MASHER_START_LEVEL:
+		var masher_weight: int = mini((level - MASHER_START_LEVEL + 1) * MASHER_WEIGHT_PER_LEVEL, MASHER_MAX_WEIGHT)
+		for i in masher_weight:
+			pool.append(masher_scene)
+
+	return pool
 
 
 func _on_final_room_cleared(room: Room) -> void:
