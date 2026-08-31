@@ -243,14 +243,17 @@ _data = {
 size = Vector2(559, 212)
 
 [node name="Room" type="Node2D" unique_id=1104122540]
+y_sort_enabled = true
 script = ExtResource("1_ry4l0")
 
 [node name="AllRooms" type="Sprite2D" parent="." unique_id=95455608]
+z_index = -1
 texture = ExtResource("2_vxwyh")
 hframes = 15
 
 [node name="NoDoors" type="Sprite2D" parent="." unique_id=415371947]
 visible = false
+z_index = -1
 texture = ExtResource("3_v362g")
 
 [node name="CollisionForms" type="Node2D" parent="." unique_id=940091090]

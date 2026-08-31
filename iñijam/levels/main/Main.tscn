@@ -8,3 +8,6 @@ script = ExtResource("1_de3ls")
 
 [node name="RoomManager" type="Node" parent="." unique_id=1438739058]
 script = ExtResource("2_room_manager")
+
+[node name="YSort" type="Node2D" parent="." unique_id=1438739059]
+y_sort_enabled = true

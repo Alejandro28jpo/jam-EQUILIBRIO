@@ -13,6 +13,7 @@ const LEVELS_PER_ENEMY_INCREASE := 2
 @export var enemy_scenes: Array[PackedScene] = [preload("res://entities/enemies/bull/bull.tscn")]
 
 @onready var room_manager: RoomManager = $RoomManager
+@onready var y_sort: Node2D = $YSort
 
 var player: Node2D
 var camera: Camera2D
@@ -39,7 +40,7 @@ func next_level() -> void:
 func _start_level(level: int) -> void:
 	GameManager.set_level(level)
 	var room_count := BASE_ROOM_COUNT + (level - 1) / LEVELS_PER_ROOM_INCREASE
-	var start_position := room_manager.generate(self, room_count)
+	var start_position := room_manager.generate(y_sort, room_count)
 
 	_setup_encounters()
 	generate_player(start_position)
@@ -57,7 +58,7 @@ func _start_level(level: int) -> void:
 func generate_player(start_position: Vector2) -> void:
 	if player == null:
 		player = player_scene.instantiate()
-		add_child(player)
+		y_sort.add_child(player)
 	player.position = start_position
 
 
