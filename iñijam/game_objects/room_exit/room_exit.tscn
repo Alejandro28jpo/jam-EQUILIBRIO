@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://cbe1edg6oflvw"]
+
+[ext_resource type="Script" uid="uid://fwn6hlk3bjru" path="res://game_objects/room_exit/room_exit.gd" id="1_hcwne"]
+[ext_resource type="Texture2D" uid="uid://j3vjnqrpi02k" path="res://game_objects/room_exit/puerta_de_salida.png" id="1_ssc04"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ubc1v"]
+size = Vector2(65, 61)
+
+[sub_resource type="Animation" id="Animation_hcwne"]
+resource_name = "CLOSED"
+length = 0.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_ssc04"]
+resource_name = "OPENING"
+length = 0.6
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1), Vector2(2, 2)]
+}
+
+[sub_resource type="Animation" id="Animation_eodf4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fufi2"]
+_data = {
+&"CLOSED": SubResource("Animation_hcwne"),
+&"OPENING": SubResource("Animation_ssc04"),
+&"RESET": SubResource("Animation_eodf4")
+}
+
+[node name="RoomExit" type="Area2D" unique_id=1794034654]
+script = ExtResource("1_hcwne")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1302316147]
+texture = ExtResource("1_ssc04")
+offset = Vector2(-35, -48)
+hframes = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=110043439]
+position = Vector2(0.5, -31.5)
+shape = SubResource("RectangleShape2D_ubc1v")
+
+[node name="PlayerExitPoint" type="Marker2D" parent="." unique_id=179018749]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2130953689]
+libraries/ = SubResource("AnimationLibrary_fufi2")
+autoplay = &"CLOSED"

@@ -38,6 +38,7 @@ func _ready() -> void:
 	temperature_component.setup()
 	score_component.setup()
 	health_component.died.connect(_die)
+	health_component.damage_taken.connect(_on_damage_taken)
 	temperature_component.died.connect(_die_from_temperature)
 	temperature_component.frozen_changed.connect(_on_frozen_changed)
 	player = get_tree().get_first_node_in_group("player")
@@ -88,6 +89,10 @@ func _collect_descendants(node: Node) -> Array[Node]:
 
 
 func _update_ai(_delta: float) -> void:
+	pass
+
+
+func _on_damage_taken(_amount: int) -> void:
 	pass
 
 

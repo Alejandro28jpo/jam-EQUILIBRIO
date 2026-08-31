@@ -14,6 +14,8 @@ enum State { CHASE, WINDUP, COOLDOWN }
 @export var contact_damage: int = 1
 @export var contact_damage_cooldown: float = 0.6
 
+@export var damage_sound: AudioStream
+
 @onready var attack_area: Area2D = $AttackArea
 @onready var contact_area: Area2D = $ContactArea
 @onready var contact_cooldown_timer: Timer = $ContactCooldownTimer
@@ -82,6 +84,11 @@ func _cooldown(delta: float) -> void:
 	_state_timer -= delta
 	if _state_timer <= 0.0:
 		state = State.CHASE
+
+
+func _on_damage_taken(_amount: int) -> void:
+	if damage_sound:
+		ControladorAudio.reproducir_sonido(damage_sound)
 
 
 func _on_attack_area_body_entered(body: Node) -> void:
