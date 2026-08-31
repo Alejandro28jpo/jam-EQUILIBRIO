@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://vv12hdmwrtwi"]
 
 [ext_resource type="Script" uid="uid://d03e2dwm8mhjh" path="res://entities/enemies/bull/bull.gd" id="1_yhui5"]
+[ext_resource type="AudioStream" uid="uid://d2krgm3e5c367" path="res://sonidos/enemigos/IMPACTO BLIGHT.ogg" id="2_bifg8"]
 [ext_resource type="Script" uid="uid://bdrf7jgd44xr2" path="res://components/health_component.gd" id="2_nqhih"]
 [ext_resource type="Script" uid="uid://cdmuggadc7ltb" path="res://components/move_component.gd" id="3_64hbd"]
 [ext_resource type="Script" uid="uid://oq1ifkw5qcjx" path="res://components/temperature_component.gd" id="4_5igbm"]
@@ -195,6 +196,7 @@ _data = {
 
 [node name="blight" type="CharacterBody2D" unique_id=103023843]
 script = ExtResource("1_yhui5")
+damage_sound = ExtResource("2_bifg8")
 
 [node name="HealthComponent" type="Node" parent="." unique_id=1991495429]
 script = ExtResource("2_nqhih")

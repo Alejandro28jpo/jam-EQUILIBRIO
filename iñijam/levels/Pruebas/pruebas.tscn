@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cy0u5e0hiwcy0" path="res://game_objects/room/room.tscn" id="1_bq086"]
 [ext_resource type="PackedScene" uid="uid://cgna6o5sjx7ls" path="res://entities/player/player.tscn" id="1_kuph3"]
 [ext_resource type="PackedScene" uid="uid://dhxvq8nbtpq8o" path="res://entities/enemies/masher/masher.tscn" id="4_jgouc"]
+[ext_resource type="PackedScene" uid="uid://ds0w753sjpyfx" path="res://entities/enemies/grouch/grouch.tscn" id="4_jsu7m"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ubc1v"]
 bg_color = Color(0.30980393, 0.9019608, 1, 1)
@@ -44,3 +45,6 @@ position = Vector2(6, 7)
 position = Vector2(211, 2)
 
 [node name="Entities" type="Node2D" parent="." unique_id=211472332]
+
+[node name="grouch" parent="." unique_id=103023843 instance=ExtResource("4_jsu7m")]
+position = Vector2(78, 73)

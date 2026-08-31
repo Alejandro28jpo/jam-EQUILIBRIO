@@ -246,3 +246,5 @@ texture = ExtResource("2_rqwxg")
 visible = false
 position = Vector2(125, 176)
 texture = ExtResource("3_oed65")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=871078730]

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://u52ffq816hk5" path="res://entities/enemies/masher/masher.gd" id="1_masher"]
 [ext_resource type="Script" uid="uid://bdrf7jgd44xr2" path="res://components/health_component.gd" id="2_j1ld1"]
+[ext_resource type="AudioStream" uid="uid://dgs48s5p7ujv6" path="res://sonidos/enemigos/IMPACTO MASHER.ogg" id="2_wngji"]
 [ext_resource type="Script" uid="uid://cdmuggadc7ltb" path="res://components/move_component.gd" id="3_01gpp"]
 [ext_resource type="Script" uid="uid://oq1ifkw5qcjx" path="res://components/temperature_component.gd" id="4_wb7aw"]
 [ext_resource type="Texture2D" uid="uid://cj74p2ig4sww3" path="res://entities/enemigosFiles/cuerpo a cuerpo 2.png" id="5_mylwr"]
@@ -256,6 +257,7 @@ _data = {
 
 [node name="masher" type="CharacterBody2D" unique_id=103023843]
 script = ExtResource("1_masher")
+damage_sound = ExtResource("2_wngji")
 
 [node name="HealthComponent" type="Node" parent="." unique_id=1991495429]
 script = ExtResource("2_j1ld1")
