@@ -1,0 +1,1335 @@
+<REAPER_PROJECT 0.1 "7.79/win64" 1788142348 0
+  <NOTES 0 2
+  >
+  RIPPLE 0 0
+  GROUPOVERRIDE 0 0 0 0
+  AUTOXFADE 129
+  ENVATTACH 3
+  POOLEDENVATTACH 0
+  TCPUIFLAGS 0
+  MIXERUIFLAGS 11 48 0
+  ENVFADESZ10 40
+  PEAKGAIN 1
+  FEEDBACK 0
+  PANLAW 1
+  PROJOFFS 0 0 0
+  MAXPROJLEN 0 0
+  GRID 3199 8 1 8 1 0 0 0
+  TIMEMODE 1 5 -1 30 0 0 -1 0
+  VIDEO_CONFIG 0 0 65792
+  PANMODE 3
+  PANLAWFLAGS 3
+  CURSOR 39.08440629470672
+  ZOOM 12.85911208940569 0 0
+  VZOOMEX 6 0
+  USE_REC_CFG 0
+  RECMODE 1
+  SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
+  LOOP 1
+  LOOPGRAN 0 4
+  RECORD_PATH "Media" ""
+  <RECORD_CFG
+    ZXZhdxgAAQ==
+  >
+  <APPLYFX_CFG
+  >
+  RENDER_FILE "C:\Users\User\Documents\Apps\GitHub\jam-EQUILIBRIO\iñijam\sonidos\escenas\SALAS PRINCIPALES\TEMPERATURA BAJA.ogg"
+  RENDER_FMT 0 2 48000
+  RENDER_1X 0
+  RENDER_RANGE 2 0 0 0 1000
+  RENDER_RESAMPLE 3 0 1
+  RENDER_ADDTOPROJ 0
+  RENDER_STEMS 0
+  RENDER_DITHER 0
+  RENDER_TRIM 0.000001 0.000001 0 0
+  TIMELOCKMODE 1
+  TEMPOENVLOCKMODE 1
+  ITEMMIX 1
+  DEFPITCHMODE 589824 0
+  TAKELANE 1
+  SAMPLERATE 44100 0 0
+  <RENDER_CFG
+    dmdnbwAAgD8AgAAAAIAAAAAgAAAAAAEAAA==
+  >
+  LOCK 1
+  <METRONOME 6 2
+    VOL 0.25 0.125
+    BEATLEN 4
+    FREQ 1760 880 1
+    SAMPLES "" "" "" ""
+    SPLIGNORE 0 0
+    SPLDEF 2 660 "" 0 ""
+    SPLDEF 3 440 "" 0 ""
+    PATTERN 0 169
+    PATTERNSTR ABBB
+    MULT 1
+  >
+  GLOBAL_AUTO -1
+  TEMPO 120 4 4 0
+  PLAYRATE 1 0 0.25 4
+  SELECTION 40 0
+  SELECTION2 40 0
+  MASTERAUTOMODE 0
+  MASTERTRACKHEIGHT 0 0
+  MASTERPEAKCOL 16576
+  MASTERMUTESOLO 0
+  MASTERTRACKVIEW 0 0.6667 0.5 0.5 0 0 0 0 0 0 0 0 0 0 1
+  MASTERHWOUT 0 0 1 0 0 0 0 -1
+  MASTER_NCH 2 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  MASTER_PANMODE 3
+  MASTER_PANLAWFLAGS 3
+  MASTER_FX 1
+  MASTER_TRACKID {013B82A6-9632-43DD-B082-770BBE95F85B}
+  MASTER_SEL 0
+  <MASTERFXLIST
+    WNDRECT 25 60 655 408
+    SHOW 0
+    LASTSEL 0
+    DOCKED 0
+    BYPASS 0 0 0
+    <VST "VST: easyReverb (EmRysRa)" easyReverb_x64.dll 0 "" 2020570983<565354786F7767656173797265766572> ""
+      Z3dveO9e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAARAAAAAAAAAA4AAAA
+      776t3g3wrd6PwnU8YhEePajF/z4lSRI/AAAAALdtWz8AAAA/AAAAP1yPAj9mZmY/zczMPpqZGT8K1yM9j8J1PwAAAAA=
+      VmVyeSBTbWFsbCBMb3cgLSBDaGFtYmVyAEnDkUlHT0RPVCBERUZJTklUSVZPIE9HAAAAAAA=
+    >
+    PRESETNAME "IÑIGODOT DEFINITIVO OG"
+    FLOATPOS 0 0 0 0
+    FXID {2CB904FE-AD76-4BEA-90E8-D4925714EB47}
+    WAK 0 0
+  >
+  <MASTERPLAYSPEEDENV
+    EGUID {DA9CE788-654F-4203-8EA7-6B78DF14E610}
+    ACT 0 -1
+    VIS 0 1 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 0 -1 -1
+  >
+  <TEMPOENVEX
+    EGUID {AE4B0095-AAB3-49B0-A6A3-82571492E4AA}
+    ACT 1 -1
+    VIS 1 0 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 1 -1 -1
+  >
+  RULERHEIGHT 86 86
+  RULERLANE 1 4 "" 0 -1 0
+  RULERLANE 2 8 "" 0 -1 0
+  <PROJBAY
+  >
+  <TRACK {5BDE3CB1-67E8-4EFA-A4DF-8B6C22BC227F}
+    NAME freesound_community-wind__artic__cold-6195
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.21564526406619 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {5BDE3CB1-67E8-4EFA-A4DF-8B6C22BC227F}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 22
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 4 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {BFA9FE82-FF91-4678-969C-148442063BDA}
+      IID 790
+      NAME freesound_community-wind__artic__cold-6195.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 20
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {04F523A6-EBDF-40B0-9608-31A3523FDC1A}
+      <SOURCE MP3
+        FILE "Media\freesound_community-wind__artic__cold-6195.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\freesound_community-wind__artic__cold-6195.mp3
+      >
+    >
+    <ITEM
+      POSITION 18
+      SNAPOFFS 0
+      LENGTH 22
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 4 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {4131E164-6249-49AF-8064-89127EA25FF8}
+      IID 790
+      NAME freesound_community-wind__artic__cold-6195.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 57.01795833333333
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {AF732EEA-FC76-4570-A7CB-1FF45E5E1A0D}
+      <SOURCE MP3
+        FILE "Media\freesound_community-wind__artic__cold-6195.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\freesound_community-wind__artic__cold-6195.mp3
+      >
+    >
+  >
+  <TRACK {966D8FE7-1E12-4C2F-863A-C35447BC27DC}
+    NAME floraphonic-rocks-and-gravel-slide-4-204995
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.03552929412815 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {966D8FE7-1E12-4C2F-863A-C35447BC27DC}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 25 60 734 521
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaPitch (Cockos)" reapitch.dll 0 "" 1919250531<56535472657063726561706974636800> ""
+        Y3Blcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAATAAAAAEAAAAAABAA
+        AAAAAP////8BAAAALAAAAAIAAAAAAAAAAACAPwAAAAAAAAAAAACAP166KT8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIA/AAAAPw==
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {550078DC-3799-4648-A19C-49E496E58E1E}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.dll 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAEYdLbNqanpAHIiqOKK6zD+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAGZBDCQ/7tBAn8bvyG+/0D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AP0BAABcAQAAAgABAA==
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {1980C85B-E3EA-4E8E-A82F-8CBB603CB48D}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 2.73297916666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 1.23297916666667 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {0D102EA9-16C7-4344-815B-B70F93508C32}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3ED6596A-BC61-40CB-B2FD-17BCF36FC6E6}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 1.5
+      SNAPOFFS 0
+      LENGTH 2.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.23297916666667 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {113ACC07-BD09-4217-B124-8FA1F9CE48D4}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2BE5EC50-72A7-4A89-A9D4-315095EA3B9F}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 4
+      SNAPOFFS 0
+      LENGTH 2.73297916666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 1.23297916666667 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {E8EBA3BA-D4AA-4D0B-A538-67FE9AB0DA02}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9CCC3928-DBF6-4EAC-B0E7-6968704106BA}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 5.5
+      SNAPOFFS 0
+      LENGTH 2.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.23297916666667 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {064A878D-A5FE-446F-B3DC-AE7378AA528E}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0656924B-B166-466A-92BE-72A5CC71F16D}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 8
+      SNAPOFFS 0
+      LENGTH 2.73297916666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 1.23297916666667 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {C9EE29CF-83EC-4032-8303-C5E6A1D4E034}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {55D2E2A9-7E43-4E10-8D4A-296620F30421}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 9.5
+      SNAPOFFS 0
+      LENGTH 2.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.23297916666667 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {17E3F6AE-3B58-4A3C-B627-8AE93A723BF7}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {CFD713CB-93A7-402C-9F46-D1EA7F1EEE02}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 12
+      SNAPOFFS 0
+      LENGTH 2.73297916666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 1.23297916666667 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {F64291DA-90A4-4904-BE61-754C8374954C}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5D168A81-F8AB-4F5E-A132-E4E9B842A699}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 13.5
+      SNAPOFFS 0
+      LENGTH 2.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.23297916666667 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {DC501FED-0FF5-4A06-A2D0-0F38842958FA}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {43AA8F84-0611-492D-BE0D-A988541329D9}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 16
+      SNAPOFFS 0
+      LENGTH 2.73297916666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 1.23297916666667 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {D4DFE3BD-9037-4B6D-AAAE-7A472BC9021E}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {AF63A26C-4AB5-4F54-BF09-48261160CB43}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 17.5
+      SNAPOFFS 0
+      LENGTH 2.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.23297916666667 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {4A90B119-AD47-478D-8AC5-274A784A3A45}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5E1EB7DC-7075-424A-8356-828B6884A02A}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 20
+      SNAPOFFS 0
+      LENGTH 2.73297916666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 1.23297916666667 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {206DA617-2F01-460D-A22C-2DFE8B94AEB6}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {83A91CEB-2F69-47A8-804F-CFE7AFF89919}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 21.5
+      SNAPOFFS 0
+      LENGTH 2.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.23297916666667 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {4B59D5DD-A499-4BD6-A084-89BEABAE8A29}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F245FDE3-FDF7-426B-B491-3B87CAA37982}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 24
+      SNAPOFFS 0
+      LENGTH 2.73297916666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 1.23297916666667 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {B4FFE94B-CCC8-4837-93E0-F7583066F54D}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {73ED29DC-8C97-4911-BF00-5A3DDD8C2D18}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 25.5
+      SNAPOFFS 0
+      LENGTH 2.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.23297916666667 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {38D98C87-4FE1-4AAE-ACE4-3B0397A3207E}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {88D030BC-3521-47EC-8243-F4ED7D84C820}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 28
+      SNAPOFFS 0
+      LENGTH 2.73297916666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 1.23297916666667 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {9E7C18DB-F3F4-4340-9ED4-0A072186C31C}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C89BB58D-C1A3-40B1-9C53-9323A3020D6C}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 29.5
+      SNAPOFFS 0
+      LENGTH 2.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.23297916666667 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {F0FA5274-4BBD-406B-B4AF-BBE37A45683B}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1AAAB719-0805-4A11-AADF-18DAB32CD396}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 32
+      SNAPOFFS 0
+      LENGTH 2.73297916666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 1.23297916666667 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {09D84C8A-8860-48E0-A9D1-2B81614A3806}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7D231D21-ED94-4ACD-8F71-1650B7162ADD}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 33.5
+      SNAPOFFS 0
+      LENGTH 2.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.23297916666667 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {9C1EBBC0-35C0-40AF-9163-1CC39A3A30A3}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0A621084-8744-4C6E-A37D-5F5EE850EBF3}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 36
+      SNAPOFFS 0
+      LENGTH 2.73297916666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 1.23297916666667 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {1F841B7F-C9DB-49D3-911D-A3FF627896EC}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5EE6F140-27FB-4576-A58A-2B6335ECCE9C}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 37.5
+      SNAPOFFS 0
+      LENGTH 2.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.23297916666667 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {2D0D90F1-0F2F-4614-A8B5-A1D94C537784}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1DD9DA86-E479-47E8-9A87-E943AC131646}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+  >
+  <TRACK {F3F9B9AF-4020-427A-BEE1-61F8BAB1E0A7}
+    NAME freesound_community-earth-rumble-6953
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.03660934663165 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {F3F9B9AF-4020-427A-BEE1-61F8BAB1E0A7}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 40
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {7281EF26-52DD-4A71-A16C-0A63264C911A}
+      IID 793
+      NAME freesound_community-earth-rumble-6953.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DEB9DA1D-ED25-4AD0-843A-394B1A08616D}
+      <SOURCE MP3
+        FILE "Media\freesound_community-earth-rumble-6953.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\freesound_community-earth-rumble-6953.mp3
+      >
+    >
+  >
+  <TRACK {D6A65396-4DA5-44B3-81C0-DDA391BDED67}
+    NAME ""
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.05135869580197 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {D6A65396-4DA5-44B3-81C0-DDA391BDED67}
+    PERF 0
+    MIDIOUT -1 -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 2.73297916666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 1.23297916666667 1 1 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {C68245E2-6759-4B76-A9B0-B32C08237D74}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0C4E4A17-4857-4D6D-A0F1-D5795AC058BB}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 1.5
+      SNAPOFFS 0
+      LENGTH 2.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.23297916666667 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {EE37F319-7103-456F-AAF2-D7437FAFEC73}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3576680E-EB8E-433F-8930-5911D88BF226}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 4
+      SNAPOFFS 0
+      LENGTH 2.73297916666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 1.23297916666667 1 1 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {F3B1250D-88EB-4823-984B-1056C342203D}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3460AE4E-95BF-4478-A91E-C596B9A0368B}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 5.5
+      SNAPOFFS 0
+      LENGTH 2.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.23297916666667 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {543B4DAA-7071-431A-80BF-B9A95159F5C3}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DB2EE0E6-945E-4B70-A57E-E5B1CC0240DD}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 8
+      SNAPOFFS 0
+      LENGTH 2.73297916666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 1.23297916666667 1 1 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {2C69F014-959A-43BD-89E9-221A99B125F5}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F60678E1-0352-4243-BCB0-334FAEE1BD60}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 9.5
+      SNAPOFFS 0
+      LENGTH 2.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.23297916666667 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {938DCBDD-1638-45E3-97B5-D819B05C99FC}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B60DCE4E-B8E8-4DCA-8147-D836C5803B15}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 12
+      SNAPOFFS 0
+      LENGTH 2.73297916666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 1.23297916666667 1 1 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {0B32F9E9-66A9-4B1C-8045-EEFEB0F61178}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {CA0E69D1-4B7B-4082-8F15-011FFF0E44DC}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 13.5
+      SNAPOFFS 0
+      LENGTH 2.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.23297916666667 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {2A7A81E7-BF95-4531-9085-4CF4D1582C5C}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {687267C2-723D-437E-BC70-844B2E9BBC2F}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 16
+      SNAPOFFS 0
+      LENGTH 2.73297916666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 1.23297916666667 1 1 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {BC56CC75-242A-4281-B30A-F8F9492D363A}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3F770920-5007-45FE-B989-49279ED7426C}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 17.5
+      SNAPOFFS 0
+      LENGTH 2.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.23297916666667 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {E24E3556-F23B-4C98-ABF5-6DC8CEB76FB3}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {971C3948-1188-4E1F-B9DD-DA5A5B75BFD9}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 20
+      SNAPOFFS 0
+      LENGTH 2.73297916666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 1.23297916666667 1 1 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {3376EF99-011C-44F0-904E-01D2E5E9F4C1}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {EFC77AA7-E9E4-420E-B4E8-28D8ABF7C283}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 21.5
+      SNAPOFFS 0
+      LENGTH 2.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.23297916666667 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {856DBEA9-2213-4635-B336-0CB476254A42}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F97B5CCD-D86B-489B-AE3C-FBE47491957A}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 24
+      SNAPOFFS 0
+      LENGTH 2.73297916666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 1.23297916666667 1 1 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {F775E987-5309-4F69-977F-BDFD18CE80E6}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {97206A66-FDCD-412D-9FAE-E063F61E415F}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 25.5
+      SNAPOFFS 0
+      LENGTH 2.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.23297916666667 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {BE77B162-7766-4B09-A0BB-D38AAF4FDF53}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E2DBD8F1-7B2A-45FA-9767-C179C8BC7D3D}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 28
+      SNAPOFFS 0
+      LENGTH 2.73297916666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 1.23297916666667 1 1 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {8AB11184-10DC-40FE-8AEE-AF33977345DD}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E5A63FEB-2307-40E3-B32C-F5A390EA3B6C}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 29.5
+      SNAPOFFS 0
+      LENGTH 2.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.23297916666667 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {0653DED4-9BC8-40FD-A21C-83E52AC47A6C}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F788599F-FD5D-4120-9D6D-42E8564FE802}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 32
+      SNAPOFFS 0
+      LENGTH 2.73297916666668
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 1.23297916666667 1 1 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {4790F7BC-05CE-49B0-914E-DD0FEC18CE60}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {AD6A0E75-82F7-463D-8E33-8EFAA2FD89F8}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 33.5
+      SNAPOFFS 0
+      LENGTH 2.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.23297916666667 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {C2D23F0B-9179-477B-9F67-DCA9BA3144A1}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BFC120BA-6BC8-4F22-89C5-4343DCB6F1DF}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 36
+      SNAPOFFS 0
+      LENGTH 2.73297916666668
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1.1 0 1.23297916666667 1 1 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {ED4972DF-F785-4876-BDF4-A362EA9F1080}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 2.5
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {98A7126F-ABAE-44F0-AB9C-885B356296B2}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+    <ITEM
+      POSITION 37.5
+      SNAPOFFS 0
+      LENGTH 2.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0 1.23297916666667 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {8EFDF560-D7D0-4C96-A64A-661A33816595}
+      IID 792
+      NAME floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D934EC35-CBAF-4E7C-B7C0-FB44D8CF5F0F}
+      <SOURCE MP3
+        FILE "Media\floraphonic-rocks-and-gravel-slide-4-204995.mp3" 1
+      >
+      <EXT
+        ORIGINAL_FILENAME C:\Users\User\Downloads\floraphonic-rocks-and-gravel-slide-4-204995.mp3
+      >
+    >
+  >
+>
