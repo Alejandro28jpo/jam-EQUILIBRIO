@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b8v40ro7fwdwg"
+path="res://.godot/imported/MUERTE GROUCH.ogg-af6c3d66aaf6ec501c6f59bde6f17dbd.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/enemigos/MUERTE GROUCH.ogg"
+dest_files=["res://.godot/imported/MUERTE GROUCH.ogg-af6c3d66aaf6ec501c6f59bde6f17dbd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

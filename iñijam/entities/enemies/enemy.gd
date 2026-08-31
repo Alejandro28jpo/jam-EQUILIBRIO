@@ -63,8 +63,8 @@ func _set_collisions_enabled(enabled: bool) -> void:
 		if node is CollisionShape2D or node is CollisionPolygon2D:
 			node.set_deferred("disabled", not enabled)
 		elif node is Area2D:
-			node.monitoring = enabled
-			node.monitorable = enabled
+			node.set_deferred("monitoring", enabled)
+			node.set_deferred("monitorable", enabled)
 
 
 func _collect_descendants(node: Node) -> Array[Node]:

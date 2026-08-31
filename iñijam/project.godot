@@ -19,6 +19,7 @@ config/icon="uid://bstiqxnoykwcf"
 
 ControladorAudio="*uid://6q8v4w07822q"
 Puntos="*uid://dapfdo6aibbvi"
+Transition="*uid://bj8mx1pkmnxsi"
 
 [display]
 
