@@ -20,3 +20,7 @@ func apply_damage(damage: int) -> void:
 
 	if current_damage <= 0:
 		died.emit()
+
+
+func heal(amount: int) -> void:
+	current_damage = min(current_damage + amount, max_health)

@@ -11,11 +11,12 @@ const LEVELS_PER_ENEMY_INCREASE := 2
 
 @export var player_scene: PackedScene = preload("res://entities/player/player.tscn")
 @export var enemy_scenes: Array[PackedScene] = [preload("res://entities/enemies/bull/bull.tscn")]
+@export var room_exit_scene: PackedScene = preload("res://game_objects/room_exit/room_exit.tscn")
 
 @onready var room_manager: RoomManager = $RoomManager
 @onready var y_sort: Node2D = $YSort
 
-var player: Node2D
+var player: Player
 var camera: Camera2D
 var current_cell: Vector2i
 var _camera_tween: Tween
@@ -74,8 +75,18 @@ func _move_camera_to(cell: Vector2i) -> void:
 
 func _setup_encounters() -> void:
 	var enemy_count = BASE_ENEMY_COUNT + (GameManager.current_level - 1) / LEVELS_PER_ENEMY_INCREASE
+	var end_cell := room_manager.farthest_cell(room_manager.start_cell)
 	for cell in room_manager.rooms_by_cell:
 		if cell == room_manager.start_cell:
 			continue
 		var room: Room = room_manager.rooms_by_cell[cell]
 		room.setup_encounter(enemy_scenes, enemy_count)
+		if cell == end_cell:
+			room.cleared.connect(_on_final_room_cleared.bind(room), CONNECT_ONE_SHOT)
+
+
+func _on_final_room_cleared(room: Room) -> void:
+	var room_exit: RoomExit = room_exit_scene.instantiate()
+	room.add_child(room_exit)
+	room_exit.player = player
+	room_exit.main_level = self

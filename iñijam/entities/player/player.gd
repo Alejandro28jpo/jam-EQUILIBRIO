@@ -34,6 +34,7 @@ var current_weapon: Weapon = Weapon.COLD
 var is_taking_damage: bool = false
 var is_invulnerable: bool = false
 var is_dead: bool = false
+var is_exiting: bool = false
 
 
 func _ready() -> void:
@@ -45,7 +46,7 @@ func _ready() -> void:
 
 
 func _physics_process(_delta: float) -> void:
-	if is_dead:
+	if is_dead or is_exiting:
 		return
 
 	if is_taking_damage:

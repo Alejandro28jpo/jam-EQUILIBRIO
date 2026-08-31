@@ -74,6 +74,17 @@ func generate(parent: Node, room_count: int) -> Vector2:
 	return Vector2(start_cell) * ROOM_SIZE
 
 
+func farthest_cell(from: Vector2i) -> Vector2i:
+	var farthest := from
+	var farthest_distance := -1
+	for cell in rooms_by_cell:
+		var distance: int = abs(cell.x - from.x) + abs(cell.y - from.y)
+		if distance > farthest_distance:
+			farthest_distance = distance
+			farthest = cell
+	return farthest
+
+
 func cell_at(world_position: Vector2) -> Vector2i:
 	return Vector2i(round(world_position.x / ROOM_SIZE.x), round(world_position.y / ROOM_SIZE.y))
 
