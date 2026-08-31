@@ -264,6 +264,7 @@ _data = {
 }
 
 [node name="Bull" type="CharacterBody2D" unique_id=103023843]
+y_sort_enabled = true
 script = ExtResource("1_ybm8d")
 
 [node name="HealthComponent" type="Node" parent="." unique_id=1991495429]
@@ -282,6 +283,12 @@ freeze_kills = false
 script = ExtResource("9_score")
 points = 1
 
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1636694391]
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("2_lrt4w")
+offset = Vector2(0, -39)
+hframes = 21
+
 [node name="AttackArea" type="Area2D" parent="." unique_id=1150035558]
 position = Vector2(0, -10)
 
@@ -298,12 +305,6 @@ shape = SubResource("CircleShape2D_contact")
 [node name="ContactCooldownTimer" type="Timer" parent="." unique_id=664399431]
 wait_time = 0.6
 one_shot = true
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1636694391]
-scale = Vector2(1.3, 1.3)
-texture = ExtResource("2_lrt4w")
-offset = Vector2(0, -39)
-hframes = 21
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1807691024]
 position = Vector2(0, -10)

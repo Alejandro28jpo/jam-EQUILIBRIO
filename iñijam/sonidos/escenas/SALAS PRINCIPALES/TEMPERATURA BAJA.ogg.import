@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dtuk2dbgak51q"
+path="res://.godot/imported/TEMPERATURA BAJA.ogg-ef3e9d58dc6a7b071879ff9b4e42f93a.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/escenas/SALAS PRINCIPALES/TEMPERATURA BAJA.ogg"
+dest_files=["res://.godot/imported/TEMPERATURA BAJA.ogg-ef3e9d58dc6a7b071879ff9b4e42f93a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

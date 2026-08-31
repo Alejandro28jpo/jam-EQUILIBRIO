@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b663x53d3xjk7"
+path="res://.godot/imported/floraphonic-rocks-and-gravel-slide-4-204995.mp3-1d1177a9e7deaa8a9714e11be2609b91.mp3str"
+
+[deps]
+
+source_file="res://sonidos/escenas/SALAS PRINCIPALES/Proyectos Reaper/TEMPERATURA BAJA/Media/floraphonic-rocks-and-gravel-slide-4-204995.mp3"
+dest_files=["res://.godot/imported/floraphonic-rocks-and-gravel-slide-4-204995.mp3-1d1177a9e7deaa8a9714e11be2609b91.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

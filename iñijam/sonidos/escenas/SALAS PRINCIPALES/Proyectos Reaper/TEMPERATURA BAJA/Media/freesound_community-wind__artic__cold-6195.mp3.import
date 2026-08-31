@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b38uhhegbp1g4"
+path="res://.godot/imported/freesound_community-wind__artic__cold-6195.mp3-58c46aeeaa9f1802cb4f06ffbd3b1992.mp3str"
+
+[deps]
+
+source_file="res://sonidos/escenas/SALAS PRINCIPALES/Proyectos Reaper/TEMPERATURA BAJA/Media/freesound_community-wind__artic__cold-6195.mp3"
+dest_files=["res://.godot/imported/freesound_community-wind__artic__cold-6195.mp3-58c46aeeaa9f1802cb4f06ffbd3b1992.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

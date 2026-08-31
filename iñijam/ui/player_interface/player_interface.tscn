@@ -146,11 +146,21 @@ hframes = 9
 scale = Vector2(1.5, 1.5)
 script = ExtResource("4_hearts")
 
-[node name="Heart" type="Sprite2D" parent="Hearts" unique_id=1897470902]
+[node name="Heart" type="Node2D" parent="Hearts" unique_id=1897470902]
+script = ExtResource("5_heart")
+
+[node name="Alive" type="Sprite2D" parent="Hearts/Heart"]
 texture = ExtResource("3_ell5n")
 centered = false
 hframes = 5
-script = ExtResource("5_heart")
+
+[node name="Empty" type="Sprite2D" parent="Hearts/Heart"]
+visible = false
+z_index = -1
+texture = ExtResource("3_ell5n")
+centered = false
+hframes = 5
+frame = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=608900756]
 libraries/ = SubResource("AnimationLibrary_gh2wv")

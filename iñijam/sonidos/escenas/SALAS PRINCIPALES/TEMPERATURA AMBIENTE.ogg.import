@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cdekhoijgemwe"
+path="res://.godot/imported/TEMPERATURA AMBIENTE.ogg-549446fdc6deb73736ef7747dba5f95a.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/escenas/SALAS PRINCIPALES/TEMPERATURA AMBIENTE.ogg"
+dest_files=["res://.godot/imported/TEMPERATURA AMBIENTE.ogg-549446fdc6deb73736ef7747dba5f95a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

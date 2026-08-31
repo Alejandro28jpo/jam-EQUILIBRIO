@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dybkj8gccyawa"
+path="res://.godot/imported/soundreality-wind-outside-room-tone-457957.mp3-a9b099d576900209fd1f6b9d6844ec88.mp3str"
+
+[deps]
+
+source_file="res://sonidos/escenas/SALAS PRINCIPALES/Proyectos Reaper/TEMPERATURA BAJA/TEMPERATURA AMBIENTE/Media/soundreality-wind-outside-room-tone-457957.mp3"
+dest_files=["res://.godot/imported/soundreality-wind-outside-room-tone-457957.mp3-a9b099d576900209fd1f6b9d6844ec88.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bnab81ftmpnof"
+path="res://.godot/imported/freesound_community-earth-rumble-6953.mp3-3afbeb7338cca284191f8b4fe112759f.mp3str"
+
+[deps]
+
+source_file="res://sonidos/escenas/SALAS PRINCIPALES/Proyectos Reaper/TEMPERATURA BAJA/Media/freesound_community-earth-rumble-6953.mp3"
+dest_files=["res://.godot/imported/freesound_community-earth-rumble-6953.mp3-3afbeb7338cca284191f8b4fe112759f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
