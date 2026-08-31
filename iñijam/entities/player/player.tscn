@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://cdmuggadc7ltb" path="res://components/move_component.gd" id="2_sglur"]
 [ext_resource type="PackedScene" uid="uid://bqlnlvnb54ll6" path="res://ui/player_interface/player_interface.tscn" id="4_bls4j"]
 [ext_resource type="Script" uid="uid://oq1ifkw5qcjx" path="res://components/temperature_component.gd" id="5_fkugw"]
-[ext_resource type="Texture2D" uid="uid://dchw5nuotclc6" path="res://entities/player/jugador.png" id="6_8fjmc"]
+[ext_resource type="Texture2D" uid="uid://bf8x6fx8drqhv" path="res://arte/jugador.png" id="6_qiwj3"]
 [ext_resource type="AudioStream" uid="uid://bg0xpyxhosllp" path="res://sonidos/gameplay/LATIDO CORAZÓN.ogg" id="7_qiwj3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ubc1v"]
@@ -248,7 +248,7 @@ script = ExtResource("2_sglur")
 one_shot = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1411277537]
-texture = ExtResource("6_8fjmc")
+texture = ExtResource("6_qiwj3")
 offset = Vector2(0, -28)
 hframes = 16
 
