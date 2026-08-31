@@ -72,7 +72,8 @@ func _play_spawn_animation() -> void:
 func _set_collisions_enabled(enabled: bool) -> void:
 	for node in _collect_descendants(self):
 		if node is CollisionShape2D or node is CollisionPolygon2D:
-			node.set_deferred("disabled", not enabled)
+			var is_attack_hitbox: bool = node.get_parent() is Area2D and node.get_parent().name == "AttackArea"
+			node.set_deferred("disabled", not enabled or is_attack_hitbox)
 		elif node is Area2D:
 			node.set_deferred("monitoring", enabled)
 			node.set_deferred("monitorable", enabled)
