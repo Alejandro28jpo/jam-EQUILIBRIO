@@ -30,6 +30,7 @@ signal weapon_changed(weapon: Weapon)
 @onready var shoot_cooldown_timer: Timer = $ShootCooldownTimer
 @onready var bullet_spawn_position: Marker2D = $BulletSpawnPosition
 @onready var low_health_audio_player: AudioStreamPlayer = $AudioStreamPlayer
+@onready var temperature_ambience_component: Node = $TemperatureAmbienceComponent
 
 var dir: Vector2 = Vector2.ZERO
 var current_weapon: Weapon = Weapon.COLD
@@ -43,6 +44,7 @@ var is_exiting: bool = false
 func _ready() -> void:
 	health_component.setup()
 	temperature_component.setup()
+	temperature_ambience_component.setup(temperature_component)
 	player_interface.setup()
 	health_component.died.connect(_on_died)
 	health_component.health_changed.connect(_on_health_changed)
