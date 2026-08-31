@@ -10,10 +10,11 @@ signal score_popup_requested(points: int, world_position: Vector2)
 var current_level: int = 1
 var current_score: int = 0
 var best_score: int = 0
+var intro_seen: bool = false
 
 
 func _ready() -> void:
-	_load_best_score()
+	_load_save()
 
 
 func start_new_game() -> void:
@@ -24,17 +25,32 @@ func start_new_game() -> void:
 
 
 func save_best_score() -> void:
+	_save()
+
+
+func mark_intro_seen() -> void:
+	if intro_seen:
+		return
+	intro_seen = true
+	_save()
+
+
+func _save() -> void:
 	var file := FileAccess.open(SAVE_PATH, FileAccess.WRITE)
-	file.store_string(JSON.stringify({"best_score": best_score}))
+	file.store_string(JSON.stringify({"best_score": best_score, "intro_seen": intro_seen}))
 
 
-func _load_best_score() -> void:
+func _load_save() -> void:
 	if not FileAccess.file_exists(SAVE_PATH):
 		return
 	var file := FileAccess.open(SAVE_PATH, FileAccess.READ)
 	var data: Variant = JSON.parse_string(file.get_as_text())
-	if typeof(data) == TYPE_DICTIONARY and data.has("best_score"):
+	if typeof(data) != TYPE_DICTIONARY:
+		return
+	if data.has("best_score"):
 		best_score = int(data["best_score"])
+	if data.has("intro_seen"):
+		intro_seen = bool(data["intro_seen"])
 
 
 func add_score(amount: int) -> void:

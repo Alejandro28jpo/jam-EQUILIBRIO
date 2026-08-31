@@ -12,16 +12,21 @@ class_name PlayerInterface
 @export var game_over_pulse_duration: float = 0.25
 @export var game_over_hold_duration: float = 1.0
 
+@export var bullet_indicator_squish_scale: Vector2 = Vector2(1.35, 0.7)
+@export var bullet_indicator_squish_duration: float = 0.08
+
 @onready var temperature_meter: Sprite2D = $TemperatureMeter
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var hearts_display: HeartsDisplay = $Hearts
 @onready var puntos_label: Label = $puntos
+@onready var bullet_indicator: Label = $bulletIndicator
 @onready var game_over_advise: Sprite2D = $GameOverAdvise
 
 var current_state: GlobalEnums.EntityState
 var state_to_show: int
 
 var _game_over_rest_position: Vector2
+var _bullet_indicator_tween: Tween
 
 
 func _ready() -> void:
@@ -40,6 +45,9 @@ func setup() -> void:
 	hearts_display.setup(player.health_component.max_health)
 	manage_health_label()
 	GameManager.score_popup_requested.connect(_on_score_popup_requested)
+
+	player.weapon_changed.connect(_on_weapon_changed)
+	_on_weapon_changed(player.current_weapon)
 
 
 func _on_score_popup_requested(points: int, world_position: Vector2) -> void:
@@ -77,6 +85,23 @@ func show_game_over() -> void:
 	pulse_tween.kill()
 
 	Transition.change_scene(main_menu_scene)
+
+
+func _on_weapon_changed(weapon: Player.Weapon) -> void:
+	bullet_indicator.text = "WARM" if weapon == Player.Weapon.WARM else "COLD"
+	_squish_bullet_indicator()
+
+
+func _squish_bullet_indicator() -> void:
+	bullet_indicator.pivot_offset = bullet_indicator.size / 2.0
+
+	if _bullet_indicator_tween:
+		_bullet_indicator_tween.kill()
+	bullet_indicator.scale = Vector2.ONE
+
+	_bullet_indicator_tween = create_tween()
+	_bullet_indicator_tween.tween_property(bullet_indicator, "scale", bullet_indicator_squish_scale, bullet_indicator_squish_duration).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+	_bullet_indicator_tween.tween_property(bullet_indicator, "scale", Vector2.ONE, bullet_indicator_squish_duration * 2.0).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 
 
 func manage_health_label() -> void:

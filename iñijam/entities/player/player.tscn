@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://oq1ifkw5qcjx" path="res://components/temperature_component.gd" id="5_fkugw"]
 [ext_resource type="Texture2D" uid="uid://bf8x6fx8drqhv" path="res://arte/jugador.png" id="6_qiwj3"]
 [ext_resource type="AudioStream" uid="uid://bg0xpyxhosllp" path="res://sonidos/gameplay/LATIDO CORAZÓN.ogg" id="7_latido"]
+[ext_resource type="Script" path="res://components/temperature_ambience_component.gd" id="8_ambience"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ubc1v"]
 radius = 13.0
@@ -267,3 +268,15 @@ position = Vector2(13, -16)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1826562004]
 stream = ExtResource("7_latido")
+
+[node name="TemperatureAmbienceComponent" type="Node" parent="."]
+script = ExtResource("8_ambience")
+
+[node name="Low" type="AudioStreamPlayer" parent="TemperatureAmbienceComponent"]
+bus = &"Master"
+
+[node name="Ambient" type="AudioStreamPlayer" parent="TemperatureAmbienceComponent"]
+bus = &"Master"
+
+[node name="High" type="AudioStreamPlayer" parent="TemperatureAmbienceComponent"]
+bus = &"Master"

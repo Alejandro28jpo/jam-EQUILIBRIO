@@ -3,12 +3,14 @@ class_name Player
 
 
 var murido = preload("res://sonidos/gameplay/MUERTE.ogg")
-var canbiar_arma = preload("res://sonidos/gameplay/CAMBIAR_ARMA.ogg")
-var distaro1 = preload("res://sonidos/gameplay/ARMA_FUEGO.ogg")
-var distaro2 = preload("res://sonidos/gameplay/ARMA_HIELO.ogg")
+var cambiar_arma = preload("res://sonidos/gameplay/CAMBIAR_ARMA.ogg")
+var disparo1 = preload("res://sonidos/gameplay/ARMA_FUEGO.ogg")
+var disparo2 = preload("res://sonidos/gameplay/ARMA_HIELO.ogg")
 var recibir_daño = preload("res://sonidos/gameplay/RECIBIR_DAÑO.ogg")
 
 enum Weapon { COLD, WARM }
+
+signal weapon_changed(weapon: Weapon)
 
 @export var cold_bullet_scene: PackedScene = preload("res://entities/bullets/cold_bullet.tscn")
 @export var warm_bullet_scene: PackedScene = preload("res://entities/bullets/warm_bullet.tscn")
@@ -28,6 +30,7 @@ enum Weapon { COLD, WARM }
 @onready var shoot_cooldown_timer: Timer = $ShootCooldownTimer
 @onready var bullet_spawn_position: Marker2D = $BulletSpawnPosition
 @onready var low_health_audio_player: AudioStreamPlayer = $AudioStreamPlayer
+@onready var temperature_ambience_component: Node = $TemperatureAmbienceComponent
 
 var dir: Vector2 = Vector2.ZERO
 var current_weapon: Weapon = Weapon.COLD
@@ -41,10 +44,11 @@ var is_exiting: bool = false
 func _ready() -> void:
 	health_component.setup()
 	temperature_component.setup()
+	temperature_ambience_component.setup(temperature_component)
 	player_interface.setup()
 	health_component.died.connect(_on_died)
 	health_component.health_changed.connect(_on_health_changed)
-	temperature_component.died.connect(func(_cause: GlobalEnums.EntityState) -> void: _on_died())
+	temperature_component.died.connect(_on_died_from_temperature)
 	_on_health_changed(health_component.current_damage, health_component.max_health)
 
 
@@ -61,11 +65,11 @@ func _physics_process(_delta: float) -> void:
 	_update_facing()
 
 	if Input.is_action_just_pressed("switch_weapon"):
-		ControladorAudio.reproducir_sonido(canbiar_arma)
+		ControladorAudio.reproducir_sonido(cambiar_arma)
 		_switch_weapon()
 	if Input.is_action_pressed("shoot") and shoot_cooldown_timer.is_stopped():
-		var distaro = distaro2 if current_weapon == Weapon.COLD else distaro1
-		ControladorAudio.reproducir_sonido(distaro)
+		var disparo = disparo2 if current_weapon == Weapon.COLD else disparo1
+		ControladorAudio.reproducir_sonido(disparo)
 		_shoot()
 
 	if is_dead:
@@ -111,6 +115,16 @@ func _on_health_changed(current_damage: int, _max_health: int) -> void:
 
 
 func _on_died() -> void:
+	_die()
+
+
+func _on_died_from_temperature(_cause: GlobalEnums.EntityState) -> void:
+	if not is_dead:
+		player_interface.hearts_display.lose_all()
+	_die()
+
+
+func _die() -> void:
 	ControladorAudio.reproducir_sonido(murido)
 	low_health_audio_player.stop()
 	if is_dead:
@@ -140,6 +154,7 @@ func _blink() -> void:
 
 func _switch_weapon() -> void:
 	current_weapon = Weapon.WARM if current_weapon == Weapon.COLD else Weapon.COLD
+	weapon_changed.emit(current_weapon)
 
 
 func _shoot() -> void:

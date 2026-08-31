@@ -110,6 +110,8 @@ func is_immobilized() -> bool:
 
 
 func _on_frozen_changed(frozen: bool) -> void:
+	if is_dead:
+		return
 	if frozen:
 		is_frozen = true
 		_play_freeze_in()
