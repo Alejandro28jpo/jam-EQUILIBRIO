@@ -46,7 +46,7 @@ func _ready() -> void:
 	player_interface.setup()
 	health_component.died.connect(_on_died)
 	health_component.health_changed.connect(_on_health_changed)
-	temperature_component.died.connect(func(_cause: GlobalEnums.EntityState) -> void: _on_died())
+	temperature_component.died.connect(_on_died_from_temperature)
 	_on_health_changed(health_component.current_damage, health_component.max_health)
 
 
@@ -113,6 +113,16 @@ func _on_health_changed(current_damage: int, _max_health: int) -> void:
 
 
 func _on_died() -> void:
+	_die()
+
+
+func _on_died_from_temperature(_cause: GlobalEnums.EntityState) -> void:
+	if not is_dead:
+		player_interface.hearts_display.lose_all()
+	_die()
+
+
+func _die() -> void:
 	ControladorAudio.reproducir_sonido(murido)
 	low_health_audio_player.stop()
 	if is_dead:
