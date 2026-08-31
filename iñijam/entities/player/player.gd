@@ -5,6 +5,7 @@ class_name Player
 var murido = preload("res://sonidos/gameplay/MUERTE.ogg")
 var canbiar_arma = preload("res://sonidos/gameplay/CAMBIAR_ARMA.ogg")
 var distaro1 = preload("res://sonidos/gameplay/ARMA_FUEGO.ogg")
+var distaro2 = preload("res://sonidos/gameplay/ARMA_HIELO.ogg")
 var recibir_daño = preload("res://sonidos/gameplay/RECIBIR_DAÑO.ogg")
 
 enum Weapon { COLD, WARM }
@@ -59,7 +60,8 @@ func _physics_process(_delta: float) -> void:
 		ControladorAudio.reproducir_sonido(canbiar_arma)
 		_switch_weapon()
 	if Input.is_action_pressed("shoot") and shoot_cooldown_timer.is_stopped():
-		ControladorAudio.reproducir_sonido(distaro1)
+		var distaro = distaro2 if current_weapon == Weapon.COLD else distaro1
+		ControladorAudio.reproducir_sonido(distaro)
 		_shoot()
 
 	if is_dead:
