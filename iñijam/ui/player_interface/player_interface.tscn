@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://bqlnlvnb54ll6"]
 
 [ext_resource type="Script" uid="uid://dni0rk6ruwamq" path="res://ui/player_interface/player_interface.gd" id="1_gmoja"]
-[ext_resource type="Texture2D" uid="uid://d3uedst5t2j64" path="res://ui/player_interface/barra de temperatura.png" id="2_pkws4"]
+[ext_resource type="Texture2D" uid="uid://80gmdxeku76o" path="res://ui/player_interface/barra de temperatura.png" id="2_pkws4"]
 [ext_resource type="AudioStream" uid="uid://54qpgst3u6y5" path="res://scripts/RADIO_CASSETE_MÚSICA_POP.ogg" id="3_7re8n"]
+[ext_resource type="Texture2D" uid="uid://cqe6s2ucu4243" path="res://ui/player_interface/vida.png" id="3_ell5n"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ubc1v"]
 font_size = 10
@@ -144,6 +145,14 @@ scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_pkws4")
 offset = Vector2(0, -50)
 hframes = 9
+
+[node name="Hearts" type="Node2D" parent="." unique_id=2008512608]
+scale = Vector2(1.5, 1.5)
+
+[node name="Heart" type="Sprite2D" parent="Hearts" unique_id=1897470902]
+texture = ExtResource("3_ell5n")
+centered = false
+hframes = 5
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=608900756]
 libraries/ = SubResource("AnimationLibrary_gh2wv")
