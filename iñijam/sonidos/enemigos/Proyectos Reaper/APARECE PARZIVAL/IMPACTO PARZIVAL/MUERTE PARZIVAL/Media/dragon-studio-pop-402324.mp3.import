@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bji4e7bh3md3y"
+path="res://.godot/imported/dragon-studio-pop-402324.mp3-91fae450e2c3a21d778fe5041c7998d3.mp3str"
+
+[deps]
+
+source_file="res://sonidos/enemigos/Proyectos Reaper/APARECE PARZIVAL/IMPACTO PARZIVAL/MUERTE PARZIVAL/Media/dragon-studio-pop-402324.mp3"
+dest_files=["res://.godot/imported/dragon-studio-pop-402324.mp3-91fae450e2c3a21d778fe5041c7998d3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

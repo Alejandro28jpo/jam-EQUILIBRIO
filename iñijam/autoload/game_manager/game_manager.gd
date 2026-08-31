@@ -1,6 +1,8 @@
 extends Node
 
 
+const SAVE_PATH := "user://save.json"
+
 signal score_changed(new_score: int)
 signal level_changed(new_level: int)
 signal score_popup_requested(points: int, world_position: Vector2)
@@ -8,6 +10,31 @@ signal score_popup_requested(points: int, world_position: Vector2)
 var current_level: int = 1
 var current_score: int = 0
 var best_score: int = 0
+
+
+func _ready() -> void:
+	_load_best_score()
+
+
+func start_new_game() -> void:
+	current_level = 1
+	current_score = 0
+	score_changed.emit(current_score)
+	level_changed.emit(current_level)
+
+
+func save_best_score() -> void:
+	var file := FileAccess.open(SAVE_PATH, FileAccess.WRITE)
+	file.store_string(JSON.stringify({"best_score": best_score}))
+
+
+func _load_best_score() -> void:
+	if not FileAccess.file_exists(SAVE_PATH):
+		return
+	var file := FileAccess.open(SAVE_PATH, FileAccess.READ)
+	var data: Variant = JSON.parse_string(file.get_as_text())
+	if typeof(data) == TYPE_DICTIONARY and data.has("best_score"):
+		best_score = int(data["best_score"])
 
 
 func add_score(amount: int) -> void:

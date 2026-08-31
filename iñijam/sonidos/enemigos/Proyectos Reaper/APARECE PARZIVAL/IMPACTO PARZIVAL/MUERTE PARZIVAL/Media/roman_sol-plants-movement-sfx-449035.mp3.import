@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cuefve1uawep2"
+path="res://.godot/imported/roman_sol-plants-movement-sfx-449035.mp3-b72244f984bc85cc1a9fdf8fbbdd070e.mp3str"
+
+[deps]
+
+source_file="res://sonidos/enemigos/Proyectos Reaper/APARECE PARZIVAL/IMPACTO PARZIVAL/MUERTE PARZIVAL/Media/roman_sol-plants-movement-sfx-449035.mp3"
+dest_files=["res://.godot/imported/roman_sol-plants-movement-sfx-449035.mp3-b72244f984bc85cc1a9fdf8fbbdd070e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

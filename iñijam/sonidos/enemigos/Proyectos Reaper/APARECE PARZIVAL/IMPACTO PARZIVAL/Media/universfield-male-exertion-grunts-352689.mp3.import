@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ccr2wc3j0uru5"
+path="res://.godot/imported/universfield-male-exertion-grunts-352689.mp3-ba98d8ae3b15cb23bd581038ebd86808.mp3str"
+
+[deps]
+
+source_file="res://sonidos/enemigos/Proyectos Reaper/APARECE PARZIVAL/IMPACTO PARZIVAL/Media/universfield-male-exertion-grunts-352689.mp3"
+dest_files=["res://.godot/imported/universfield-male-exertion-grunts-352689.mp3-ba98d8ae3b15cb23bd581038ebd86808.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

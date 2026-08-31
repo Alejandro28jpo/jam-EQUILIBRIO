@@ -15,7 +15,7 @@ func _ready() -> void:
 
 
 func _on_start_button_pressed() -> void:
-	#get_tree().change_scene_to_file("uid://b4t2us54hecpu")
+	GameManager.start_new_game()
 	Transition.change_scene("uid://cxkx4vnakrmrg", true, 1)
 
 

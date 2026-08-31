@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://co4vslm2kpsbn"
+path="res://.godot/imported/APARICIÓN PARZIVAL.ogg-cacd885eb5180da766dbfea91e743223.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/enemigos/APARICIÓN PARZIVAL.ogg"
+dest_files=["res://.godot/imported/APARICIÓN PARZIVAL.ogg-cacd885eb5180da766dbfea91e743223.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

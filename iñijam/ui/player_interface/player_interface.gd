@@ -58,6 +58,8 @@ func _on_score_popup_collected(points: int) -> void:
 
 
 func show_game_over() -> void:
+	GameManager.save_best_score()
+
 	game_over_advise.visible = true
 	game_over_advise.scale = Vector2.ONE
 	game_over_advise.position = _game_over_rest_position + game_over_fall_start_offset
