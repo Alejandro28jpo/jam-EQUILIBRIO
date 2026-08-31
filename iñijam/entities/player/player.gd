@@ -27,6 +27,7 @@ enum Weapon { COLD, WARM }
 @onready var sprite_2d: Sprite2D = $Sprite2D
 @onready var shoot_cooldown_timer: Timer = $ShootCooldownTimer
 @onready var bullet_spawn_position: Marker2D = $BulletSpawnPosition
+@onready var low_health_audio_player: AudioStreamPlayer = $AudioStreamPlayer
 
 var dir: Vector2 = Vector2.ZERO
 var current_weapon: Weapon = Weapon.COLD
@@ -42,7 +43,9 @@ func _ready() -> void:
 	temperature_component.setup()
 	player_interface.setup()
 	health_component.died.connect(_on_died)
+	health_component.health_changed.connect(_on_health_changed)
 	temperature_component.died.connect(func(_cause: GlobalEnums.EntityState) -> void: _on_died())
+	_on_health_changed(health_component.current_damage, health_component.max_health)
 
 
 func _physics_process(_delta: float) -> void:
@@ -99,8 +102,17 @@ func take_damage(damage: int) -> void:
 	is_invulnerable = false
 
 
+func _on_health_changed(current_damage: int, _max_health: int) -> void:
+	var should_play_low_health: bool = current_damage == 1
+	if should_play_low_health and not low_health_audio_player.playing:
+		low_health_audio_player.play()
+	elif not should_play_low_health and low_health_audio_player.playing:
+		low_health_audio_player.stop()
+
+
 func _on_died() -> void:
 	ControladorAudio.reproducir_sonido(murido)
+	low_health_audio_player.stop()
 	if is_dead:
 		return
 
