@@ -3,18 +3,6 @@
 [ext_resource type="Script" uid="uid://dcms1roxd41l8" path="res://autoload/transition/transition.gd" id="1_72ud7"]
 [ext_resource type="Texture2D" uid="uid://cv23ltf7q3762" path="res://autoload/transition/numeros.png" id="2_4y5j1"]
 
-[sub_resource type="Animation" id="Animation_72ud7"]
-resource_name = "IN"
-
-[sub_resource type="Animation" id="Animation_4y5j1"]
-resource_name = "OUT"
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_1cenm"]
-_data = {
-&"IN": SubResource("Animation_72ud7"),
-&"OUT": SubResource("Animation_4y5j1")
-}
-
 [node name="Transition" type="CanvasLayer" unique_id=461075550]
 layer = 100
 script = ExtResource("1_72ud7")
@@ -45,7 +33,7 @@ color = Color(0, 0, 0, 1)
 position = Vector2(320, 160)
 
 [node name="Decimal" type="Node2D" parent="Container/Numbers" unique_id=166561736]
-position = Vector2(-50, 0)
+position = Vector2(-32, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Container/Numbers/Decimal" unique_id=1936533596]
 position = Vector2(-16, 0)
@@ -57,17 +45,8 @@ position = Vector2(16, 0)
 texture = ExtResource("2_4y5j1")
 hframes = 11
 
-[node name="Space" type="Node2D" parent="Container/Numbers" unique_id=998877834]
-
-[node name="Sprite2D" type="Sprite2D" parent="Container/Numbers/Space" unique_id=646455617]
-position = Vector2(-1, 0)
-rotation = 1.5707964
-texture = ExtResource("2_4y5j1")
-hframes = 11
-frame = 10
-
 [node name="Integers" type="Node2D" parent="Container/Numbers" unique_id=1814721758]
-position = Vector2(50, 0)
+position = Vector2(32, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Container/Numbers/Integers" unique_id=713999807]
 position = Vector2(-16, 0)
@@ -78,6 +57,3 @@ hframes = 11
 position = Vector2(16, 0)
 texture = ExtResource("2_4y5j1")
 hframes = 11
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1275467981]
-libraries/ = SubResource("AnimationLibrary_1cenm")
