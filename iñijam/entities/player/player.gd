@@ -10,6 +10,8 @@ var recibir_daño = preload("res://sonidos/gameplay/RECIBIR_DAÑO.ogg")
 
 enum Weapon { COLD, WARM }
 
+signal weapon_changed(weapon: Weapon)
+
 @export var cold_bullet_scene: PackedScene = preload("res://entities/bullets/cold_bullet.tscn")
 @export var warm_bullet_scene: PackedScene = preload("res://entities/bullets/warm_bullet.tscn")
 @export var shoot_cooldown: float = 0.25
@@ -140,6 +142,7 @@ func _blink() -> void:
 
 func _switch_weapon() -> void:
 	current_weapon = Weapon.WARM if current_weapon == Weapon.COLD else Weapon.COLD
+	weapon_changed.emit(current_weapon)
 
 
 func _shoot() -> void:
