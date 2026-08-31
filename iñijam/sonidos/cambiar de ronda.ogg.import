@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cwn7mtg2ubniv"
+path="res://.godot/imported/cambiar de ronda.ogg-22fb431716d7aaf3120d51f03c28e3ee.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/cambiar de ronda.ogg"
+dest_files=["res://.godot/imported/cambiar de ronda.ogg-22fb431716d7aaf3120d51f03c28e3ee.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

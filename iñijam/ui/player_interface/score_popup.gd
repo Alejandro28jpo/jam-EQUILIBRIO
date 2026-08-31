@@ -1,7 +1,6 @@
 extends Label
 class_name ScorePopup
 
-
 signal collected(points: int)
 
 @export var scatter_radius: float = 50.0
@@ -14,7 +13,6 @@ var target_global_position: Vector2
 
 var _points: int = 0
 
-
 func setup(points: int) -> void:
 	_points = points
 	text = "+%d" % points
@@ -22,7 +20,8 @@ func setup(points: int) -> void:
 
 func _ready() -> void:
 	_play_sequence()
-
+	ControladorAudio.reproducir_sonido(preload("res://sonidos/escenas/CINEMÁTICA/cinemática.ogg"))
+	ControladorAudio.reproducir_musica(preload("res://sonidos/escenas/CINEMÁTICA/cinemática.ogg"))
 
 func _play_sequence() -> void:
 	var start_position: Vector2 = position

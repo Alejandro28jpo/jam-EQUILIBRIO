@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cjggh3byhi4b7"
+path="res://.godot/imported/untitled - Track 1.wav-3f70420bf36cce8153b44595bfc8fd5f.sample"
+
+[deps]
+
+source_file="res://sonidos/música/MÚSICA MENÚ/Media/MENÚ MUSICA/untitled - Track 1.wav"
+dest_files=["res://.godot/imported/untitled - Track 1.wav-3f70420bf36cce8153b44595bfc8fd5f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
