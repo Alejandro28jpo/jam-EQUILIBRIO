@@ -1,20 +1,5 @@
 extends Node2D
 
-func _ready() -> void:
-	await get_tree().create_timer(3.0).timeout
-	$AnimationPlayer.play("comienzo")
-	await get_tree().create_timer(2.9).timeout
-	$UQ2Hb2391VbThunderClap521194.play()
-	$ExplosionBlastFireHeavyCrackle01.play()
-	$AmbienceNatureTrail18001.stop()
-	await get_tree().create_timer(3.5).timeout
-	$UniversfieldManPainScream567203.play()
-	await get_tree().create_timer(2.5).timeout
-	$UQ2Hb2391VbThunderClap521194.stop()
-	$ExplosionBlastFireHeavyCrackle01.stop()
-	await get_tree().create_timer(0.8).timeout
-	$BryansantosbretonDarknessTonalCymbalRollRiserBraamImpact184275.play()
-	
 
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
@@ -24,6 +9,37 @@ var _finished: bool = false
 
 func _ready() -> void:
 	_can_skip = GameManager.intro_seen
+	_play_sound_cues()
+
+
+func _play_sound_cues() -> void:
+	await get_tree().create_timer(3.0).timeout
+	if _finished:
+		return
+	animation_player.play("comienzo")
+
+	await get_tree().create_timer(2.9).timeout
+	if _finished:
+		return
+	$UQ2Hb2391VbThunderClap521194.play()
+	$ExplosionBlastFireHeavyCrackle01.play()
+	$AmbienceNatureTrail18001.stop()
+
+	await get_tree().create_timer(3.5).timeout
+	if _finished:
+		return
+	$UniversfieldManPainScream567203.play()
+
+	await get_tree().create_timer(2.5).timeout
+	if _finished:
+		return
+	$UQ2Hb2391VbThunderClap521194.stop()
+	$ExplosionBlastFireHeavyCrackle01.stop()
+
+	await get_tree().create_timer(0.8).timeout
+	if _finished:
+		return
+	$BryansantosbretonDarknessTonalCymbalRollRiserBraamImpact184275.play()
 
 
 func _unhandled_input(event: InputEvent) -> void:
