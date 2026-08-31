@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dtcecdgy513j8" path="res://inicio/tv.gd" id="1_wvx8s"]
 [ext_resource type="Script" uid="uid://bmk1l10eapy6" path="res://inicio/camera_s.gd" id="2_mgwog"]
 [ext_resource type="Script" uid="uid://bc0gvtvhv4vu8" path="res://inicio/control.gd" id="3_n2f71"]
+[ext_resource type="Texture2D" uid="uid://b7i04u8uhbwl5" path="res://arte/fondo.png" id="4_xe77b"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_wvx8s"]
 sky_top_color = Color(0.032915603, 0.048961498, 0.07076094, 1)
@@ -16,6 +17,7 @@ sky_material = SubResource("ProceduralSkyMaterial_wvx8s")
 
 [sub_resource type="Environment" id="Environment_m7bqy"]
 background_mode = 2
+background_energy_multiplier = 2.5
 sky = SubResource("Sky_mgwog")
 glow_enabled = true
 
@@ -320,7 +322,8 @@ shape = SubResource("ConcavePolygonShape3D_wvx8s")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="arcade/tv/Quad" unique_id=1210245128]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.16246486, 1.3351197)
-light_energy = 0.1
+light_color = Color(0.8914075, 0.9887704, 0.9858652, 1)
+light_energy = 0.925
 light_specular = 0.0
 shadow_enabled = true
 omni_range = 0.45255062
@@ -362,8 +365,8 @@ layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_top = -31.0
-offset_right = 41.0
+offset_top = -62.0
+offset_right = 82.0
 grow_vertical = 0
 mouse_filter = 1
 text = "salir
@@ -427,5 +430,9 @@ mesh = SubResource("BoxMesh_eaugy")
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="Node3D" unique_id=2000586596]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0042012334, -1.1920929e-07, 0.00039684772)
 mesh = SubResource("BoxMesh_jvjwp")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=373866165]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -0.035947442, 0.36445415, -0.92140794)
+texture = ExtResource("4_xe77b")
 
 [connection signal="pressed" from="arcade/tv/SubViewport/Control/ColorRect/Button" to="arcade/tv/SubViewport/Control" method="_on_button_pressed"]

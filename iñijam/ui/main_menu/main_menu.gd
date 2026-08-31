@@ -12,6 +12,7 @@ func _ready() -> void:
 	start_button.pressed.connect(_on_start_button_pressed)
 	quit_button.pressed.connect(_on_quit_button_pressed)
 	settings_button.pressed.connect(_on_settings_button_pressed)
+	$"RadioCasseteMúsicaPop".play()
 
 
 func _on_start_button_pressed() -> void:

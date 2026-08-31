@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dg7lopnpupxcg"
+path="res://.godot/imported/soundreality-wind-outside-room-tone-457957 (1).mp3-06698ed97a062feef77635e27fdc2314.mp3str"
+
+[deps]
+
+source_file="res://sonidos/CINEMÁTICA/cinematica/Media/soundreality-wind-outside-room-tone-457957 (1).mp3"
+dest_files=["res://.godot/imported/soundreality-wind-outside-room-tone-457957 (1).mp3-06698ed97a062feef77635e27fdc2314.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

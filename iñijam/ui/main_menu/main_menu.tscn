@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cj7a6bqsv1x3t" path="res://ui/main_menu/setting.png" id="4_i5wg5"]
 [ext_resource type="Texture2D" uid="uid://bdxa880xouqwi" path="res://ui/main_menu/logo.png" id="5_3c04x"]
 [ext_resource type="Texture2D" uid="uid://8kl6n1c8736c" path="res://ui/main_menu/nubes.png" id="5_joh67"]
+[ext_resource type="AudioStream" uid="uid://54qpgst3u6y5" path="res://scripts/RADIO_CASSETE_MÚSICA_POP.ogg" id="8_6mijq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mu8pm"]
 atlas = ExtResource("1_uhj5c")
@@ -228,6 +229,10 @@ autoplay = &"TitleSmooth"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=210422401]
 position = Vector2(68, 169)
+
+[node name="RadioCasseteMúsicaPop" type="AudioStreamPlayer" parent="." unique_id=935853998]
+stream = ExtResource("8_6mijq")
+volume_db = -4.0
 
 [connection signal="focus_entered" from="StartButton" to="." method="_on_start_button_focus_entered"]
 [connection signal="focus_entered" from="QuitButton" to="." method="_on_quit_button_focus_entered"]
