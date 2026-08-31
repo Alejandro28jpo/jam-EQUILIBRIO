@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dignfh8uf751e"
+path="res://.godot/imported/MUERTE OCULUS.ogg-134e56df5e383e86d44720a94bf4e8d5.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/enemigos/OCULUS/MUERTE OCULUS.ogg"
+dest_files=["res://.godot/imported/MUERTE OCULUS.ogg-134e56df5e383e86d44720a94bf4e8d5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

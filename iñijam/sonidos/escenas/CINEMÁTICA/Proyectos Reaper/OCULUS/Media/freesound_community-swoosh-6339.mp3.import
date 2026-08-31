@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cgh4lkh2xuilf"
+path="res://.godot/imported/freesound_community-swoosh-6339.mp3-8b30aad8d8b8ff0156717c1f31dd7874.mp3str"
+
+[deps]
+
+source_file="res://sonidos/escenas/CINEMÁTICA/Proyectos Reaper/OCULUS/Media/freesound_community-swoosh-6339.mp3"
+dest_files=["res://.godot/imported/freesound_community-swoosh-6339.mp3-8b30aad8d8b8ff0156717c1f31dd7874.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

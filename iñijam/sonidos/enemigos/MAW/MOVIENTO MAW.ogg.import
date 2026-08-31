@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://k77b5uujv54"
+path="res://.godot/imported/MOVIENTO MAW.ogg-ef73a7fdb123dfc1e4823df6281287a5.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/enemigos/MAW/MOVIENTO MAW.ogg"
+dest_files=["res://.godot/imported/MOVIENTO MAW.ogg-ef73a7fdb123dfc1e4823df6281287a5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

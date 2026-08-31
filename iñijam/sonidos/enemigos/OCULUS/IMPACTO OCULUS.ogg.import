@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://kltont230hwy"
+path="res://.godot/imported/IMPACTO OCULUS.ogg-31f5d0820294205f91731c2e3a8894cf.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/enemigos/OCULUS/IMPACTO OCULUS.ogg"
+dest_files=["res://.godot/imported/IMPACTO OCULUS.ogg-31f5d0820294205f91731c2e3a8894cf.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

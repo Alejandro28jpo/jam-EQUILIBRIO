@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dlhcf0p2m5aa"
+path="res://.godot/imported/MOVIMIENTO GROUCH.ogg-0190f95016fe751eb990a8195bbdbf39.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/enemigos/GROUCH/MOVIMIENTO GROUCH.ogg"
+dest_files=["res://.godot/imported/MOVIMIENTO GROUCH.ogg-0190f95016fe751eb990a8195bbdbf39.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

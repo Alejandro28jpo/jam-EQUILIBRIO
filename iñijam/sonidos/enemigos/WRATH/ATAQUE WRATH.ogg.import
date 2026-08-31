@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d6k28gnpn8uo"
+path="res://.godot/imported/ATAQUE WRATH.ogg-a12e747c2e883d544df4350caedd02df.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/enemigos/WRATH/ATAQUE WRATH.ogg"
+dest_files=["res://.godot/imported/ATAQUE WRATH.ogg-a12e747c2e883d544df4350caedd02df.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

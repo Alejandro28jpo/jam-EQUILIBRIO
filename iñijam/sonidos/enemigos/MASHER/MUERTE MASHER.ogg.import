@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b8ec4v450ogos"
+path="res://.godot/imported/MUERTE MASHER.ogg-e123e196999af1653f711983b58f3380.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/enemigos/MASHER/MUERTE MASHER.ogg"
+dest_files=["res://.godot/imported/MUERTE MASHER.ogg-e123e196999af1653f711983b58f3380.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

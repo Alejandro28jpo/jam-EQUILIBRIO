@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://breakpdo5uuvt"
+path="res://.godot/imported/AMBIENTE MENÚ.ogg-8feb01c93d1c1afa933107bb9b60705e.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/menu/AMBIENTE MENÚ.ogg"
+dest_files=["res://.godot/imported/AMBIENTE MENÚ.ogg-8feb01c93d1c1afa933107bb9b60705e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

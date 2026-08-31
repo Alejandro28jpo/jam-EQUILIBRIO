@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c5hn1cn756ews"
+path="res://.godot/imported/ATAQUE MASHER.ogg-571e93a6cb352b4f2f034f3c3dc7ec1c.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/enemigos/MASHER/ATAQUE MASHER.ogg"
+dest_files=["res://.godot/imported/ATAQUE MASHER.ogg-571e93a6cb352b4f2f034f3c3dc7ec1c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

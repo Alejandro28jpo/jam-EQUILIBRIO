@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://brxkdx0syyqkc"
+path="res://.godot/imported/ATAQUE OCULUS.ogg-d13b1c818d50f832bb65e40bb12d047b.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/enemigos/OCULUS/ATAQUE OCULUS.ogg"
+dest_files=["res://.godot/imported/ATAQUE OCULUS.ogg-d13b1c818d50f832bb65e40bb12d047b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

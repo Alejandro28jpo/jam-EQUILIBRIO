@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dqk0n6i6kyu47"
+path="res://.godot/imported/MUERTE WRATH.ogg-acf9ff9272520f32a5ab0c2d620894e6.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/enemigos/WRATH/MUERTE WRATH.ogg"
+dest_files=["res://.godot/imported/MUERTE WRATH.ogg-acf9ff9272520f32a5ab0c2d620894e6.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
