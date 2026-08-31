@@ -16,8 +16,8 @@ var _is_on_transition: bool = false
 
 
 func change_scene(scene_path: String, show_level: bool = false, level: int = 1) -> void:
-	if _is_on_transition:
-		return
+	while _is_on_transition:
+		await completed
 
 	await fade_in(show_level, level)
 	await get_tree().create_timer(.5).timeout
