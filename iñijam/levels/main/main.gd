@@ -87,6 +87,6 @@ func _setup_encounters() -> void:
 
 func _on_final_room_cleared(room: Room) -> void:
 	var room_exit: RoomExit = room_exit_scene.instantiate()
-	room.add_child(room_exit)
 	room_exit.player = player
 	room_exit.main_level = self
+	room.call_deferred("add_child", room_exit)

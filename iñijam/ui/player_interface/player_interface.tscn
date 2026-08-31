@@ -1,14 +1,15 @@
 [gd_scene format=3 uid="uid://bqlnlvnb54ll6"]
 
 [ext_resource type="Script" uid="uid://dni0rk6ruwamq" path="res://ui/player_interface/player_interface.gd" id="1_gmoja"]
+[ext_resource type="FontFile" uid="uid://b16j8q1no71pc" path="res://Kenney Blocks.ttf" id="2_7y6ss"]
 [ext_resource type="Texture2D" uid="uid://80gmdxeku76o" path="res://ui/player_interface/barra de temperatura.png" id="2_pkws4"]
 [ext_resource type="AudioStream" uid="uid://54qpgst3u6y5" path="res://scripts/RADIO_CASSETE_MÚSICA_POP.ogg" id="3_7re8n"]
 [ext_resource type="Texture2D" uid="uid://cqe6s2ucu4243" path="res://ui/player_interface/vida.png" id="3_ell5n"]
 [ext_resource type="Script" uid="uid://djjfkg0k4qt7" path="res://ui/player_interface/hearts_display.gd" id="4_hearts"]
 [ext_resource type="Script" uid="uid://8n6xp5r0isjd" path="res://ui/player_interface/heart.gd" id="5_heart"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_ubc1v"]
-font_size = 10
+[sub_resource type="LabelSettings" id="LabelSettings_p4geo"]
+font = ExtResource("2_7y6ss")
 outline_size = 4
 outline_color = Color(0, 0, 0, 1)
 
@@ -117,16 +118,6 @@ _data = {
 [node name="PlayerInterface" type="CanvasLayer" unique_id=1121228753]
 script = ExtResource("1_gmoja")
 
-[node name="PlayerState" type="Label" parent="." unique_id=453639766]
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_top = -14.0
-offset_right = 83.0
-grow_vertical = 0
-text = "CURRENT STATE: "
-label_settings = SubResource("LabelSettings_ubc1v")
-
 [node name="puntos" type="Label" parent="." unique_id=1236482406]
 anchors_preset = 1
 anchor_left = 1.0
@@ -134,6 +125,7 @@ anchor_right = 1.0
 offset_left = -40.0
 offset_bottom = 23.0
 grow_horizontal = 0
+label_settings = SubResource("LabelSettings_p4geo")
 
 [node name="TemperatureMeter" type="Sprite2D" parent="." unique_id=1930263204]
 position = Vector2(610, 315)
@@ -149,12 +141,12 @@ script = ExtResource("4_hearts")
 [node name="Heart" type="Node2D" parent="Hearts" unique_id=1897470902]
 script = ExtResource("5_heart")
 
-[node name="Alive" type="Sprite2D" parent="Hearts/Heart"]
+[node name="Alive" type="Sprite2D" parent="Hearts/Heart" unique_id=684207335]
 texture = ExtResource("3_ell5n")
 centered = false
 hframes = 5
 
-[node name="Empty" type="Sprite2D" parent="Hearts/Heart"]
+[node name="Empty" type="Sprite2D" parent="Hearts/Heart" unique_id=1451626417]
 visible = false
 z_index = -1
 texture = ExtResource("3_ell5n")

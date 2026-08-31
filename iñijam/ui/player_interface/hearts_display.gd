@@ -30,3 +30,5 @@ func set_current_damage(current_damage: int, _max_health: int) -> void:
 	for i in _hearts.size():
 		if i >= current_damage:
 			_hearts[i].lose()
+		else:
+			_hearts[i].revive()
