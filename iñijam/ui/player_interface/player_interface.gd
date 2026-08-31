@@ -12,7 +12,7 @@ var current_state: GlobalEnums.EntityState
 var state_to_show: int
 
 func _process(delta: float) -> void:
-	$puntos.text = "%s / %s" % [Puntos.puntos, Puntos.record]
+	$puntos.text = "%s / %s" % [GameManager.current_score, GameManager.best_score]
 
 func setup() -> void:
 	current_state = player.temperature_component.state

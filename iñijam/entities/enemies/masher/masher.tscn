@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://bdrf7jgd44xr2" path="res://components/health_component.gd" id="2_j1ld1"]
 [ext_resource type="Script" uid="uid://cdmuggadc7ltb" path="res://components/move_component.gd" id="3_01gpp"]
 [ext_resource type="Script" uid="uid://oq1ifkw5qcjx" path="res://components/temperature_component.gd" id="4_wb7aw"]
+[ext_resource type="Script" path="res://components/score_component.gd" id="9_score"]
 [ext_resource type="Texture2D" uid="uid://cj74p2ig4sww3" path="res://entities/enemigosFiles/cuerpo a cuerpo 2.png" id="5_mylwr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_attack"]
@@ -203,7 +204,10 @@ speed = 90.0
 
 [node name="TemperatureComponent" type="Node" parent="." unique_id=1735389838]
 script = ExtResource("4_wb7aw")
-puntos_que_da = 30
+
+[node name="ScoreComponent" type="Node" parent="." unique_id=1500000001]
+script = ExtResource("9_score")
+points = 30
 
 [node name="AttackArea" type="Area2D" parent="." unique_id=1150035558]
 position = Vector2(0, -10)

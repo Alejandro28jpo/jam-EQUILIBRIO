@@ -16,6 +16,7 @@ const SPEED_MULTIPLIERS := {
 @onready var health_component: HealthComponent = $HealthComponent
 @onready var move_component: MoveComponent = $MoveComponent
 @onready var temperature_component: TemperatureComponent = $TemperatureComponent
+@onready var score_component: ScoreComponent = $ScoreComponent
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var sprite_2d: Sprite2D = $Sprite2D
 
@@ -27,6 +28,7 @@ var is_spawning: bool = true
 func _ready() -> void:
 	health_component.setup()
 	temperature_component.setup()
+	score_component.setup()
 	health_component.died.connect(_die)
 	temperature_component.died.connect(_die_from_temperature)
 	player = get_tree().get_first_node_in_group("player")

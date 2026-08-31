@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://bdrf7jgd44xr2" path="res://components/health_component.gd" id="3_health"]
 [ext_resource type="Script" uid="uid://cdmuggadc7ltb" path="res://components/move_component.gd" id="4_move"]
 [ext_resource type="Script" uid="uid://oq1ifkw5qcjx" path="res://components/temperature_component.gd" id="5_temp"]
+[ext_resource type="Script" uid="uid://dcrvvmo6c1484" path="res://components/score_component.gd" id="9_score"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_attack"]
 radius = 38.052597
@@ -211,6 +212,10 @@ speed = 90.0
 
 [node name="TemperatureComponent" type="Node" parent="." unique_id=1735389838]
 script = ExtResource("5_temp")
+
+[node name="ScoreComponent" type="Node" parent="." unique_id=1500000001]
+script = ExtResource("9_score")
+points = 1
 
 [node name="AttackArea" type="Area2D" parent="." unique_id=1150035558]
 position = Vector2(0, -10)

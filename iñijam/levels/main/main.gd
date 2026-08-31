@@ -14,7 +14,6 @@ const LEVELS_PER_ENEMY_INCREASE := 2
 
 @onready var room_manager: RoomManager = $RoomManager
 
-var current_level: int = 1
 var player: Node2D
 var camera: Camera2D
 var current_cell: Vector2i
@@ -22,7 +21,7 @@ var _camera_tween: Tween
 
 
 func _ready() -> void:
-	_start_level(current_level)
+	_start_level(GameManager.current_level)
 
 
 func _process(_delta: float) -> void:
@@ -34,11 +33,11 @@ func _process(_delta: float) -> void:
 
 
 func next_level() -> void:
-	_start_level(current_level + 1)
+	_start_level(GameManager.current_level + 1)
 
 
 func _start_level(level: int) -> void:
-	current_level = level
+	GameManager.set_level(level)
 	var room_count := BASE_ROOM_COUNT + (level - 1) / LEVELS_PER_ROOM_INCREASE
 	var start_position := room_manager.generate(self, room_count)
 
@@ -73,7 +72,7 @@ func _move_camera_to(cell: Vector2i) -> void:
 
 
 func _setup_encounters() -> void:
-	var enemy_count = BASE_ENEMY_COUNT + (current_level - 1) / LEVELS_PER_ENEMY_INCREASE
+	var enemy_count = BASE_ENEMY_COUNT + (GameManager.current_level - 1) / LEVELS_PER_ENEMY_INCREASE
 	for cell in room_manager.rooms_by_cell:
 		if cell == room_manager.start_cell:
 			continue
