@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cqe6s2ucu4243" path="res://ui/player_interface/vida.png" id="3_ell5n"]
 [ext_resource type="Script" uid="uid://djjfkg0k4qt7" path="res://ui/player_interface/hearts_display.gd" id="4_hearts"]
 [ext_resource type="Script" uid="uid://8n6xp5r0isjd" path="res://ui/player_interface/heart.gd" id="5_heart"]
+[ext_resource type="Texture2D" uid="uid://blj7c7itp64e6" path="res://ui/player_interface/game_over.png" id="8_jynxn"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_p4geo"]
 font = ExtResource("2_7y6ss")
@@ -160,3 +161,7 @@ autoplay = &"IDLE"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1847065843]
 stream = ExtResource("3_7re8n")
+
+[node name="GameOverAdvise" type="Sprite2D" parent="." unique_id=1569022438]
+position = Vector2(320, 160)
+texture = ExtResource("8_jynxn")
