@@ -20,6 +20,7 @@ layer = 100
 script = ExtResource("1_72ud7")
 
 [node name="Container" type="Control" parent="." unique_id=1203413065]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
