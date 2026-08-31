@@ -12,4 +12,5 @@ func setup() -> void:
 
 
 func _on_enemy_died() -> void:
-	GameManager.add_score(points)
+	if points > 0:
+		GameManager.score_popup_requested.emit(points, _enemy.global_position)

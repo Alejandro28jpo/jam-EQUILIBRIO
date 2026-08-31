@@ -3,6 +3,7 @@ extends Node
 
 signal score_changed(new_score: int)
 signal level_changed(new_level: int)
+signal score_popup_requested(points: int, world_position: Vector2)
 
 var current_level: int = 1
 var current_score: int = 0

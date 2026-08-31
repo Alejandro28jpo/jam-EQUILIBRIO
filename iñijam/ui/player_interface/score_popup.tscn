@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c11xjc4t2gk6w"]
+
+[ext_resource type="Script" uid="uid://cpdi44mc72m5v" path="res://ui/player_interface/score_popup.gd" id="1_score_popup"]
+[ext_resource type="FontFile" uid="uid://b16j8q1no71pc" path="res://Kenney Blocks.ttf" id="2_font"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_score_popup"]
+font = ExtResource("2_font")
+font_size = 12
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[node name="ScorePopup" type="Label" unique_id=1723344108]
+label_settings = SubResource("LabelSettings_score_popup")
+script = ExtResource("1_score_popup")
