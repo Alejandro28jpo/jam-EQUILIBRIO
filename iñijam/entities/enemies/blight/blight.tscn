@@ -4,8 +4,8 @@
 [ext_resource type="Script" uid="uid://bdrf7jgd44xr2" path="res://components/health_component.gd" id="2_nqhih"]
 [ext_resource type="Script" uid="uid://cdmuggadc7ltb" path="res://components/move_component.gd" id="3_64hbd"]
 [ext_resource type="Script" uid="uid://oq1ifkw5qcjx" path="res://components/temperature_component.gd" id="4_5igbm"]
-[ext_resource type="Script" path="res://components/score_component.gd" id="9_score"]
 [ext_resource type="Texture2D" uid="uid://d0i3r2dufsyh4" path="res://arte/horizontal 2.png" id="5_8c0ys"]
+[ext_resource type="Script" uid="uid://dcrvvmo6c1484" path="res://components/score_component.gd" id="9_score"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_attack"]
 radius = 38.052597
@@ -109,7 +109,7 @@ tracks/1/keys = {
 [sub_resource type="Animation" id="Animation_rvjbp"]
 resource_name = "WALK"
 length = 1.2
-loop_mode = 1
+loop_mode = 2
 step = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
