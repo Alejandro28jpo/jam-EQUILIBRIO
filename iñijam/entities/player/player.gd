@@ -126,6 +126,8 @@ func _on_died() -> void:
 	await animation_player.animation_finished
 	animation_player.play("DEAD")
 
+	player_interface.show_game_over()
+
 
 func _blink() -> void:
 	var elapsed: float = 0.0

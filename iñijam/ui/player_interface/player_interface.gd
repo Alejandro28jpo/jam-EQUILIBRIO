@@ -4,14 +4,29 @@ class_name PlayerInterface
 
 @export var player: Player
 @export var score_popup_scene: PackedScene = preload("res://ui/player_interface/score_popup.tscn")
+@export var main_menu_scene: String = "uid://dgijqkbas0cdl"
+
+@export var game_over_fall_start_offset: Vector2 = Vector2(0.0, -400.0)
+@export var game_over_fall_duration: float = 0.6
+@export var game_over_pulse_scale: float = 1.15
+@export var game_over_pulse_duration: float = 0.25
+@export var game_over_hold_duration: float = 1.0
 
 @onready var temperature_meter: Sprite2D = $TemperatureMeter
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var hearts_display: HeartsDisplay = $Hearts
 @onready var puntos_label: Label = $puntos
+@onready var game_over_advise: Sprite2D = $GameOverAdvise
 
 var current_state: GlobalEnums.EntityState
 var state_to_show: int
+
+var _game_over_rest_position: Vector2
+
+
+func _ready() -> void:
+	_game_over_rest_position = game_over_advise.position
+	game_over_advise.visible = false
 
 
 func _process(delta: float) -> void:
@@ -40,6 +55,26 @@ func _on_score_popup_requested(points: int, world_position: Vector2) -> void:
 
 func _on_score_popup_collected(points: int) -> void:
 	GameManager.add_score(points)
+
+
+func show_game_over() -> void:
+	game_over_advise.visible = true
+	game_over_advise.scale = Vector2.ONE
+	game_over_advise.position = _game_over_rest_position + game_over_fall_start_offset
+
+	var fall_tween: Tween = create_tween()
+	fall_tween.tween_property(game_over_advise, "position", _game_over_rest_position, game_over_fall_duration).set_trans(Tween.TRANS_BOUNCE).set_ease(Tween.EASE_OUT)
+	await fall_tween.finished
+
+	var pulse_tween: Tween = create_tween()
+	pulse_tween.set_loops()
+	pulse_tween.tween_property(game_over_advise, "scale", Vector2.ONE * game_over_pulse_scale, game_over_pulse_duration).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	pulse_tween.tween_property(game_over_advise, "scale", Vector2.ONE, game_over_pulse_duration).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+
+	await get_tree().create_timer(game_over_hold_duration).timeout
+	pulse_tween.kill()
+
+	Transition.change_scene(main_menu_scene)
 
 
 func manage_health_label() -> void:

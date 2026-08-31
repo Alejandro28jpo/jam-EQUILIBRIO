@@ -57,6 +57,7 @@ func _ready() -> void:
 	_update_room_type()
 	if not Engine.is_editor_hint():
 		lock_trigger.body_entered.connect(_on_lock_trigger_body_entered)
+		print("[Room] ready at ", global_position, " type=", RoomType.keys()[current_room_type], " has_encounter=", has_encounter)
 
 
 func setup_encounter(enemy_scenes: Array[PackedScene], enemy_count: int) -> void:
@@ -65,6 +66,7 @@ func setup_encounter(enemy_scenes: Array[PackedScene], enemy_count: int) -> void
 	has_encounter = true
 	_enemy_scenes = enemy_scenes
 	_enemies_alive = enemy_count
+	print("[Room] setup_encounter at ", global_position, " enemy_count=", enemy_count)
 
 
 func _update_room_type() -> void:
@@ -82,6 +84,7 @@ func _update_room_type() -> void:
 
 
 func _on_lock_trigger_body_entered(body: Node) -> void:
+	print("[Room] lock_trigger body_entered at ", global_position, " body=", body.name, " is_player=", body.is_in_group("player"), " has_encounter=", has_encounter, " already_triggered=", _encounter_triggered)
 	if _encounter_triggered or not has_encounter or not body.is_in_group("player"):
 		return
 	_encounter_triggered = true
@@ -118,6 +121,7 @@ func _on_enemy_died() -> void:
 
 
 func lock() -> void:
+	print("[Room] lock() at ", global_position, " already_locked=", locked)
 	if locked:
 		return
 	locked = true
@@ -128,6 +132,7 @@ func lock() -> void:
 
 
 func unlock() -> void:
+	print("[Room] unlock() at ", global_position, " not_locked=", not locked)
 	if not locked:
 		return
 	locked = false
