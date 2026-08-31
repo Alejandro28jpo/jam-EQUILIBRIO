@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dtcecdgy513j8" path="res://inicio/tv.gd" id="1_wvx8s"]
 [ext_resource type="Script" uid="uid://bmk1l10eapy6" path="res://inicio/camera_s.gd" id="2_mgwog"]
+[ext_resource type="Script" uid="uid://bc0gvtvhv4vu8" path="res://inicio/control.gd" id="3_n2f71"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_wvx8s"]
 sky_top_color = Color(0.032915603, 0.048961498, 0.07076094, 1)
@@ -337,6 +338,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("3_n2f71")
 
 [node name="ColorRect" type="ColorRect" parent="arcade/tv/SubViewport/Control" unique_id=736150529]
 layout_mode = 1
@@ -355,14 +357,6 @@ anchor_right = 1.0
 offset_bottom = 36.0
 grow_horizontal = 2
 
-[node name="HSlider" type="HSlider" parent="arcade/tv/SubViewport/Control/ColorRect/VBoxContainer" unique_id=1582981013]
-layout_mode = 2
-mouse_filter = 1
-
-[node name="HSlider2" type="HSlider" parent="arcade/tv/SubViewport/Control/ColorRect/VBoxContainer" unique_id=599982496]
-layout_mode = 2
-mouse_filter = 1
-
 [node name="Button" type="Button" parent="arcade/tv/SubViewport/Control/ColorRect" unique_id=535514288]
 layout_mode = 1
 anchors_preset = 2
@@ -374,6 +368,23 @@ grow_vertical = 0
 mouse_filter = 1
 text = "salir
 "
+
+[node name="Label" type="Label" parent="arcade/tv/SubViewport/Control" unique_id=1063196131]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -186.0
+offset_top = -35.0
+offset_right = 525.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "haber no pensè en las opcones asi que fingire 
+que haz puesto las opciones que te gusta ¿ok?
+ "
 
 [node name="Sphere" type="MeshInstance3D" parent="arcade" unique_id=1230939439]
 transform = Transform3D(0.18872066, 0, 0, 0, 0.1883367, 0.012032, 0, -0.012032, 0.1883367, -0.68910027, 1.5102639, 1.0636864)
@@ -416,3 +427,5 @@ mesh = SubResource("BoxMesh_eaugy")
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="Node3D" unique_id=2000586596]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0042012334, -1.1920929e-07, 0.00039684772)
 mesh = SubResource("BoxMesh_jvjwp")
+
+[connection signal="pressed" from="arcade/tv/SubViewport/Control/ColorRect/Button" to="arcade/tv/SubViewport/Control" method="_on_button_pressed"]

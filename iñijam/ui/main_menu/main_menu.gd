@@ -25,6 +25,7 @@ func _on_quit_button_pressed() -> void:
 
 
 func _on_settings_button_pressed() -> void:
+	Transition.change_scene("uid://c4c2p31hmfmem", false, 1)
 	print("Settings")
 	
 func quit():
