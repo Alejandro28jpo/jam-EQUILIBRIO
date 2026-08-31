@@ -11,6 +11,9 @@ class_name PlayerInterface
 var current_state: GlobalEnums.EntityState
 var state_to_show: int
 
+func _ready() -> void:
+	Transition.fade_out()
+
 func _process(delta: float) -> void:
 	$puntos.text = "%s / %s" % [GameManager.current_score, GameManager.best_score]
 

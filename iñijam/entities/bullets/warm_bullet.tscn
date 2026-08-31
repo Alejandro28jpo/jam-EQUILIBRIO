@@ -50,6 +50,7 @@ _data = {
 [node name="WarmBullet" type="Area2D" unique_id=866925067]
 script = ExtResource("1_d8j5q")
 speed = 420.0
+damage = 1
 temperature_effect = 18.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=792113937]

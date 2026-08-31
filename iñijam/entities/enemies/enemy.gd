@@ -12,6 +12,8 @@ const SPEED_MULTIPLIERS := {
 }
 
 @export var spawn_scale_duration: float = 0.5
+@export var freeze_tremble_amplitude: float = 1.5
+@export var freeze_tremble_speed: float = 0.06
 
 @onready var health_component: HealthComponent = $HealthComponent
 @onready var move_component: MoveComponent = $MoveComponent
@@ -23,14 +25,21 @@ const SPEED_MULTIPLIERS := {
 var player: Node2D
 var is_dead: bool = false
 var is_spawning: bool = true
+var is_frozen: bool = false
+var is_thawing: bool = false
+
+var _sprite_base_position: Vector2
+var _tremble_tween: Tween
 
 
 func _ready() -> void:
+	_sprite_base_position = sprite_2d.position
 	health_component.setup()
 	temperature_component.setup()
 	score_component.setup()
 	health_component.died.connect(_die)
 	temperature_component.died.connect(_die_from_temperature)
+	temperature_component.frozen_changed.connect(_on_frozen_changed)
 	player = get_tree().get_first_node_in_group("player")
 	_play_spawn_animation()
 
@@ -90,6 +99,51 @@ func get_speed_multiplier() -> float:
 	return SPEED_MULTIPLIERS.get(temperature_component.state, 1.0)
 
 
+func is_immobilized() -> bool:
+	return is_frozen or is_thawing
+
+
+func _on_frozen_changed(frozen: bool) -> void:
+	if frozen:
+		is_frozen = true
+		_play_freeze_in()
+	else:
+		is_frozen = false
+		_play_freeze_out()
+
+
+func _play_freeze_in() -> void:
+	_stop_tremble()
+	if animation_player.has_animation("FREEZED"):
+		animation_player.play("FREEZED")
+		await animation_player.animation_finished
+	if is_frozen:
+		_start_tremble()
+
+
+func _play_freeze_out() -> void:
+	_stop_tremble()
+	is_thawing = true
+	if animation_player.has_animation("FREEZED"):
+		animation_player.play_backwards("FREEZED")
+		await animation_player.animation_finished
+	is_thawing = false
+
+
+func _start_tremble() -> void:
+	_tremble_tween = create_tween().set_loops()
+	_tremble_tween.tween_property(sprite_2d, "position", _sprite_base_position + Vector2(freeze_tremble_amplitude, 0.0), freeze_tremble_speed)
+	_tremble_tween.tween_property(sprite_2d, "position", _sprite_base_position - Vector2(freeze_tremble_amplitude, 0.0), freeze_tremble_speed)
+	_tremble_tween.tween_property(sprite_2d, "position", _sprite_base_position, freeze_tremble_speed)
+
+
+func _stop_tremble() -> void:
+	if _tremble_tween:
+		_tremble_tween.kill()
+		_tremble_tween = null
+	sprite_2d.position = _sprite_base_position
+
+
 func direction_to_player() -> Vector2:
 	if player == null:
 		return Vector2.ZERO
@@ -107,24 +161,25 @@ func _die() -> void:
 		return
 	is_dead = true
 	velocity = Vector2.ZERO
+	_stop_tremble()
 	_set_collisions_enabled(false)
 	died.emit()
 	queue_free()
 
 
-func _die_from_temperature(cause: GlobalEnums.EntityState) -> void:
+func _die_from_temperature(_cause: GlobalEnums.EntityState) -> void:
 	if is_dead:
 		return
 	is_dead = true
 	velocity = Vector2.ZERO
 	move_component.move(Vector2.ZERO)
+	_stop_tremble()
 
 	_set_collisions_enabled(false)
 
-	var death_animation: String = "BURNED" if cause == GlobalEnums.EntityState.PEAK_BURN else "FREEZED"
-	if animation_player.has_animation(death_animation):
-		animation_player.play(death_animation)
-		var anim_length: float = animation_player.get_animation(death_animation).length
+	if animation_player.has_animation("BURNED"):
+		animation_player.play("BURNED")
+		var anim_length: float = animation_player.get_animation("BURNED").length
 		await get_tree().create_timer(anim_length).timeout
 
 	died.emit()

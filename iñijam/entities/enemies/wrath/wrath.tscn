@@ -158,6 +158,7 @@ speed = 90.0
 
 [node name="TemperatureComponent" type="Node" parent="." unique_id=1735389838]
 script = ExtResource("4_1wrpt")
+freeze_kills = false
 
 [node name="ScoreComponent" type="Node" parent="." unique_id=1500000001]
 script = ExtResource("9_score")

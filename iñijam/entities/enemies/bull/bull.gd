@@ -30,18 +30,14 @@ func _ready() -> void:
 
 
 func get_speed_multiplier() -> float:
-	var temp_state: GlobalEnums.EntityState = temperature_component.state
-	if temp_state == GlobalEnums.EntityState.PEAK_FREEZE:
-		return 0.0
-	if temp_state == GlobalEnums.EntityState.FREEZING:
+	if temperature_component.state == GlobalEnums.EntityState.FREEZING:
 		return 0.05
 	return super.get_speed_multiplier()
 
 
 func _update_ai(delta: float) -> void:
-	if get_speed_multiplier() <= 0.0:
+	if is_immobilized():
 		move_component.move(Vector2.ZERO)
-		_play_animation("FREEZED")
 		return
 
 	match state:
@@ -89,11 +85,13 @@ func _cooldown(delta: float) -> void:
 
 
 func _on_attack_area_body_entered(body: Node) -> void:
+	if is_immobilized():
+		return
 	_damage_player(body, attack_damage)
 
 
 func _on_contact_area_body_entered(body: Node) -> void:
-	if not body.is_in_group("player"):
+	if is_immobilized() or not body.is_in_group("player"):
 		return
 	if contact_cooldown_timer.is_stopped():
 		_damage_player(body, contact_damage)
@@ -101,6 +99,8 @@ func _on_contact_area_body_entered(body: Node) -> void:
 
 
 func _on_contact_cooldown_timeout() -> void:
+	if is_immobilized():
+		return
 	for body in contact_area.get_overlapping_bodies():
 		if body.is_in_group("player"):
 			_damage_player(body, contact_damage)
