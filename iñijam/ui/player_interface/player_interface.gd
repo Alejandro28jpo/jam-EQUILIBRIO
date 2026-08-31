@@ -4,15 +4,13 @@ class_name PlayerInterface
 
 @export var player: Player
 
-@onready var player_life: Label = $PlayerLife
 @onready var temperature_meter: Sprite2D = $TemperatureMeter
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var hearts_display: HeartsDisplay = $Hearts
 
 var current_state: GlobalEnums.EntityState
 var state_to_show: int
 
-func _ready() -> void:
-	Transition.fade_out()
 
 func _process(delta: float) -> void:
 	$puntos.text = "%s / %s" % [GameManager.current_score, GameManager.best_score]
@@ -22,11 +20,12 @@ func setup() -> void:
 	state_to_show = current_state#_state_to_frame(current_state)
 	temperature_meter.frame = state_to_show
 	player.temperature_component.state_changed.connect(_on_state_changed)
+	hearts_display.setup(player.health_component.max_health)
 	manage_health_label()
 
 
 func manage_health_label() -> void:
-	player_life.text = "%s / %s" % [player.health_component.current_damage, player.health_component.max_health]
+	hearts_display.set_current_damage(player.health_component.current_damage, player.health_component.max_health)
 
 
 func update_temperature_meter() -> void:
