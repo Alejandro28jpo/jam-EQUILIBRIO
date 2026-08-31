@@ -9,14 +9,28 @@ const CAMERA_TRANSITION_TIME := 0.4
 const BASE_ENEMY_COUNT := 2
 const LEVELS_PER_ENEMY_INCREASE := 2
 
-const BULL_WEIGHT := 3
+const CATEGORY_SLOTS := 12
+const LEVELS_PER_CATEGORY := 3
+
+const MELEE_START_LEVEL := 1
+const STRAIGHT_START_LEVEL := MELEE_START_LEVEL + LEVELS_PER_CATEGORY
+const DIAGONAL_START_LEVEL := STRAIGHT_START_LEVEL + LEVELS_PER_CATEGORY
+
 const MASHER_START_LEVEL := 3
-const MASHER_WEIGHT_PER_LEVEL := 1
-const MASHER_MAX_WEIGHT := 5
 
 @export var player_scene: PackedScene = preload("res://entities/player/player.tscn")
 @export var bull_scene: PackedScene = preload("res://entities/enemies/bull/bull.tscn")
 @export var masher_scene: PackedScene = preload("res://entities/enemies/masher/masher.tscn")
+@export var straight_scenes: Array[PackedScene] = [
+	preload("res://entities/enemies/grouch/grouch.tscn"),
+	preload("res://entities/enemies/blight/blight.tscn"),
+	preload("res://entities/enemies/oculus/oculus.tscn"),
+]
+@export var diagonal_scenes: Array[PackedScene] = [
+	preload("res://entities/enemies/maw/maw.tscn"),
+	preload("res://entities/enemies/stitch/stitch.tscn"),
+	preload("res://entities/enemies/wrath/wrath.tscn"),
+]
 @export var room_exit_scene: PackedScene = preload("res://game_objects/room_exit/room_exit.tscn")
 
 @onready var room_manager: RoomManager = $RoomManager
@@ -93,14 +107,22 @@ func _setup_encounters() -> void:
 
 
 func _build_enemy_pool(level: int) -> Array[PackedScene]:
-	var pool: Array[PackedScene] = []
-	for i in BULL_WEIGHT:
-		pool.append(bull_scene)
-
+	var melee_scenes: Array[PackedScene] = [bull_scene]
 	if level >= MASHER_START_LEVEL:
-		var masher_weight: int = mini((level - MASHER_START_LEVEL + 1) * MASHER_WEIGHT_PER_LEVEL, MASHER_MAX_WEIGHT)
-		for i in masher_weight:
-			pool.append(masher_scene)
+		melee_scenes.append(masher_scene)
+
+	var categories: Array[Array] = [melee_scenes]
+	if level >= STRAIGHT_START_LEVEL:
+		categories.append(straight_scenes)
+	if level >= DIAGONAL_START_LEVEL:
+		categories.append(diagonal_scenes)
+
+	var pool: Array[PackedScene] = []
+	for category_scenes in categories:
+		var weight_per_scene: int = maxi(1, CATEGORY_SLOTS / category_scenes.size())
+		for scene in category_scenes:
+			for i in weight_per_scene:
+				pool.append(scene)
 
 	return pool
 

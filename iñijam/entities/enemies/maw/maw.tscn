@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://blmf3gbyptwtb"]
 
-[ext_resource type="Script" uid="uid://d03e2dwm8mhjh" path="res://entities/enemies/bull/bull.gd" id="1_6igvt"]
+[ext_resource type="Script" path="res://entities/enemies/maw/maw.gd" id="1_maw"]
 [ext_resource type="AudioStream" uid="uid://1canktnpoddq" path="res://sonidos/enemigos/IMPACTO MAW.ogg" id="2_bo4lu"]
 [ext_resource type="Script" uid="uid://bdrf7jgd44xr2" path="res://components/health_component.gd" id="2_tw65n"]
 [ext_resource type="Script" uid="uid://cdmuggadc7ltb" path="res://components/move_component.gd" id="3_lg2bo"]
@@ -195,16 +195,16 @@ _data = {
 }
 
 [node name="maw" type="CharacterBody2D" unique_id=103023843]
-script = ExtResource("1_6igvt")
+script = ExtResource("1_maw")
 damage_sound = ExtResource("2_bo4lu")
 
 [node name="HealthComponent" type="Node" parent="." unique_id=1991495429]
 script = ExtResource("2_tw65n")
-max_health = 5
+max_health = 3
 
 [node name="MoveComponent" type="Node" parent="." unique_id=1774239702]
 script = ExtResource("3_lg2bo")
-speed = 90.0
+speed = 130.0
 
 [node name="TemperatureComponent" type="Node" parent="." unique_id=1735389838]
 script = ExtResource("4_mns3j")
@@ -212,6 +212,7 @@ freeze_kills = false
 
 [node name="ScoreComponent" type="Node" parent="." unique_id=1500000001]
 script = ExtResource("9_score")
+points = 3
 
 [node name="AttackArea" type="Area2D" parent="." unique_id=1150035558]
 position = Vector2(0, -10)

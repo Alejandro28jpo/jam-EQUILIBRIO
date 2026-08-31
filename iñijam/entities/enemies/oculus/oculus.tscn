@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://otgyf310fbyp"]
 
-[ext_resource type="Script" uid="uid://d03e2dwm8mhjh" path="res://entities/enemies/bull/bull.gd" id="1_5bdon"]
+[ext_resource type="Script" path="res://entities/enemies/grouch/grouch.gd" id="1_grouch"]
 [ext_resource type="Script" uid="uid://bdrf7jgd44xr2" path="res://components/health_component.gd" id="2_6gavu"]
 [ext_resource type="AudioStream" uid="uid://c6oc1aqsd1yq7" path="res://sonidos/enemigos/IMPACTO OCULUS.ogg" id="2_qsdl7"]
 [ext_resource type="Script" uid="uid://cdmuggadc7ltb" path="res://components/move_component.gd" id="3_uvaod"]
@@ -195,7 +195,7 @@ _data = {
 }
 
 [node name="oculus" type="CharacterBody2D" unique_id=103023843]
-script = ExtResource("1_5bdon")
+script = ExtResource("1_grouch")
 damage_sound = ExtResource("2_qsdl7")
 
 [node name="HealthComponent" type="Node" parent="." unique_id=1991495429]
@@ -212,6 +212,7 @@ freeze_kills = false
 
 [node name="ScoreComponent" type="Node" parent="." unique_id=1500000001]
 script = ExtResource("9_score")
+points = 2
 
 [node name="AttackArea" type="Area2D" parent="." unique_id=1150035558]
 position = Vector2(0, -10)
