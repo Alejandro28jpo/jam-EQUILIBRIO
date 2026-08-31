@@ -1,6 +1,8 @@
 extends CanvasLayer
 class_name MainMenu
 
+const PRESELECT = preload("uid://c31ll73dr57b7")
+const PULSAR_ATRÁS_EXIT = preload("uid://bhh0027xjbm0h")
 
 @onready var start_button: TextureButton = $StartButton
 @onready var quit_button: TextureButton = $QuitButton
@@ -18,8 +20,18 @@ func _on_start_button_pressed() -> void:
 
 
 func _on_quit_button_pressed() -> void:
-	get_tree().quit()
+	ControladorAudio.reproducir_sonido(PULSAR_ATRÁS_EXIT)
+	$AnimationPlayer.play("salir")
 
 
 func _on_settings_button_pressed() -> void:
 	print("Settings")
+	
+func quit():
+	get_tree().quit()
+func _on_start_button_focus_entered() -> void:
+	ControladorAudio.reproducir_sonido(PRESELECT)
+func _on_quit_button_focus_entered() -> void:
+	ControladorAudio.reproducir_sonido(PRESELECT)
+func _on_settings_button_focus_entered() -> void:
+	ControladorAudio.reproducir_sonido(PRESELECT)
